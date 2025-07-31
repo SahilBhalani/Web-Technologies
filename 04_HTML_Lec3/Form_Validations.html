@@ -45,7 +45,26 @@
     <form>
 
         <label for="cc">Credit Card Number</label>
-        <input type="text" id="cc" pattern="\d{16}">
+        <input type="text" id="cc" pattern="\d{16}">\
+
+        <br><br>
+
+        <label for="date">Date</label>
+        <input type="text" id="date" pattern="\d{2}-\d{2}-\d{4}">
+
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" pattern="[+][9][1]-\d{10}">
+
+        <br><br>
+        <label for="url">Url</label>
+        <input type="url" id="url">
+
+        <br><br>
+
+        <label for="url">MyUrl</label>
+        <input type="url" id="url" pattern="https?://.+">
 
     </form>
     
