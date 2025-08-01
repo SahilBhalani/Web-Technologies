@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Advamced Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Welcome To Techmart Advanced!</h1>
+
+    <form>
+
+        <div>
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" placeholder="Enter Your Full Name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" placeholder="Enter Your Email Address" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Your password" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Cpassword">Confirm Password:</label>
+            <input type="password" id="password" placeholder="Enter Your Conform password" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="dob">Date Of Birth:</label>
+            <input type="text" id="dob" placeholder="Enter Your DOB" pattern="\d{2}-\d{2}-\d{4}" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number" pattern="+[9][1]\d{10}" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="cc">Credit Card Number:</label>
+            <input type="text" id="cc" placeholder="Enter Your Credit Card Number" pattern="\d{16}" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" placeholder="Enter Your Username" pattern="^[a-zA-Z0-9]+$" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="website">Website URL:</label>
+            <input type="text" id="website" placeholder="Enter Your Website URL" pattern="https?:\\.+" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="cmnt">Comment</label>
+            <textarea name="cmnt" id="cmnt" cols="30" rows="5"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Choose Subscription Plan</legend>
+                <input type="radio" name="plans" id="plans">
+                <label for="plans">99$</label>
+                <input type="radio" name="plans" id="plans" checked>
+                <label for="plans">199$</label>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="cntry">Country</label>
+            <select id="cntry">
+                <option value="01" selected>India</option>
+                <option value="02">United Kingdom</option>
+                <option value="03">Barcelona</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="1" max="100" value="25">
+        </div>
+
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
