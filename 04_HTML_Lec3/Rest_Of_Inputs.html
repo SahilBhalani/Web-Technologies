@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <!-- Comments -->
+        <label for="comment">Comments</label>
+        <textarea id="comment" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <!-- Dropdowns -->
+        <label for="language">languages</label>
+        <select id="language">
+
+            <option value="01">Java</option>
+            <option value="02" selected>Cpp</option>
+            <option value="03">Python</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Checkboxes -->
+
+        <!-- For addind all labels in one container -->
+        <fieldset>
+
+            <!-- for giving header wrap to container -->
+            <legend>Click On Your Choices</legend>
+
+            <label for="coffee">Coffeee</label>
+            <input type="checkbox" id="coffee" checked>
+            <label for="tea">Tea</label>
+            <input type="checkbox" id="tea">
+        </fieldset>
+
+
+        <!-- Radio-Button -->
+        <fieldset>
+            <legend>Do you agree with Terms & Conditions</legend>
+            <input type="radio" name="terms" id="yes" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" name="terms" id="no">
+            <label for="no">No!</label>
+        </fieldset>
+
+        <br><br>
+
+        <!-- Range Selector -->
+        <label for="rng">Speed</label>
+        <input type="range" id="rnd" min="1" max="200" step="5" value="10">
+
+        <!-- reset -->
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
