@@ -121,6 +121,21 @@ function add(a, b){
     return d;
 }
 
+// create a function in javascript to check a string is palindrome or not without using built-in reverse method
+function isPalindrome(str) {
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed === str;
+}
+
+    for(let i = 1; i<=10 ; i++ ){
+         let result = console.log(i);
+    }
+
+    
+
 let result = add(10,20);
 console.log("result :" , result);
 
