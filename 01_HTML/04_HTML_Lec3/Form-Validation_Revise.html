@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validations</title>
+</head>
+<style>
+    input:valid {
+        border: 3px solid green;
+    }
+
+    input:invalid {
+        border: 3px solid red;
+    }
+</style>
+
+<body>
+    <!-- Valid & Invalid Cues -->
+
+    <form action="">
+
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <br><br>
+
+        <!-- Pattern Matching -->
+        <label for="cc">Credit Card</label>
+        <input type="text" id="cc" pattern="\d{16}">
+
+        <br><br>
+
+        <label for="myNum">Phone No:</label>
+        <input type="text" id="myNum" pattern="[+][9][1]-\d{10}">
+
+        <br><br>
+
+        <label for="date">Date</label>
+        <input type="text" id="date" pattern="\d{2}-\d{2}-\d{4}">
+
+        <br><br>
+        <input type="submit" value="Register">
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>

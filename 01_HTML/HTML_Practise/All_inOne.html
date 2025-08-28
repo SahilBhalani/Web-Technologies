@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tags In HTML!</title>
+     
+    <!-- favicon Tag -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+ <style>
+    table,th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        border-style: dashed;
+    }
+    th:nth-child(even){
+        background-color: grey;
+    }
+
+    tr{
+        text-align:center;
+    }
+
+    #div2{
+        width: 33%;
+        margin: auto;
+        background-color: chartreuse;
+    }
+</style>
+
+<body>
+
+<!-- H1 to H6 tags -->
+    <h1>Hi There! H1</h1>
+    <h2>Hi There! H2</h2>
+    <h3>Hi There! H3</h3>
+    <h4>Hi There! H4</h4>
+    <h5>Hi There! H5</h5>
+    <h6>Hi There! H6</h6>
+
+    <!-- Paragraph Tag -->
+    <p>This is Paragraph Text.</p>
+
+    <!-- break tag -->
+    <br>
+
+    <!-- span tag -->
+    <span>This is &nbsp; tag</span>
+
+    <br>
+
+    <!-- anchor tag -->
+    <a href="https://google.com">Go TO Google</a>
+
+    <br>
+
+    <!-- pre-Formatted Text -->
+    <pre>
+        This is
+        Pre Formatted Text.
+        
+    </pre>
+
+    <br>
+
+    <!-- Style Attributes -->
+     <p style="color: red;">This is style Attribute Example</p>
+     
+     <br>
+
+     <!-- Diffrent Types of font style tags -->
+
+     <p> <b>Bold</b> 
+        <strong>Important</strong> 
+        <i>Italic</i> 
+        <em>Emphasized</em> 
+        <mark>Marked</mark>  
+        <small>Small</small>
+        <ins>Inserted Text</ins>
+        <del>Deleted Text</del>
+        <sub>Subscripted Text</sub>
+        <sup>Supscripted Text</sup>
+        <s>No Longer Accesss</s>
+        <u>Underlined text</u>
+        <p></p>Define a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, laudantium. <wbr>Line Break.</wbr></p>
+
+    </p>
+
+    <!-- Quotation Tags -->
+
+    <blockquote cite="https://wikipedia.com/index.html">
+        This Is Block Quote, Lorem ipsum dolor sit amet.
+    </blockquote>
+
+    <p>This Is <q>Short Quotation</q> period.</p>
+
+    <p>This is <abbr title="Abberiviation">Abbriviation</abbr></p>
+
+    <address>
+        B-190 Yoginagar Society, <br>
+        Nr. Silver Business Hub, <br>
+        Surat
+    </address>
+
+    <br>
+
+    <bdo dir="rtl">This text <bdi style="font-weight: bold;">This is normal text</bdi> is right to left</bdo>
+
+    <!-- CSS tags -->
+
+    <!-- Css can be defined in three ways 
+        1. Inline 
+        2. Internal Style Tag 
+        3. External Through Link Tag    
+    -->
+        <br>
+
+    <!-- Link Tags -->
+     <a href="https://www.google.com"><img src="/01_HTML/01_Intro_To_Web_HTML/download.jpg" alt="Click Image To Open Website" width="100%">Click Image to Open Website</a> <br> <br>
+
+     <a href="mailto:dahiwala108@gmail.com">Send Email To Me</a> <br> <br>
+
+     <!-- Images Tag -->
+
+     <p style="background-image: url('/01_HTML/01_Intro_To_Web_HTML/download.jpg');">text with image as background</p>
+
+    <!-- Table Tag -->
+
+    <table>
+        <thead>
+            <caption style="font-size: large;">Price Table</caption>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Stock</th>
+                <th rowspan="2">Price</th>
+            </tr>
+
+            <tr>
+                <th>In Stock</th>
+                <th>Out Of Stock</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>bike</td>
+                    <td>yes</td>
+                    <td>no</td>
+                    <td>99$</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Cycle</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>199$</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Car</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>9999$</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+
+<!-- List Tags -->
+
+    <!-- Unordered List -->
+    <ul>
+        <li>This is unordered list</li>
+        <li>This is unordered list</li>
+    </ul> 
+
+    <!-- Ordered List -->
+    <ol>
+        <li>This is ordered list</li>
+        <li>This is ordered list</li>
+    </ol>
+
+    <!-- Description List -->
+     <dl>
+        <dt>Coffee</dt>
+        <dd>Cappucino</dd>
+        <dd>Frappe</dd>
+
+        <dt>Tea</dt>
+        <dd>Lemon Tea</dd>
+        <dd>Ice Tea</dd>
+
+     </dl>
+
+
+     <!-- Div tag -->
+      <div id="div1">
+        <p>This is a div</p>
+      </div>
+
+      <div id="div2">
+        <p>This is a Centered Div</p>
+    </div>
+
+    <!-- Iframe tag -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qP23O70ve7k?si=Ol912HgqSvYVKt4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Script tag -->
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!"
+    </script>
+
+    <noscript>
+        Please Enable Your JavaScript!
+    </noscript>
+
+    <!-- Responsive tags -->
+     <p style="font-size: 5vw;">This is Responsive Text</p>
+
+     <!-- Keyboard input tags -->
+      <p>Save the document by Pressing
+        <kbd>Ctrl + S</kbd>
+      </p>
+
+      <!-- Semantic Elements :
+        Semantic Elements Clearly Describes its meaning to both browser and the developer -->
+
+</body>
+
+</html>

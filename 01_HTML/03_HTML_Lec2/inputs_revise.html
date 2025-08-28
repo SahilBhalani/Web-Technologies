@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- form tag -->
+    <form>
+        <!--Input Tags  -->
+        <!-- Label Tag -->
+
+        <!-- readonly input -->
+         <label for="nickname">Nickname</label>
+         <input type="text" id="nickname" value="John" readonly>
+
+         <br><br>
+
+        <!--  Text Input with validations-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name"
+        minlength="5"
+        maxlength="20">
+
+        <br><br>
+
+        <!--Number Input with validations -->
+        <label for="number">Number:</label>
+        <input type="number" id="number"
+        placeholder="Enter Your Number" min="5" max="100" step="5">
+
+        <br><br>
+
+        <!-- Email Input with validations -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Your Mail"
+        required>
+
+        <br><br>
+        <!-- Password Input with validations-->
+        <label for="Password">Password</label>
+        <input type="password" id="password" 
+        placeholder="Enter Password"
+        minlength="8" required>
+
+        <br><br>
+
+        <!-- Submit input -->
+        <input type="submit" value="Register">
+
+        <!-- Reset input -->
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+
+</html>
