@@ -117,6 +117,14 @@ function isPalindrome(str) {
 }
 ```
 
+Checks if a string is a palindrome using the built-in reverse method:
+
+```js
+function isPalindromeWithReverse(str) {
+    return str === str.split("").reverse().join("");
+}
+```
+
 ## 6. Strings
 
 - Strings can be declared with `"`, `'`, or `` ` `` (template literals).

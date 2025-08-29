@@ -1,0 +1,10 @@
+h2{
+    color: lightgreen;
+    background-color: grey;
+}
+
+span{
+    font-size: 2rem;
+    font-family: Helvetica;
+    font-weight:bold;
+}
