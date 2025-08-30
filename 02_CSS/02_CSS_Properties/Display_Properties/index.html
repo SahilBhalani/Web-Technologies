@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    *{
+         font-family: 'Times New Roman', Times, serif;
+         box-sizing: border-box;
+    }
+    h1{
+        color: red;
+       
+    }
+
+    .block{
+        display: block;
+        background-color: lightskyblue;
+        height: 100px; /* User Defined height */
+        width: 100px;  /* User Defined width */
+        padding: 10px; /* Padding in All Directions */
+       margin: 40px; /* margin in all directions */
+       border: 3px solid red; /* border in all direction */ 
+         
+    }
+
+    .inline{
+
+        background-color: lightgreen;
+        height: 100px; /* User-defined height (does not work) */
+        width: 200px; /* User-defined width (does not work) */
+        display: inline;
+        padding: 10px; /* Padding in all directions */
+        margin-left: 10px; /* Horizontal margin works */
+        margin-top: 10px; /* Vertical margin(does not work) */
+        border: 5px solid red; /* Border in all directions */
+
+    }
+
+    .inline-block{
+
+        background-color: mediumorchid;
+        display: inline-block;
+        height: 100px; /* User-defined height */
+        width: 100px; /* User-defined width */
+        padding: 10px; /* Padding in all directions */
+        margin-left: 10px; /* Horizontal margin works */
+        margin-top: 10px; /* Vertical margin work */
+        border: 5px solid red; /* Border in all directions */
+
+    }
+</style>
+
+<body>
+    <h1>Display Properties</h1>
+
+    <!-- Block Level Element -->
+    <div class="block"> This is Block-Level Element</div>
+
+    <!-- Inline Element -->
+    <span class="inline">This is Inline Element</span>
+
+    <!-- Inline-Block Element -->
+    <div class="inline-block">This is Inline-Block Element</div>
+</body>
+</html>

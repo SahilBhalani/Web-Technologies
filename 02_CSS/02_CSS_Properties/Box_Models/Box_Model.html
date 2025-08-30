@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1{
+            color: orange;
+            text-align: center;
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+
+            /* Border */
+            border: 10px solid red;
+
+            /* Padding */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+
+            /* Margin */
+            margin-bottom: 10px;
+
+            /* Box Sizing  */
+            box-sizing: content-box;
+        }
+
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+
+            /* Border */
+            border: 10px solid red;
+
+            /* Padding */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+
+            /* Box sizing */
+            box-sizing: border-box;
+        }
+
+        
+
+        /* Element Total Width = BorderR + borderL + paddingL + paddindR 
+           
+            Element Total Height = borderT + borderD + paddingT + paddingD
+        
+        */
+
+        /* Differne between Content Box and Border Box 
+            Content Box = Content Height + Vertical Border + Vertical Padding
+            
+            Border Box = Content Height - Vertical Border - Vertical Padding
+
+            Basically Content Box take full height and width and then add border and padding & Border Box take border and padding height and then give the the element height and width from remaining space.
+
+            Recommend To Use : Border Box.
+        */
+
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Box Model Example</h1>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nesciunt.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, pariatur.
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    /* Universal Selector */
+    *{
+        font-family: Helvetica;
+        font-size: large;
+        text-align: center;
+    }
+
+    /* Full-Body Selector */
+    body{
+        background-color: rgba(51, 57, 51, 0.3);
+    }
+/* Descendant Combinator */
+     div.p{
+        color: rgb(236, 59, 0);
+    }
+
+    /* Child Combinator */
+    div > p{
+        color: rgb(7, 250, 226);
+    }
+
+    .p1{
+        color: red;
+        font-weight: bold;
+    }
+
+    /* Adjacent Combinator */
+     h3 + p{
+        color : red;
+    } 
+
+    /* general sibling Combinator */
+
+     /* h3 ~ p {
+        color: purple;
+    }  */
+
+    /* ID Selector */
+    #p2{
+        color: chocolate;
+        font-style: oblique;
+    }
+
+    /* Borders */
+    .b1{
+        border: 3px solid black;
+        border-style: dashed;
+    }
+    .b2{
+        border: 3px solid red;
+        border-style: dotted;
+    }
+    .b3{
+        border: 3px solid green;
+        border-style:dotted double solid dashed;
+        border-radius: 5px;
+    }
+
+    /* Margins */
+    .m1{
+        height: 100px;
+        width: 30%;
+        background-color: burlywood ;
+        text-align: center;
+        margin: 10px 20px 10px 20px;
+        
+    }
+
+    /* Padding */
+    .pd1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: aqua;
+    }
+
+    /* Outline */
+    .oline{
+        outline-offset: 3px solid red;
+        border: 3px solid black;
+        background-color: chocolate;
+    }
+    
+</style>
+<body>
+    <!-- Selectors -->
+    <div>
+        <p>Paragraph inside the div (parent)</p>
+        <p>Another Paragraph inside the same div(Child)</p>
+    </div>
+
+    <h3>Heading 3</h3>
+    <p>Paragraph Next to h3 (Adjacent Sibling)</p>
+    <p>Another paragraph next to h3(general sibling)</p>
+
+    <p class="p1">This is Class Selector</p>
+
+    <p id="p2">This is ID Selector</p>
+
+    <!-- Inline CSS -->
+    <p style="color: yellow;">This is inline CSS</p>
+
+    <!-- Borders -->
+    <p class="b1">Border No.1</p>
+    <p class="b2">Border No.2</p>
+    <p class="b3">Border No.3</p>
+
+    <!-- Margins -->
+
+    <div class="m1">
+        margin
+
+    </div>
+
+    <!-- Padding -->
+    <div class="pd1">
+        This element has padding of 30px
+    </div>
+
+    <!-- Outlines -->
+     <div class="oline">
+        This is outlined block
+     </div>
+</body>
+</html>
