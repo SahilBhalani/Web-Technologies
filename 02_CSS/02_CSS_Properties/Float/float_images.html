@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            float: left;
+            width: 20%;
+            padding: 5px;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="container"><img src="https://picsum.photos/200/300?grayscale
+" alt="" width="100%"></div>
+        <div class="container"><img src="https://picsum.photos/200/300
+" alt="" width="100%"></div>
+        <div class="container"><img src="https://picsum.photos/200/300.jpg
+" alt="" width="100%"></div>
+        <div class="container"><img src="https://picsum.photos/200/300.webp
+" alt="" width="100%"></div>
+        <div class="container"><img src="https://picsum.photos/200/300.webp
+" alt="" width="100%"></div>
+    </div>
+</body>
+
+</html>

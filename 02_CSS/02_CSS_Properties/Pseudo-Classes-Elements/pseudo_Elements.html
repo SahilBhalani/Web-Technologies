@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fletter::first-letter{
+        color: red;
+    }
+
+    .fline::first-line{
+        color: blueviolet;
+    }
+
+    .h2::before{
+        content: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHFkZmFud2s0bWN4bnZwamE2NnhqY3dhOTFxcTk3M3VtMzZqbDR4cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vVzH2XY3Y0Ar6/giphy.gif");
+    }
+
+    .h3::after{
+        content: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHFkZmFud2s0bWN4bnZwamE2NnhqY3dhOTFxcTk3M3VtMzZqbDR4cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vVzH2XY3Y0Ar6/giphy.gif");
+    }
+
+    ::marker{
+        color: red;
+    }
+
+    ::selection{
+        background-color: yellow;
+        color: red;
+    }
+</style>
+<body>
+    <p class="fletter"> First Letter</p>
+
+    <p class="fline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste facere quia earum optio magni vero ipsa quasi a, dicta tempora eos corrupti tenetur quos inventore, cumque reiciendis esse soluta ratione? Ab nesciunt nobis aspernatur sint iusto! Totam eum a modi mollitia minima esse et est reprehenderit, odio incidunt! Blanditiis rem repudiandae ducimus quo suscipit ex, sequi culpa dolore. Vel autem, accusantium reiciendis culpa veritatis temporibus debitis porro provident vitae eius quisquam possimus laboriosam explicabo. Incidunt eaque similique laudantium quibusdam qui excepturi. Officia consectetur, sunt, autem pariatur minima cumque ad iusto optio nihil, blanditiis maiores! Vitae ipsum voluptate impedit explicabo eligendi.</p>
+
+    <div class="h2">Before Element</div>
+    <div class="h3">After Element</div>
+
+    <ul>
+        <li>Coffee </li>
+        <li>Tea</li>
+        <li>Coke</li>
+    </ul>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coke</li>
+    </ol>
+</body>
+</html>

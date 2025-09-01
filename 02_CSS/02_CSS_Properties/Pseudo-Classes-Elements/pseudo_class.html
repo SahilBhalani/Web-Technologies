@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .h1{
+        border: 2px solid black;
+    }
+
+    .h1:hover{
+        background-color: blue;
+    }
+
+    input:hover{
+        background-color: grey;
+    }
+
+    a.highlight:hover{
+        font-style: italic;
+        font-size: large;
+        color: chocolate;
+    }
+
+    p{
+       display: none;
+       background-color: yellow;
+       padding: 20px;
+    }
+
+    div:hover p{
+        display: block;
+    }
+
+
+</style>
+<body>
+    <div class="h1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, impedit!
+    </div>
+    <br>
+
+    <form action="">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname">
+
+    </form>
+
+    <br>
+
+    <a href="" class="highlight">CSS Highlight</a>
+
+    <br>
+    <br>
+
+    <div>Hover me to Show full P Element
+        <p>Tada! Here I am!</p>
+    </div>
+</body>
+</html>
