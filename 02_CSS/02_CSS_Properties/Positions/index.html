@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Image Text Position */
+    .pic {
+        position: relative;
+    }
+
+
+    /* Top Left Text Position */
+    .topleft {
+        position: absolute;
+        top: 17%;
+        left: 1%;
+    }
+
+    .center {
+        position: absolute;
+        top: 38%;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .topright {
+        position: absolute;
+        top: 17%;
+        left: 84%;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 27%;
+        left: 1%;
+    }
+
+    .bottomright {
+        position: absolute;
+        bottom: 27%;
+        left: 85%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .fixed{
+        border : 3px solid green;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        position: fixed;
+    }
+
+    .sticky{
+        border: 3px solid green;
+        background-color: red;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+
+    }
+</style>
+
+<body>
+
+    <h1>Positioning</h1>
+
+    <!-- <div class="static"><p>
+        This Div Elemnet has Position : static;
+    </p>  -->
+
+    </div>
+
+    <div class="sticky">
+        <p>This is Sticky Element</p>
+    </div>
+
+    <div class="pic">
+        <img src="/01_HTML/01_Intro_To_Web_HTML/download.jpg" alt="Spiderman Pic" width="1000" height="300">
+    </div>
+
+    <div class="center">
+        <p>Center Text</p>
+    </div>
+
+    <div class="topleft">
+        <p>Top Left Text</p>
+    </div>
+
+    <div class="topright">
+        <p>Top right Text</p>
+    </div>
+
+    <div class="bottomleft">
+        <p>Bottom Left Text</p>
+    </div>
+
+    <div class="bottomright">
+        <p>Bottom Right Text</p>
+    </div>
+
+    <div class="fixed">
+        <p>This Element is fixed element</p>
+    </div>
+
+</body>
+
+</html>

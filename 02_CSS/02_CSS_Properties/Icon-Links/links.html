@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* unvisited link */
+    a.link1:link{ color: red;}
+
+    /* visited link */
+   a.link1:visited{color:green;}
+
+    /* Mouse over link */
+    a.link1:hover{color: darkgoldenrod;}  
+    /* Hover must come after :link and :visited 
+
+    /* Active link */
+    a.link:active{color: brown;}
+    /* :active must come after :hover */
+
+    /* For Link Buttons */
+    a.link2:link , a.link2:visited{
+        background-color: red;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+     a.link2:hover, a.link2:active{
+        background-color: skyblue;
+     }   
+</style>
+<body>
+    <p><a class="link1" href="">This is Link 1</a></p>
+    <p><a class="link2" href="">This is Link 2</a></p>
+    
+</body>
+</html>

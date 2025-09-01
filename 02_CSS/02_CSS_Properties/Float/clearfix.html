@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            float: right;
+            
+        }
+
+        .woclearfix{
+            border: 3px solid black;
+        }
+
+        .clearfix{
+             border: 3px solid black;
+        }
+
+        .clearfix ::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without ClearFix:</h1>
+    <div class="woclearfix">
+        <img src="../Z_Index/leaf-nature-tree-png-20.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, deleniti.</p>
+    </div>
+    <br>
+
+    <h1>With ClearFix:</h1>
+    <div class="clearfix">
+        <img src="../Z_Index/leaf-nature-tree-png-20.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, deleniti.</p>
+    </div>
+
+</body>
+</html>

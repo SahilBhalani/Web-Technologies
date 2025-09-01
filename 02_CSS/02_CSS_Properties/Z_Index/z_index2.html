@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        position: relative;
+    }
+
+    .black-box {
+
+        position: relative;
+        border: 3px solid black;
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 120px;
+        z-index: 1;
+    }
+
+    .gray-box {
+        border: 3px solid grey;
+        width: 70%;
+        height: 50px;
+        background-color: grey;
+        color: white;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 2;
+        /* gray box will be top above black box */
+    }
+
+    .green-box {
+        border: 3px solid green;
+        background-color: green;
+        position: absolute;
+        width: 35%;
+        height: 50px;
+        top: 60px;
+        z-index: 3;
+        /* green box will be top above black box and gray box 
+
+        If two positioned elements overlap each other without a z-index specified, the elements render in the order they are defined in the HTML source code: */
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="black-box">Black-Box</div>
+        <div class="gray-box">Gray-Box</div>
+        <div class="green-box">Green-Box</div>
+    </div>
+</body>
+
+</html>
