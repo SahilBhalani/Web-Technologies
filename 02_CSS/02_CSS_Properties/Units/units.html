@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        .px,
+        .rem,
+        .vh-vw,
+        .em{
+            margin-bottom: 20px;
+            background-color: lightgreen; 
+        }
+
+        .px{
+            font-size: 20px; /* Absolute Unit */ 
+        }
+
+        html{
+            font-size:10px; /* 1 rem = 10px */
+        }
+
+        .rem{
+            font-size: 2rem; /* 2rem = 2 * 10px = 20px */
+        }
+
+        .vh-vw{
+            height: 20vh;
+            width: 50vw;
+            font-size: 2rem;
+        }
+
+        .gp{
+            height: 200px;
+            width: 300px;
+            background-color: lightcoral;
+        }
+
+        .parent{
+            height: 50%;
+            width: 50%;
+            background-color: blanchedalmond;
+        }
+
+        .child{
+            height: 50%;
+            width: 50%;
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Absolute Units -->
+     <div class="px">This is a fixed size Text(20px)</div>
+
+     <!-- Relative Units -->
+      <div class="rem">This text is sized using rem(2rem)</div>
+
+      <div class="em">This is box sized using em</div>
+
+      <div class="vh-vw">This box is sized using vh-vw</div>
+
+      <div class="gp">
+        <div class="parent">
+            <div class="child">This box is sized using %</div>
+        </div>
+      </div>
+</body>
+</html>
