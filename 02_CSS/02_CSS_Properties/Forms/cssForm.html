@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            font-family:Helvetica;
+            font-weight: bold;
+        }
+        input[type=text],select{
+            width:100%;
+            padding : 12px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit]{
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            margin: 8px 0;
+            border: none;
+            padding : 14px 20px;
+            cursor : pointer;
+        }
+
+        input[type=submit]:hover{
+            background-color: #4CAF80;
+        }
+
+        div{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <form action="">
+
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" placeholder="Enter Full Name..">
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Enter Last Name..">
+
+        <br><br>
+
+        <label for="city">Enter City</label>
+        <select id="city">
+            <option value="a">Australia</option>
+            <option value="b">Baku</option>
+            <option value="c">California</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+
+    </form>
+    </div>
+</body>
+
+</html>
