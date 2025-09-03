@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radical Gradients</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .default {
+        background-image: radial-gradient(red, orange, black);
+    }
+
+    .diff-grad {
+        background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+    }
+
+    .shape {
+        background-image: radial-gradient(circle, red, yellow, green);
+    }
+
+    .repeat {
+        background-image: repeating-radial-gradient(black, blue 10%, violet 15%);
+    }
+</style>
+
+<body>
+    <p>Evenly Spaced Gredient</p>
+    <div class="default"></div>
+
+    <p>Diffrently Spaced Color Stops</p>
+    <div class="diff-grad"></div>
+
+    <p>Set Shape</p>
+    <div class="shape"></div>
+
+    <p>Repeat Radial</p>
+    <div class="repeat"></div>
+
+</body>
+
+</html>

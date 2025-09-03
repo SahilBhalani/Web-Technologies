@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conical Gradient</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin:10px;
+            padding: 20px;
+        }
+
+        .con-grad{
+            background-image: conic-gradient(red,yellow,green) ;
+        }
+
+        .five-grad{
+            background-image: conic-gradient(red,yellow,green,blue,black);
+        }
+
+        .col-deg-grad{
+            background-image: conic-gradient(red 45deg, yellow 180deg,green 210deg);
+        }
+
+        .pie-chart{
+            background-image: conic-gradient(red, yellow,green,blue,black);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Three Colors</p>
+    <div class="con-grad"></div>
+
+    <p>Five Colors</p>
+    <div class="five-grad"></div>
+
+    <p>Three Colours With Degrees</p>
+    <div class="col-deg-grad"></div>
+
+    <p>Pie Chart</p>
+    <div class="pie-chart"></div>
+
+
+</body>
+</html>
