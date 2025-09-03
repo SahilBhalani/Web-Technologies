@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Image</title>
+    <style>
+        .borderimg{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("https://www.w3schools.com/css/border.png") 30 round;
+            margin-bottom: 20px;
+        }
+
+        .borderimg2{
+            border : 10px solid transparent;
+            padding : 20px;
+            border-image : url("https://www.w3schools.com/css/border.png") 30 stretch; 
+        }
+
+        .borderimg3{
+            border : 10px solid transparent;
+            padding: 20px;
+            border-image : url("https://www.w3schools.com/css/border.png") 10 round;
+        }
+
+        .borderimg4{
+            border : 10px solid transparent;
+            padding: 20px;
+            border-image : url("https://www.w3schools.com/css/border.png") 20% stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Image Style 1</h1>
+    <div class="borderimg">
+        <h2>An Image as a border!</h2>
+    </div>
+
+    <h1>Border Image Style 2</h1>
+    <div class="borderimg2">
+        <h2>An Image as a border!</h2>
+    </div>
+
+    <h1>Border Image Style 3</h1>
+    <div class="borderimg3">
+        <h2>An Image as a border!</h2>
+    </div>
+
+    <h1>Border Image Style 4</h1>
+    <div class="borderimg4">
+        <h2>An Image as a border!</h2>
+    </div>
+</body>
+</html>
