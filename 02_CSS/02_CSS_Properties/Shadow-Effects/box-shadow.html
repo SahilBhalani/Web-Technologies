@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: crimson;
+    }
+
+    .hor-ver{
+        box-shadow: 10px 10px;
+    }
+
+    .col-shadow{
+        box-shadow: 10px 10px aqua;
+    }
+
+    .blur{
+        box-shadow: 10px 10px 5px aqua;
+    }
+
+    .blur2{
+        box-shadow: 10px 10px 5px 12px aqua;
+    }
+
+    .inset{
+        box-shadow: 10px 10px 5px aqua inset;
+    }
+
+    .multiple{
+        box-shadow: 5px 5px 8px blue,10px 10px 8px red,15px 15px 8px green;
+    }
+</style>
+<body>
+    
+    <p>Horizontal & Vertical Shadow</p>
+    <div class="hor-ver"></div>
+    <br>
+
+    <p>Specify a Color for the Shadow</p>
+    <div class="col-shadow"></div>
+
+    <p>Add a Blur Effect to the Shadow</p>
+    <div class="blur"></div>
+
+    <p>Set the Spread Radius of the Shadow</p>
+    <div class="blur2"></div>
+
+    <br>
+
+    <p>Set the inset Parameter</p>
+    <div class="inset"></div>
+
+    <p>Multiple Shadows</p>
+    <div class="multiple"></div>
+
+</body>
+</html>
