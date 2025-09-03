@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word-Wrap</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+        }
+        p.wrap{
+            word-wrap: break-word;
+            word-break: keep-all;
+        }
+
+        p.test1{
+            writing-mode: horizontal-tb;
+        }
+
+        span{
+            writing-mode: vertical-rl;
+        }
+
+        p.test2{
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+    <div><p>This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p></div>
+
+    <div>
+        <p class="wrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    </div>
+
+
+    <p class="test1">Some text with default writing-mode.</p>
+
+    <p >Some text With a span element <span class="test2">Vertical-rl</span> Writing-mode.</p>
+
+    <p class="test2">Some Text with vertical-rl writing-mode.</p>
+</body>
+</html>
