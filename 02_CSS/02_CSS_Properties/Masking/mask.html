@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masking</title>
+    <style>
+
+        *{
+            font-family: Nohemi;
+        }
+
+        @font-face {
+            font-family: 'Nohemi';
+            src: url('../Web-Fonts/Nohemi-Light.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+        }
+
+            .mask1 {
+                -webkit-mask-image: url(w3logo.png);
+                mask-image: url(w3logo.png);
+                mask-repeat: no-repeat;
+            }
+
+            p {
+                
+                font-weight: bold;
+                font-size: 20px;
+                padding: 20px;
+                color: white;
+            }
+
+            div.lineargrad {
+                -webkit-mask-image: linear-gradient(black, transparent);
+                mask-image: linear-gradient(black, transparent);
+                max-width: 600px;
+                height: 350px;
+                overflow: scroll;
+                background: url(red-fabric-texture.jpg) no-repeat;
+
+
+            }
+    </style>
+</head>
+
+<body>
+    <h2>An image with a mask layer image:</h2>
+    <div class="mask1">
+        <img src="red-fabric-texture.jpg" alt="" width="600" height="400">
+    </div>
+
+    <div class="lineargrad">
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+            Riomaggiore.</p>
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+            Riomaggiore.</p>
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+            Riomaggiore.</p>
+    </div>
+</body>
+
+</html>
