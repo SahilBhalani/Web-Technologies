@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path Property</title>
+    <style>
+
+        div.d1{
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;  
+        }
+        img{
+            float: left;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Clip-Path Property</h1>
+    <div class="d1">
+    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia assumenda ut quo sit deleniti quod voluptate molestiae, accusantium optio totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dolore unde commodi veniam! Ab deserunt odio nulla officia vitae labore minus, sapiente veritatis ipsa. Pariatur doloribus nemo distinctio voluptatum illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti necessitatibus libero inventore repellendus at. Optio adipisci vel possimus ad esse debitis labore ipsam error amet laborum dicta eaque quod officia dignissimos fugit, fugiat ea cupiditate corrupti quaerat beatae minima! Possimus.</p>
+    </div>
+</body>
+</html>
