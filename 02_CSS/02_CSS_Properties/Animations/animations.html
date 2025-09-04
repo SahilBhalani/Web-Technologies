@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        /* The Element to apply the animation to */
+         div.simple{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            animation-name: simple;
+            animation-duration: 4s;
+        }
+
+        div.percentage{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: black;
+            animation-name: percentage;
+            animation-duration: 4s;
+        }
+
+        div.square{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            position: relative;
+            background-color: red;
+            animation-name: square;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            
+        } 
+
+        div.master{
+            width: 100px;
+            height: 100px;
+            padding-top:10px;
+            margin: 10px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            border-radius: 10%;
+            background-color: green;
+            animation-name: master;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: 2;
+        }
+
+
+        /* The Animation Code */
+
+        @keyframes master{
+            0% {background-color: green;translate: 0px;}
+            25%{background-color: yellow; rotate: 20deg;}
+            50%{background-color:red;rotate: 0deg; translate: 500px;}
+            55%{rotate: 0deg;}
+            70%{background-color: blue;}
+            100%{background-color: cyan;rotate: -360deg;}
+        }
+
+        @keyframes simple{
+            from{background-color: red;}
+            to {background-color: blue;}
+        }
+
+        @keyframes percentage{
+            0% {background-color: black;}
+            25% {background-color: blue;}
+            50% {background-color: yellow;}
+            100% {background-color: red;}
+        }
+
+        @keyframes square{
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+   <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+    <div class="simple"></div>
+    <div class="percentage"></div>
+    <div class="square"></div>
+    <br>
+
+    <div class="master">CSS</div>
+</body>
+</html>
