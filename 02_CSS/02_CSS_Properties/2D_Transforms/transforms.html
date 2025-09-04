@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d_Transforms</title>
+    <style>
+        div{
+            width: 200px;
+            border: 2px solid black;
+            background-color: yellow;
+            
+        }
+
+        div.translate{
+            transform: translate(50px,100px);
+        }
+
+        div.rotate{
+            transform: rotate(20deg);
+        }
+
+        div.rotate-nagetive{
+            transform: rotate(-20deg);
+        }
+
+        div.scale{
+            margin: 100px;
+            transform: scale(2,3);
+        }
+
+        div.scale-decrease{
+            transform: scale(0.5,0.5);
+        }
+
+        div.scaleX{
+            margin: 100px;
+            transform: scaleX(2);
+        }
+
+        div.scaleY{
+            margin: 100px;
+            transform: scaleY(2);
+        }
+
+        div.skewX{
+            transform: skewX(20deg);
+            margin: 5px;
+        }
+
+        div.skewY{
+            transform: skewY(20deg);
+            margin: 30px;
+        }
+
+        div.matrix{
+            margin: 15px;
+            transform: matrix(1,-0.3,0.5,1,0,0);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>The Translate() Function</h1>
+
+    <h2>The translate() function moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</h2>
+
+    <div class="translate">this div is moved 50 pixels to the right and 100 pixel down from its current position</div>
+    <br><br><br><br><br><br><br><br>
+
+    <div class="rotate">This div is rotated clockwise with 20 degrees.</div><br><br><br><br>
+
+    <div class="rotate-nagetive">This div is rotated counter-clockwise with 20 degrees.</div> <br><br><br><br><br>
+
+    <div class="scale">this div is increases two times of its origin width and three times of its original height</div>
+    <br><br><br>
+
+    <div class="scale-decrease">this div is Decreases og half of the elements's width and height</div><br>
+
+    <div class="scaleX">This div is increased two times of its original width</div>
+
+    <div class="scaleY">This div is increased two times of its original height</div>
+
+    <div class="skewX">This div is skewed by 20 degrees in X-axis</div><br>
+
+    <div class="skewY">This div is skewed by 30 degrees in Y-axis</div><br>
+
+    <div class="matrix">The matrix method combine all 2d transform methods into one.</div>
+
+
+
+</body>
+</html>
