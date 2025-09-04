@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div.width-transition{
+            width: 200px;
+            height: 100px;
+            background: red;
+            transition: width 1s,height 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1sec;
+        }
+
+        div.width-transition:hover{
+            width: 400px;
+            height: 200px;
+        } */
+
+        div.mix{
+            width: 200px;
+            height: 100px;
+            background: crimson;
+            transition: width 1s,height 1s,transform 1s,ease 0.5s;
+        }
+
+        div.mix:hover{
+            width: 400px;
+            height: 200px;
+            transform: translate(100px , 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transitions</h1>
+
+    <!-- <div class="width-transition">Width-height Transition</div> -->
+
+    <div class="mix">Transition + Transformation</div>
+</body>
+</html>
