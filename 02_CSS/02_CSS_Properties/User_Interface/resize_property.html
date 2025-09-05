@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Property</title>
+    <style>
+        div.resize{
+            border : 2px solid;
+            padding:20px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+        #test{
+            resize: none;
+        }
+
+        div.offset{
+            border: 1px solid black;
+            margin: 20px;
+            outline : 4px solid red;
+            outline-offset: 15px;
+        }
+
+        div.offset2{
+            border: 1px solid black;
+            margin-top: 10px;
+            outline: 5px dashed blue;
+            outline-offset: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Resize Property</h1>
+
+    <div class="resize">
+        <p>Let the user resize only the width of this div element</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <textarea id="test">Textarea - Not resizable</textarea>
+    <textarea>Textarea - Resizable(default)</textarea>
+
+    <div class="offset">
+        <p>This div has an outline 15px outside the border edge.</p>
+    </div><br>
+    <div class="offset2">
+        <p>This div has an outline 5px outside the border edge.</p>
+    </div>
+
+
+</body>
+</html>
