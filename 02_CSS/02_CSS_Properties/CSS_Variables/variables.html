@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        @property --myColor{ 
+            syntax: "<color>";
+            inherits: true;
+            initial-value: lightgray;
+        }
+
+        :root{
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+
+        .container{
+        --fontsize: 25px;
+        }
+
+        body{
+            /* background-color: var(--blue); */
+            background-color: var(--myColor);
+        }
+        h1{
+            color: var(--white);
+        }
+
+        h2{
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container{
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+            font-size: var(--fontsize);
+            
+        }
+
+        button{
+            --button-white : burlywood; /* new local variable*/
+            --blue : #00ffff; /* local variable will override global */
+            background-color: var(--white);
+            border: 1px solid var(--blue);
+            color: var(--blue);
+            padding: 5px;
+            font-size: var(--fontsize);
+        }
+
+        @media screen and (min-width:450px) {
+            .container{
+                --fontsize : 50px;
+            }
+
+            :root{
+                --blue : lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Using The var() Function</h1>
+
+    <div class="container">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus sint pariatur corrupti vitae ex, reprehenderit nulla id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus sint pariatur corrupti vitae ex, reprehenderit nulla id.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @property --my-bg-color{
+            syntax: "<color>";
+            inherits: true;
+            initial-value: lightgray;
+        }
+
+        @property --my-txt-color{
+            syntax: "<color>";
+            inherits: true;
+            initial-value: darkgreen;
+        }
+
+        div{
+            width: 200px;
+            height: 150px;
+            padding: 15px;
+            margin: 10px;
+            background-color: var(--my-bg-color);
+            color: var(--my-txt-color);
+        }
+
+        .fresh{
+            --my-bg-color: orange;
+        
+        }
+
+         .nature{
+            --my-bg-color: green;
+        } 
+    </style>
+</head>
+<body>
+    <h1>The "@Property" Rule</h1>
+    <div>Property Values</div>
+    <div class="fresh"><div class="nature"></div></div>
+    
+    
+</body>
+</html>
