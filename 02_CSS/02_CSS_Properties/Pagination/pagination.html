@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .pagination{
+            display: inline-block;
+        }
+
+        .pagination a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 2px;
+            font-size: 22px;
+        }
+
+        .pagination a.active{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active){
+            background-color: #ddd;
+        }
+
+         .pagination a:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius:5px ;
+         } 
+
+         .pagination a:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius:5px ;
+         } 
+
+         .center{
+            text-align: center;
+         }
+
+         ul.breadcrumb{
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eee;
+         }
+
+         ul.breadcrumb li{
+            display: inline;
+         }
+         
+         ul.breadcrumb li+li:before{
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+         }
+
+         ul.breadcrumb li a{
+            color: green;
+         }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Pagination</h1>
+    <p>If you have a website with lots of pages, you may wish to add some sort of pagination to each page:</p>
+
+    <div class="center">
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    </div>
+
+
+    <h1>Breadcrumbs</h1>
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer</a></li>
+        <li>Italy</li>
+    </ul>
+</body>
+
+</html>
