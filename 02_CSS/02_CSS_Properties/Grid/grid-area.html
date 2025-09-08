@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            background-color: crimson;
+            grid-template-columns: auto auto auto;
+            
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .grid-container > div{
+
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            /* box-shadow: 0 1px 10px 0 rgb(255, 255, 255); */
+        }
+
+        .item4{
+            /* grid-area: 1 / 2 / 3 / 2; */
+            grid-area : 1 / 1 / span 4 / span 1
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid-Area Layout</h1>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+</body>
+
+</html>
