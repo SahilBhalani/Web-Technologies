@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD Using Flex-Box</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .header{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+            font-size: 35px;
+        }
+
+        .row{
+            display: flex;
+        }
+
+        .column{
+            padding: 10px;
+            height: 300px;
+        }
+
+        .column.side{
+            flex: 1;
+        }
+
+        .column.middle{
+            flex: 2;
+        }
+
+        .footer{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:600px) {
+            .row{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="row">
+        <div class="column side" style="background-color: #aaa;">Column</div>
+        <div class="column middle" style="background-color: #bbb;">Column</div>
+        <div class="column side" style="background-color: #ccc;">Column</div>
+    </div>
+
+    <div class="footer">Footer</div>
+</body>
+</html>
