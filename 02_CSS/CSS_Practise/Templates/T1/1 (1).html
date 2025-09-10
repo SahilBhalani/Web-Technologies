@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>webe page layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style type="text/css">
+    body {
+      background-color: #e0d48a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .main {
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .header {
+      background-color: #b0d023;
+      padding: 44px 2px;
+      display: inline-block;
+      width: 100%;
+      box-shadow: 0px 0px 4px inset grey;
+    }
+
+    .hea {
+      float: right;
+      width: 383px;
+      font-size: 18px;
+    }
+
+    .hea h1 {
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+
+    .hh h3 {
+      margin-bottom: 14px;
+      margin-top: 0;
+    }
+
+    .next {
+      background-color: #f4eccd;
+      padding: 10px;
+      float: left;
+    }
+
+    .nev {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 10px;
+      background-color: #eae6ca;
+      width: 99%;
+      margin: 0px;
+      box-shadow: 0px 1px 2px grey inset;
+    }
+
+    .nev a {
+      color: #586e65;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 22px;
+    }
+
+    .conte {
+      width: 100px;
+    }
+
+    .seaction {
+      width: 100%;
+      float: left;
+    }
+
+    .sea {
+      background-color: #d2d35e;
+      font-size: 28px;
+      width: 100%;
+      padding: 19px 12px 16px 12px;
+    }
+
+    .menu {
+      background-color: #f0e8c3;
+      margin: 4px 0px 26px 3px;
+      float: left;
+      padding: 0px 0px 0px 0px;
+      width: 100%;
+    }
+
+    .item {
+      list-style-type: none;
+      font-size: 20px;
+      text-decoration: underline;
+      color: #6a714d;
+      padding: 0px 4px;
+      margin: 5px;
+    }
+
+    #ic {
+      margin: 6px 10px;
+    }
+
+    .nw {
+      width: 100%;
+      float: left;
+    }
+
+    .tb {
+      background-color: #d2d35e;
+      margin: 2px;
+      padding: 19px 12px 16px 12px;
+      font-size: 30px;
+    }
+
+    .text {
+      float: left;
+      padding: 0px 10px 1px;
+      background-color: #f0e8c3;
+      margin: 4px 0px 0px 3px;
+      font-size: 20px;
+    }
+
+    .aside {
+      width: 70%;
+      float: left;
+      padding: 16px;
+    }
+
+    .to {
+      float: left;
+      width: 30%;
+      border-right: 1px solid grey;
+      margin: 20px 0 0 0;
+      padding: 1px 21px 30px 3px;
+    }
+
+    .bar {
+      display: inline-block;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .end {
+      font-size: 34px;
+    }
+
+    .left {
+      width: 30%;
+    }
+
+    .hh {
+      width: 100%;
+      float: left;
+      margin: 0;
+      padding: 20px 0 0 0;
+      font-size: 30px;
+    }
+
+    .sub_text {
+      width: 100%;
+      display: inline-block;
+    }
+
+    .wi {
+      width: 45%;
+      float: left;
+      margin-right: auto;
+    }
+
+    .nt {
+      width: 53%;
+      float: right;
+      margin-right: auto;
+      border-left: 2px inset;
+      padding-left: 9px;
+    }
+
+    .mar_gin {
+      margin: 23px 0 0 0;
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .foote {
+      text-align: center;
+      display: inline-block;
+      width: 98%;
+      background-color: #cbde50;
+      padding: 18px 5px 28px;
+      font-size: 18px;
+      margin: 12px 0px 9px 10px;
+    }
+
+    .new {
+      margin: 16px 0 0 0;
+      font-size: 21px;
+    }
+
+    .t_xet {
+      padding: 20px 0 0 0;
+      width: 88%;
+      font-size: 21px;
+    }
+
+    .item a {
+      color: #6a714d;
+    }
+
+    .tton a {
+      text-decoration: none;
+      padding: 9px 7px;
+      font-size: 20px;
+      background-color: #bcd92e;
+      border: 2px solid;
+      color: black;
+      margin: 4px 0 0 0;
+      display: inline-block;
+      font-weight: 800;
+    }
+
+    .item li .fa {
+      margin: 6px 10px;
+    }
+
+    .but_ton {
+      text-decoration: none;
+      font-size: 12px;
+      padding: 13px 20px 13px 23px;
+      background-color: #bcd92e;
+      border: 1px solid;
+      color: black;
+      margin: 17px 0px 1px 0px;
+      display: inline-block;
+      font-weight: 800;
+    }
+
+    .zz {
+      width: 44%;
+    }
+
+    @media screen and (max-width: 1100px) {
+      .nev a {
+        margin: 30px;
+      }
+
+      .hh {
+        padding: 0 0 0 0;
+      }
+
+      .aside {
+        padding: 0px 12px 9px 8px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .nev a {
+        margin: 10px;
+      }
+
+      .seaction {
+        padding-right: 0px;
+      }
+
+      .nw {
+        padding: 0;
+      }
+
+      .aside {
+        padding: 0px 26px 0px 8px;
+      }
+
+      .hea {
+        width: 96%;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .header {
+        padding: 21px 27px 6px 3px;
+      }
+
+      .nev a {
+        margin: 0px 20px 0px 16px;
+        font-size: 14px;
+      }
+
+      .mar_gin {
+        font-size: 20px;
+      }
+
+      .sea {
+        font-size: 15px;
+        padding: 12px 14px 10px 4px;
+      }
+
+      .tb {
+        padding: 9px 2px 10px 7px;
+        font-size: 17px;
+      }
+
+      .text {
+        font-size: 15px;
+      }
+
+      .bar {
+        font-size: 14px;
+      }
+
+      .new {
+        font-size: 14px;
+      }
+
+      .t_xet {
+        font-size: 14px;
+      }
+
+      .item {
+        font-size: 12px;
+      }
+
+      .foote {
+        margin: 12px 0px 9px 5px;
+        padding: 11px 11px 10px 3px;
+      }
+
+      .hh {
+        padding: 7px 0 0 0;
+        font-size: 20px;
+      }
+
+      .hea {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      .nev a {
+        margin: 0px 11px 0px 7px;
+        font-size: 12px;
+      }
+
+      .nev {
+        padding: 8px 5px 9px 0px;
+      }
+
+      .hh h3 {
+        margin-bottom: 14px;
+        font-size: 34px;
+      }
+
+      .sea {
+        font-size: 23px;
+        padding: 10px 10px 7px 4px;
+      }
+
+      .mar_gin {
+        font-size: 33px;
+      }
+
+      .zz {
+        width: 100%;
+      }
+
+      .foote {
+        font-size: 16px;
+      }
+
+      .item {
+        font-size: 21px;
+        padding: 0px 0px;
+      }
+
+      .tb {
+        padding: 8px 3px 6px 9px;
+        font-size: 26px;
+      }
+
+      .text {
+        font-size: 23px;
+      }
+
+      .t_xet {
+        font-size: 20px;
+        width: 100%;
+      }
+
+      .new {
+        font-size: 20px;
+      }
+
+      .bar {
+        font-size: 19px;
+      }
+
+      .to {
+        float: left;
+        width: 100%;
+        margin: 26px 0 0 0;
+      }
+
+      .aside {
+        width: 100%;
+      }
+
+      .nt {
+        width: 100%;
+        float: right;
+        margin-right: auto;
+        padding-left: 9px;
+        border-left: none;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .hea {
+        font-size: 10px;
+      }
+
+      .bar {
+        font-size: 17px;
+      }
+
+      .text {
+        font-size: 17px;
+      }
+
+      .header {
+        padding: 20px 0px 20px 3px;
+      }
+
+      .sea {
+        font-size: 16px;
+      }
+
+      .nt {
+        margin: 0 9px -2px 1px;
+      }
+
+      .nev a {
+        font-size: 17px;
+        width: 48%;
+        margin: 0;
+      }
+
+      .nev {
+        padding: 0px 1px 5px 1px;
+        width: 98%;
+        margin: 0px 1px -1px 3px;
+      }
+
+      .next {
+        padding: 9px 0px 0px;
+      }
+
+      .to {
+        margin: 20px 0px 0px;
+        padding: 1px 8px 30px 3px;
+        border-right: none;
+      }
+
+      .menu {
+        margin: 4px 0px 12px 3px;
+      }
+
+      .item {
+        font-size: 16px;
+      }
+
+      .mar_gin {
+        margin: 13px 0px -4px -2px;
+        font-size: 21px;
+      }
+
+      .but_ton {
+        margin: 17px 0px 1px 0px;
+      }
+
+      .tb {
+        font-size: 18px;
+      }
+
+      .hh h3 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      .new {
+        font-size: 17px;
+      }
+
+      .t_xet {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="hea">
+        <h1>Enter site title</h1>
+        <p>Enter site slogn</p>
+      </div>
+    </div>
+    <div class="next">
+      <div class="nev">
+        <a href="#">Home</a>
+        <a href="#">New page </a>
+        <a href="#">New page 2</a>
+        <a href="#">New page 3</a>
+        <a href="#">New page 4</a>
+        <a href="#">New page 5</a>
+      </div>
+      <div class="to">
+        <div class="seaction">
+          <div class="sea">
+            <i class="fa fa-angle-double-right"></i><b> Main Manu</b>
+          </div>
+          <div class="menu">
+            <ul class="item">
+              <li><i class="fa fa-table"></i><a href="#">Menu item 1</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 2</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 3</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 4</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 5</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 6</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 7</a></li>
+              <li><i class="fa fa-table"></i><a href="#">Menu item 8</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nw">
+          <div class="tb">
+            <i class="fa fa-angle-double-right"></i><b> Block</b>
+          </div>
+          <div class="text">
+            <p>enter block content here</p>
+            <p>
+              imply dummy text of the printing and when an unknown printer
+              took a galley of type and scrambled it to make<br />w a type
+              specimen book
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="aside">
+        <div class="hh">
+          <h3>Gallery</h3>
+          <div class="bar">
+            is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy is
+            simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy!
+          </div>
+        </div>
+        <div class="hh">
+          <div class="wi zz">
+            <h4 class="mar_gin">Subscription</h4>
+            <div class="new">
+              imply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has
+            </div>
+            <a href="#" class="but_ton">Read more </a>
+          </div>
+          <div class="nt">
+            <p class="mar_gin">Other services</p>
+            <div class="t_xet">
+              imply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy is simply dummy
+              text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy is simply dummy text of the
+              printing and typesetting industry.
+            </div>
+            <a href="#" class="but_ton">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="foote">copyright @ 2014</div>
+    </div>
+  </div>
+</body>
+
+</html>
