@@ -21,20 +21,21 @@
                 <div class="logo"><img src="./img/logo.png" alt=""></div>
                 <div class="navbar">
                     <div class="nav-items">
-                        <a href="#">HOME</a>
-                        <a href="#">ABOUT</a>
-                        <a href="#">WORK</a>
-                        <a href="#">BLOG</a>
-                        <a href="#">CONTACT</a>
+                        <a href="#home">HOME</a>
+                        <a href="#work">WORK</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#blog">BLOG</a>
+                        <a href="#contact">CONTACT</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Head Contain -->
     <div class="head-content">
         <div class="container">
-            <div class="head">
+            <div class="head" id="home">
                 <h1>Hi There! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
                 <button class="btn">WORK WITH US!</button>
             </div>
@@ -44,7 +45,7 @@
     <!--Services-Section-->
     <section class="services">
         <div class="container">
-            <div class="serv">
+            <div class="serv" id="work">
                 <h1>SERVICES WE PROVIDE</h1>
                 <hr>
                 <p class="sp1">We are working individuals and businesses from all over the globe <br> to create
@@ -80,7 +81,7 @@
     <!-- Team Section -->
     <div class="team">
         <div class="container">
-            <div class="teamhead">
+            <div class="teamhead" id="about">
                 <h1>MEET OUR BEAUTIFUL TEAM</h1>
                 <hr>
                 <p class="sp1">We are small team designers and developers, who help brands with big ideas.</p>
@@ -132,6 +133,7 @@
         </div>
     </div>
 
+    <!-- Skills Section -->
     <div class="skill">
         <div class="container">
             <div class="skill-head">
@@ -149,10 +151,155 @@
                 <div class="pro2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                     <h2>HTML / CSS</h2>
                 </div>
-                <div class="pro3"></div>
-                <div class="pro4"></div>
+                <div class="pro3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <h2>GRAPHIC DESIGN</h2>
+                </div>
+                <div class="pro4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h2>UI / UX</h2>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <div class="container">
+            <div class="porthead" id="blog">
+                <h1>OUR PORTFOLIO</h1>
+                <hr>
+                <p class="sp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi officia accusamus
+                    molestiae repellat error quidem delectus exercitationem!</p><br>
+                <a href="#">ALL</a>
+                <a href="#">WEB</a>
+                <a href="#">APPS</a>
+                <a href="#">ICONS</a>
+            </div>
+
+            <div class="port-main">
+                <div class="port1">
+                    <img src="./img/portimg1.png" alt="portimg">
+                    <p>ISOMETRIC PERSPECTIVE MOCK-UP</p>
+                </div>
+                <div class="port2">
+                    <img src="./img/portimg2.png" alt="portimg">
+                    <p>TIME ZONE APP UI</p>
+                </div>
+                <div class="port3">
+                    <img src="./img/portimg3.png" alt="portimg">
+                    <p>VIRO MEDIA PLAYERS UI</p>
+                </div>
+                <div class="port4">
+                    <img src="./img/portimg4.png" alt="portimg">
+                    <p>BLOG / MAGAZINE FLAT UI KIT</p>
+                </div>
+            </div>
+            <div class="btnn">
+                <button class="btn2">LOAD MORE PROJECTS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="review">
+        <div class="container">
+            <div class="r-head">
+                <h1>WHAT PEOPLE SAY ABOUT US</h1>
+                <hr>
+                <p class="sp1">Our clients love us!</p>
+            </div>
+
+            <div class="rev-main">
+                <div class="rev1">
+                    <div class="imgs"><img src="./img/Chanel_Iman.jpg" alt="Chanel_Iman" width="200px" height="200px">
+                    </div>
+                    <div>
+                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
+                            accusamus pariatur."
+                        </p>
+                        <h3>CHANEL IMAN</h3>
+                        <h5>CEO of Pinterest</h5>
+                    </div>
+                </div>
+
+                <div class="rev2">
+                    <div class="imgs"><img src="./img/ADRIANA_LIMA.jpg" alt="ADRIANA_LIMA" width="200px" height="200px">
+                    </div>
+                    <div>
+                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
+                            accusamus pariatur."
+                        </p>
+                        <h3>ADRIANA LIMA</h3>
+                        <h5>Founder of Instagram</h5>
+                    </div>
+                </div>
+                <div class="rev3">
+                    <div class="imgs"><img src="./img/Anne_Hathaway.jpg" alt="Anne_Hathaway" width="200px"
+                            height="200px"></div>
+                    <div>
+                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
+                            accusamus pariatur."
+                        </p>
+                        <h3>ANNE HATHAWAY</h3>
+                        <h5>Lead Designer at Behance</h5>
+                    </div>
+                </div>
+                <div class="rev4">
+                    <div class="imgs"><img src="./img/EMMA_STONE.jpg" alt="EMMA_STONE" width="200px" height="200px">
+                    </div>
+                    <div>
+                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
+                            accusamus pariatur."
+                        </p>
+                        <h3>EMMA STONE</h3>
+                        <h5>Co-Founder Of Shazam</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get-In-Touch Section -->
+    <div class="git">
+        <div class="container">
+            <div class="git-head" id="contact">
+                <h1>GET IN TOUCH</h1>
+                <hr>
+                <p class="sp1">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. TEL: (202)
+                    456-1111</p>
+            </div>
+
+            <div class="git-main">
+                <div class="form-fill">
+                    <form action="#">
+                        <input type="text" id="yname" placeholder="Your Name&#42;">
+
+                        <input type="email" id="email" placeholder="Your Email&#42;">
+
+                        <textarea name="ymassage" id="ymassage" placeholder="Your Massage&#42;"></textarea>
+                    </form>
+                </div>
+                <div class="btnn2">
+                    <button class="btn3">SEND MASSAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+     <div class="footer">
+        <div class="container">
+            <div class="foot">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Google+</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Behance</a>
+            <a href="#">Dribble</a>
+            <a href="#">Github</a>
+            </div>
+        </div>
+     </div>
+
 
 </body>
 
