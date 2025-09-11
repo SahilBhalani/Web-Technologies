@@ -1,0 +1,252 @@
+@media (max-width: 575px) {
+  h1{
+    font-size: xx-large;
+  }
+  
+  p.sp1{
+    margin-left: 5%;
+        width: 90%;
+        font-size: medium;
+  }
+
+  .head h1{
+    font-size: large;
+    padding-top: 25px;
+  }
+
+  .ces {
+    flex-direction: column;
+  }
+
+    .brand {
+  width: 100% !important;
+  text-align: center;
+}
+
+.design {
+  width: 100% !important;
+  text-align: center;
+}
+
+.development {
+  width: 100% !important;
+  text-align: center;
+}
+
+.sci {
+  width: 100% !important;
+  text-align: center;
+}
+
+  .team-card{
+    width: 100% !important;
+  }
+
+  .team-grid .team-card:nth-child(2), .team-grid .team-card:nth-child(3){
+    margin-bottom: 50px;
+  }
+
+  .prog {
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .prog h2 {
+    font-size: medium;
+  }
+
+  .pro1 h2 {
+    left: 35px;
+  }
+  .pro2 h2 {
+    left: 35px;
+  }
+  .pro3 h2 {
+    left: 24px;
+  }
+  .pro4 h2 {
+   left: 32px;
+  }
+
+  .porthead a {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    background: none;
+    text-align: center;
+  }
+
+  .porthead a:hover {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+  .port-main {
+    flex-direction: column;
+  }
+
+ .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+}
+
+  .testimonial-card {
+    width: 100%;
+}
+
+  .git-main {
+    flex-direction: column;
+  }
+
+  .foot a:hover{
+    color: #30b6e3;
+  }
+}
+
+@media (max-width: 768px){
+   .header {
+    padding: 0;
+  }
+
+  .menubar{
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 16px;
+  }
+  .menu-list {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    visibility: hidden; 
+    background-color: #673d77;
+    padding: 10px 15px;
+    border: 1px solid #864f9c;
+    border-radius: 5px;
+    box-shadow: 12px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    opacity: 0;
+  }
+
+  .navbar:hover .menu-list {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #87509c;
+    border-radius: 4px;
+  }
+
+  .navbar .menu-list li {
+    margin: 10px 0;
+  }
+
+  .head-content {
+    padding: 50px 0 60px 0;
+    text-align: center;
+  }
+
+  .head h1 {
+    padding-top: 0;
+    font-size: 30px;
+  }
+  .head button {
+    border: none;
+    padding: 20px 25px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+  } 
+}
+
+@media (max-width:991px){
+
+   .brand {
+  width: 50%;
+  text-align: center;
+}
+
+.design {
+  width: 50%;
+  text-align: center;
+}
+
+.development {
+  width: 50%;
+  text-align: center;
+}
+
+.sci {
+  width: 50%;
+  text-align: center;
+} 
+
+.team-card{
+    width: 50%;
+  }
+
+.team .team-grid .team-card:nth-child(1){
+    margin-bottom: 20px;
+  }
+
+  .prog {
+    flex-direction: row;
+  }
+
+  .row {
+     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+}
+
+  .testimonials-grid{
+            grid-template-columns: repeat(1, 1fr);
+        margin-top: 60px;
+  }
+
+  .foot a{
+    display: block;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .foot a:hover{
+    color: #30b6e3;
+  }
+}
+
+@media (max-width:1199px){
+
+   .prog h2{
+    font-size: 18px ;
+  } 
+  
+}

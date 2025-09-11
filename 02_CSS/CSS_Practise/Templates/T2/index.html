@@ -9,6 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 
@@ -19,13 +20,18 @@
         <div class="container">
             <div class="menubar">
                 <div class="logo"><img src="./img/logo.png" alt=""></div>
+
                 <div class="navbar">
+                    <i class="fa-solid fa-bars menu-toggle"></i>
                     <div class="nav-items">
-                        <a href="#home">HOME</a>
-                        <a href="#work">WORK</a>
-                        <a href="#about">ABOUT</a>
-                        <a href="#blog">BLOG</a>
-                        <a href="#contact">CONTACT</a>
+                        <ul class="menu-list d-flex">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#service">SERVICES</a></li>
+                            <li><a href="#team">TEAM</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -45,7 +51,7 @@
     <!--Services-Section-->
     <section class="services">
         <div class="container">
-            <div class="serv" id="work">
+            <div class="serv" id="service">
                 <h1>SERVICES WE PROVIDE</h1>
                 <hr>
                 <p class="sp1">We are working individuals and businesses from all over the globe <br> to create
@@ -79,55 +85,79 @@
 
 
     <!-- Team Section -->
-    <div class="team">
+    <div class="team text-center" id="team">
         <div class="container">
-            <div class="teamhead" id="about">
-                <h1>MEET OUR BEAUTIFUL TEAM</h1>
-                <hr>
-                <p class="sp1">We are small team designers and developers, who help brands with big ideas.</p>
-            </div>
-            <div class="members">
-                <div class="mem1">
-                    <img src="./img/Anne_Hathaway.jpg" alt="anne">
-                    <h1>ANNE HATHAWAY</h1>
-                    <h4>CEO / MARKETING Guru</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi inventore quibusdam esse
-                        amet. Et, ut?</p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-solid fa-envelope"></i>
+            <h1 class="section-title">MEET OUR BEAUTIFUL TEAM</h1>
+            <hr>
+            <p class="section-description">
+                We are a small team of designers and developers, who help brands with big ideas.
+            </p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="./img/Anne_Hathaway.jpg" alt="Anne Hathaway" title="Anne Hathaway">
+                    </div>
+                    <h3 class="team-name">ANNE HATHAWAY</h3>
+                    <p class="team-position">CEO / Marketing Guru</p>
+                    <p class="team-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna.
+                    </p>
+                    <div class="social-links">
+                        <i class="fab fa-facebook-f"></i></a>
+                        <i class="fab fa-twitter"></i></a>
+                        <i class="fab fa-linkedin-in"></i></a>
+                        <i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="mem2">
-                    <img src="./img/Kate_Upton.jpg" alt="kate">
-                    <h1>KATE UPTON</h1>
-                    <h4>Creative Director</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi inventore quibusdam esse
-                        amet. Et, ut?</p>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="./img/Kate_Upton.jpg" alt="Kate Upton" title="Kate Upton">
+                    </div>
+                    <h3 class="team-name">KATE UPTON</h3>
+                    <p class="team-position">Creative Director</p>
+                    <p class="team-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna.
+                    </p>
+                    <div class="social-links">
+                        <i class="fab fa-twitter"></i></a>
+                        <i class="fab fa-linkedin-in"></i></a>
+                        <i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="mem3">
-                    <img src="./img/Olivia_Wilde.jpg" alt="olive">
-                    <h1>OLIVIA WILDE</h1>
-                    <h4>Lead Designer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi inventore quibusdam esse
-                        amet. Et, ut?</p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="./img/Olivia_Wilde.jpg" alt="Olivia Wilde" title="Olivia Wilde">
+                    </div>
+                    <h3 class="team-name">OLIVIA WILDE</h3>
+                    <p class="team-position">Lead Designer</p>
+                    <p class="team-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna.
+                    </p>
+                    <div class="social-links">
+                        <i class="fab fa-facebook-f"></i></a>
+                        <i class="fab fa-twitter"></i></a>
+                        <i class="fab fa-linkedin-in"></i></a>
+                        <i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="mem4">
-                    <img src="./img/Ashley_Greene.jpg" alt="ash">
-                    <h1>ASHLEY GREENE</h1>
-                    <h4>SEO / Developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi inventore quibusdam esse
-                        amet. Et, ut?</p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="./img/Ashley_Greene.jpg" alt="Ashley Greene" title="Ashley Greene">
+                    </div>
+                    <h3 class="team-name">ASHLEY GREENE</h3>
+                    <p class="team-position">SEO / Developer</p>
+                    <p class="team-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna.
+                    </p>
+                    <div class="social-links">
+                        <i class="fab fa-facebook-f"></i></a>
+                        <i class="fab fa-twitter"></i></a>
+                        <i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,7 +166,7 @@
     <!-- Skills Section -->
     <div class="skill">
         <div class="container">
-            <div class="skill-head">
+            <div class="skill-head" id="skills">
                 <h1>WE GOT SKILLS!</h1>
                 <hr>
                 <p class="sp1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Laudantium aut
@@ -146,16 +176,24 @@
 
             <div class="prog">
                 <div class="pro1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <h2>WEB DESIGN</h2>
+                    <div class="s-title">
+                        <h2>WEB DESIGN</h2>
+                    </div>
                 </div>
                 <div class="pro2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    <h2>HTML / CSS</h2>
+                    <div class="s-title">
+                        <h2>HTML / CSS</h2>
+                    </div>
                 </div>
                 <div class="pro3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                    <h2>GRAPHIC DESIGN</h2>
+                    <div class="s-title">
+                        <h2>GRAPHIC DESIGN</h2>
+                    </div>
                 </div>
                 <div class="pro4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                    <h2>UI / UX</h2>
+                    <div class="s-title">
+                        <div class="ui-ux"><h2>UI DESIGN</h2></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,7 +202,7 @@
     <!-- Portfolio Section -->
     <div class="portfolio">
         <div class="container">
-            <div class="porthead" id="blog">
+            <div class="porthead" id="portfolio">
                 <h1>OUR PORTFOLIO</h1>
                 <hr>
                 <p class="sp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi officia accusamus
@@ -200,105 +238,102 @@
     </div>
 
     <!-- Review Section -->
-    <div class="review">
+
+    <div class="testimonials text-center">
         <div class="container">
-            <div class="r-head">
-                <h1>WHAT PEOPLE SAY ABOUT US</h1>
-                <hr>
-                <p class="sp1">Our clients love us!</p>
-            </div>
-
-            <div class="rev-main">
-                <div class="rev1">
-                    <div class="imgs"><img src="./img/Chanel_Iman.jpg" alt="Chanel_Iman" width="200px" height="200px">
+            <h1 class="section-title">WHAT PEOPLE SAY ABOUT US</h1>
+            <hr>
+            <p class="section-description">Our clients love us!</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="./img/Chanel_Iman.jpg" alt="Chanel Iman" title="Chanel Iman">
                     </div>
-                    <div>
-                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
-                            accusamus pariatur."
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna
+                            eu nisl scelerisque."
                         </p>
-                        <h3>CHANEL IMAN</h3>
-                        <h5>CEO of Pinterest</h5>
+                        <h4 class="testimonial-name">CHANEL IMAN</h4>
+                        <p class="testimonial-position">CEO of Pinterest</p>
                     </div>
                 </div>
-
-                <div class="rev2">
-                    <div class="imgs"><img src="./img/ADRIANA_LIMA.jpg" alt="ADRIANA_LIMA" width="200px" height="200px">
+                <div class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="./img/Anne_Hathaway.jpg" alt="Anne Hathaway" title="Anne Hathaway">
                     </div>
-                    <div>
-                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
-                            accusamus pariatur."
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis
+                            porta."
                         </p>
-                        <h3>ADRIANA LIMA</h3>
-                        <h5>Founder of Instagram</h5>
+                        <h4 class="testimonial-name">ANNE HATHAWAY</h4>
+                        <p class="testimonial-position">Lead Designer at Behance</p>
                     </div>
                 </div>
-                <div class="rev3">
-                    <div class="imgs"><img src="./img/Anne_Hathaway.jpg" alt="Anne_Hathaway" width="200px"
-                            height="200px"></div>
-                    <div>
-                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
-                            accusamus pariatur."
+                <div class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="./img/ADRIANA_LIMA.jpg" alt="Adriana Lima" title="Adriana Lima">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis
+                            porta."
                         </p>
-                        <h3>ANNE HATHAWAY</h3>
-                        <h5>Lead Designer at Behance</h5>
+                        <h4 class="testimonial-name">ADRIANA LIMA</h4>
+                        <p class="testimonial-position">Founder of Instagram</p>
                     </div>
                 </div>
-                <div class="rev4">
-                    <div class="imgs"><img src="./img/EMMA_STONE.jpg" alt="EMMA_STONE" width="200px" height="200px">
+                <div class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="./img/EMMA_STONE.jpg" alt="Emma Stone" title="Emma Stone">
                     </div>
-                    <div>
-                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Dolor <br>sint fugit a, sequi
-                            accusamus pariatur."
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie,
+                            risus sem cursus neque."
                         </p>
-                        <h3>EMMA STONE</h3>
-                        <h5>Co-Founder Of Shazam</h5>
+                        <h4 class="testimonial-name">EMMA STONE</h4>
+                        <p class="testimonial-position">Co-Founder of Shazam</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Get-In-Touch Section -->
-    <div class="git">
-        <div class="container">
-            <div class="git-head" id="contact">
-                <h1>GET IN TOUCH</h1>
-                <hr>
-                <p class="sp1">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. TEL: (202)
-                    456-1111</p>
+     <div class="contact" id="contact">
+            <div class="container">
+                <h1 class="section-title">GET IN TOUCH</h1> <hr>
+                <p class="contact-address">
+                    1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+                </p>
+                <form class="contact-form">
+                    <div class="row">
+                        <input type="text" placeholder="Your Name*" id="name" required>
+                        <input type="email" placeholder="Your Email*" id="email" required>
+                    </div>
+                    <textarea placeholder="Your Message*" required></textarea>
+                    <button type="submit" class="contact-submit">SEND MESSAGE</button>
+                </form>
             </div>
+        </div>
 
-            <div class="git-main">
-                <div class="form-fill">
-                    <form action="#">
-                        <input type="text" id="yname" placeholder="Your Name&#42;">
-
-                        <input type="email" id="email" placeholder="Your Email&#42;">
-
-                        <textarea name="ymassage" id="ymassage" placeholder="Your Massage&#42;"></textarea>
-                    </form>
-                </div>
-                <div class="btnn2">
-                    <button class="btn3">SEND MASSAGE</button>
-                </div>
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="foot">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Google+</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Behance</a>
+                <a href="#">Dribble</a>
+                <a href="#">Github</a>
             </div>
         </div>
     </div>
-
-    <!-- Footer Section -->
-     <div class="footer">
-        <div class="container">
-            <div class="foot">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Google+</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Behance</a>
-            <a href="#">Dribble</a>
-            <a href="#">Github</a>
-            </div>
-        </div>
-     </div>
 
 
 </body>
