@@ -1,272 +1,391 @@
-
 /* Base Styles */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: "Avenir-Medium";;
-    margin: 0;
-    line-height: 1.6;
+html {
+  scroll-behavior: smooth;
 }
 
-h1{
-    font-family: "MB PictureHouse Two W01 Light V1";
+body {
+  font-family: "Avenir-Medium";
+  margin: 0;
+  line-height: 1.6;
 }
 
+h1 {
+  font-family: "MB PictureHouse Two W01 Light V1";
+}
 
 /* container */
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Common Classes */
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
-.justify-between{
-    justify-content: space-between;
+.justify-between {
+  justify-content: space-between;
 }
 
-.align-center{
-    align-items: center;
+.align-center {
+  align-items: center;
 }
 
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.justify-center{
-    justify-content: center;
+.justify-center {
+  justify-content: center;
 }
 
-.section-title{
-    font-family: "MB PictureHouse Two W01 Light V1";
-    font-size: 50px;
-    margin: 70px 0 10px 0;
+.section-title {
+  font-family: "MB PictureHouse Two W01 Light V1";
+  font-size: 50px;
+  margin: 70px 0 10px 0;
 }
 
-hr{
-    width: 100%;
-    height: 4px;
-    background-color: #7e7f81;
-    opacity: 0.5;
+hr {
+  width: 100%;
+  height: 4px;
+  background-color: #7e7f81;
+  opacity: 0.5;
 }
 
-
-.section-description{
-    font-size: medium;
-    margin-bottom: 50px;
+.section-description {
+  font-size: medium;
+  margin-bottom: 50px;
 }
-
 
 /* Header */
-header{
-    background: url('./imgs/hero-img.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    color: white;
-    /* height: 90vh; */
-    width: 100%;
-    position: relative;
+header {
+  background: url("./imgs/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  /* height: 90vh; */
+  width: 100%;
+  position: relative;
 }
 
-.head-content{
-    flex-direction: column;
-    flex-wrap: wrap;
+.head-content {
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.head-content .logo img{
-   height: 200px;
-   width: 400px;
-   margin: 40px 0;
+.head-content .logo img {
+  height: 200px;
+  width: 400px;
+  margin: 40px 0;
 }
 
-.head-content .head-title{
-    margin: 40px 0;
-    word-spacing: 5px;
-    font-size: xxx-large;
+.head-content .head-title {
+  margin: 40px 0;
+  word-spacing: 5px;
+  font-size: xxx-large;
 }
 
-.head-content .btn{
-    background-color: #e84c3d;
-    color: white;
-    padding: 20px 60px;
-    border-radius: 30px;
-    font-family: 'Avenir-Medium';
-    margin-bottom: 140px;
-    cursor: pointer;
+.head-content .btn {
+  background-color: #e84c3d;
+  color: white;
+  padding: 20px 60px;
+  border-radius: 30px;
+  font-family: "Avenir-Medium";
+  margin-bottom: 140px;
+  cursor: pointer;
 }
 
-.head-content .scroll-description{
-    font-size: small;
-    font-weight: 100;
+.head-content .scroll-description {
+  font-size: small;
+  font-weight: 100;
 }
 
-.head-content .scroll-icon{
-    font-size: 50px;
-    margin: 30px;
+.head-content .scroll-icon {
+  font-size: 50px;
+  margin: 30px;
 }
 
 /* Everything You Need Section */
 
-.eyn-grid{
-    display: flex;   
+.eyn-grid {
+  display: flex;
 }
 
-.eyn-sec-a{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.eyn-sec-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.eyn-card-a{
-    text-align: right;
+.eyn-card-a {
+  text-align: right;
 }
-.eyn-sec-b{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.eyn-card-b{
-    text-align: left;
+.eyn-sec-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.eyn-title{
-    font-size: xx-large;
-    margin-bottom: 10px;
-    font-family: "DINOT-Regular";
+.eyn-card-b {
+  text-align: left;
 }
 
-.eyn-description{
-    font-size: small;
+.eyn-title {
+  font-size: xx-large;
+  margin-bottom: 10px;
+  font-family: "DINOT-Regular";
 }
 
-.eyn-title:hover{
-    color: red;
-    text-decoration: underline;
-    
+.eyn-description {
+  font-size: small;
 }
 
-.eyn .container{
-    margin-bottom: 80px;
+.eyn-title:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.eyn .container {
+  margin-bottom: 80px;
 }
 
 /* Every Detail Detailed Section */
-.detail{
-    background-color: #2d3e50;
-    color: white;
-    padding: 50px;
+.detail {
+  background-color: #2d3e50;
+  color: white;
+  padding: 50px;
 }
 
-.detail-grid{
-    display: flex;
-    flex-wrap: wrap;
+.detail-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.detail-card{
-    width: 33.33%;
-    padding: 40px;
+.detail-card {
+  width: 33.33%;
+  padding: 40px;
 }
 
-.detail-icon img{
-    border: none;
-    clip-path: circle(45%);
+.detail-icon img {
+  border: none;
+  clip-path: circle(45%);
 }
 
-.detail-title{
-    font-size: x-large;
-    margin-bottom: 20px;
-    font-family: "DINOT-Regular";
-    font-weight: lighter;
+.detail-title {
+  font-size: x-large;
+  margin-bottom: 20px;
+  font-family: "DINOT-Regular";
+  font-weight: lighter;
 }
 
-.detail-description{
-    font-size: small;
+.detail-description {
+  font-size: small;
 }
 
-#card1{
-    border-bottom: 5px solid #354658;
+#card1 {
+  border-bottom: 5px solid #354658;
 }
 
- #card2{
-    border-right: 5px solid #354658;
-    border-left : 5px solid #354658;
-    border-bottom: 5px solid #354658;
-} 
-
-#card3{
-    border-bottom: 5px solid #354658;
+#card2 {
+  border-right: 5px solid #354658;
+  border-left: 5px solid #354658;
+  border-bottom: 5px solid #354658;
 }
 
-#card5{
-    border-left:5px solid #354658;
-    border-right:5px solid #354658;
+#card3 {
+  border-bottom: 5px solid #354658;
+}
+
+#card5 {
+  border-left: 5px solid #354658;
+  border-right: 5px solid #354658;
 }
 
 /* Our Work Section */
+.work {
+  color: black;
+  padding: 50px;
+}
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.work-img {
+  width: 23%;
+  /* padding: 10px; */
+  position: relative;
+}
 
-.work-grid{
+.work-img img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus-icon {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work-img:hover .overlay {
+  opacity: 0.9;
+}
+
+/* Testimonials section */
+.testimonials {
+  color: white;
+  background-color: #2d3e50;
+  padding: 50px;
+}
+
+.testimonials-sec-image {
+  margin: 20px 0;
+}
+
+.testimonials-alt-sec {
+  margin-bottom: 50px;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonials-brand-image {
+  width: 100px;
+  height: 100px;
+  padding: 40px 10px;
+}
+
+.testimonials-brand-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Price Table Section */
+.price {
+  padding: 50px;
+}
+
+.price-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  width: 22%;
+  border: 1px solid black;
+  margin: 0 10px;
+}
+
+.price-sec-title {
+  background-color: #ddd;
+}
+
+.price-card h3 {
+  font-size: x-large;
+  font-family: "DINOT-Regular";
+  padding: 10px 0;
+}
+
+.price-card p {
+  font-family: "Avenir-Medium";
+  padding: 10px;
+}
+
+.price-btn {
+  padding: 15px 30px;
+  margin: 14px;
+  background-color: #2d3e51;
+  color: white;
+  border-style: none;
+}
+
+.price-card:hover{
+    border: 1px solid red;
+}
+
+.price-card:hover #p-title,
+.price-card:hover #pbtn
+{
+    background-color: red;
+    color: white;
+}
+
+/* Showcase Section */
+.showcase{
+    padding: 50px 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-   
-}
-.work-img{
-    width: 23%;
-    /* padding: 10px; */
-   position: relative;
-   
 }
 
-.work-img img{
-    display: block; 
-    width: 100%;
-    margin:0;
+.img-div{
+    width: 50%;
+    display: inline-block;
 }
 
-.overlay{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
+.img-div img{
     width: 100%;
     height: 100%;
-    background-color: red;
-    opacity: 0;
-    transition: 0.5s ease;
+    object-fit: cover;
 }
 
-
-.overlay-text{
+.showcase-main{
+    display: inline-block;
+    width: 50%;
+    background-color: #2d3e50;
     color: white;
-    font-size: 25px;
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
+    padding: 100px 200px 100px 100px;
 }
 
-.plus-icon{
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
+.showcase-sec{
+    text-align: left;
+    width: 68%;
 }
-.work-img:hover .overlay{
-    opacity: 0.7;
+
+ .showcase-title .section-title{
+    margin-top: 0 ;
+}
+.showcase-title{
+    padding-right: 20px;
+}
+
+.show-card{
+    display: inline-block;
+    padding-right: 20px;
 }
