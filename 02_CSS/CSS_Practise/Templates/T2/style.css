@@ -49,6 +49,7 @@ body {
 .navbar {
   align-self: center;
 }
+
 .logo {
   padding: 15px 5px;
 }
@@ -658,6 +659,8 @@ p.sp1 {
 .foot a:hover{
   color: #30b6e3;
 }
+
+
 
 
 

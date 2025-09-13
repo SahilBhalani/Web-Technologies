@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Avenir-Medium";
-  margin: 0;
+   color: #3c4761;
   line-height: 1.6;
 }
 
@@ -49,7 +49,7 @@ h1 {
 .section-title {
   font-family: "MB PictureHouse Two W01 Light V1";
   font-size: 50px;
-  margin: 70px 0 10px 0;
+  margin: 65px 0 10px 0;
 }
 
 hr {
@@ -65,33 +65,34 @@ hr {
 }
 
 /* Header */
-header {
-  background: url("./imgs/hero-img.jpg");
-  background-repeat: no-repeat;
+.header {
+  /* background: url("./imgs/hero-img.jpg"); */
+  /* background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
   color: white;
+  background-color: #2d3e50;
   /* height: 90vh; */
-  width: 100%;
+   width: 100%; 
   position: relative;
 }
 
 .head-content {
-  flex-direction: column;
+   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .head-content .logo img {
-  height: 200px;
-  width: 400px;
+  width: 100%;
+  max-width: 200px;
   margin: 40px 0;
+  overflow: hidden;
 }
 
 .head-content .head-title {
   margin: 40px 0;
   word-spacing: 5px;
-  font-size: xxx-large;
 }
 
 .head-content .btn {
@@ -128,6 +129,11 @@ header {
 
 .eyn-card-a {
   text-align: right;
+}
+
+.eyn-card-icon img{
+  max-width: 400px;
+  overflow: hidden ;
 }
 .eyn-sec-b {
   display: flex;
@@ -176,6 +182,9 @@ header {
 }
 
 .detail-icon img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
   border: none;
   clip-path: circle(45%);
 }
@@ -229,6 +238,7 @@ header {
 .work-img img {
   display: block;
   width: 100%;
+  overflow: hidden;
   margin: 0;
 }
 
@@ -277,6 +287,12 @@ header {
   margin: 20px 0;
 }
 
+.testimonials-sec-image img{
+  width: 50px;
+  height: 50px;
+  overflow: auto;
+}
+
 .testimonials-alt-sec {
   margin-bottom: 50px;
 }
@@ -294,8 +310,8 @@ header {
 }
 
 .testimonials-brand-image img {
-  width: 100%;
-  height: auto;
+  width: 100px;
+  overflow: auto;
 }
 
 /* Price Table Section */
@@ -315,13 +331,13 @@ header {
 }
 
 .price-sec-title {
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 .price-card h3 {
   font-size: x-large;
   font-family: "DINOT-Regular";
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 .price-card p {
@@ -363,6 +379,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .showcase-main{
@@ -370,12 +387,11 @@ header {
     width: 50%;
     background-color: #2d3e50;
     color: white;
-    padding: 100px 200px 100px 100px;
+    padding: 20px;
 }
 
 .showcase-sec{
     text-align: left;
-    width: 68%;
 }
 
  .showcase-title .section-title{
@@ -387,5 +403,123 @@ header {
 
 .show-card{
     display: inline-block;
-    padding-right: 20px;
+    padding-left: 20px;
 }
+
+.show-card img{
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+/* Our Team Section */
+.team{
+    padding: 50px;
+}
+
+.team-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-card{
+    width: 33.33%;
+}
+
+.team-card .team-title{
+    font-family: "DINOT-Regular";
+}
+
+.social-links a{
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    color: black;
+}
+
+.social-links a:hover{
+    color: aqua;
+}
+
+/* Contact Us Section */
+.contact {
+   padding: 50px;
+   background-color: #2d3e50;
+   color: white;
+}
+
+.contact-form{
+    display: flex;
+}
+.contact-form .textarea{
+    width: 50%;
+}
+
+.contact-form textarea{
+     width: 100%;
+    height: 180px;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Avenir-Medium';
+    font-size: 16px;
+    resize: vertical;
+}
+
+.contact-form .form-row{
+    width: 50%;
+}
+
+.form-row input{
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Avenir-Medium';
+    font-size: 17px;
+}
+
+.form-row #name{
+    margin: 0 0 10px 10px;
+}
+
+.form-row #code{
+    width: 64%;
+    margin-left: 0;
+}
+
+.form-row .contact-submit{
+  width: 30%;  
+  padding: 16px 30px;
+  border-radius: 2px;
+  margin-right:0;
+  background-color: red;
+  color: white;
+  border-style: none;
+}
+
+/* Footer */
+
+.foot{
+    padding-bottom: 50px;
+}
+.uparrow{
+    margin: -21px 0 30px 0;
+}
+
+.uparrow img{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.foot span{
+    color: red;
+}
+
+
+
