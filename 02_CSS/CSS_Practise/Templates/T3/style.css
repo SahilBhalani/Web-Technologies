@@ -322,6 +322,7 @@ hr {
 .price-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .price-card {
@@ -403,7 +404,10 @@ hr {
 
 .show-card{
     display: inline-block;
-    padding-left: 20px;
+}
+
+#s2{
+  padding-left: 20px;
 }
 
 .show-card img{
