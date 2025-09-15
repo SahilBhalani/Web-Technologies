@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Rounded Corner Images -->
+        <h2>Rounded Corner Images</h2>
+        <p>The <code>.img-rounded</code>class adds rounded corners to an image</p>
+        <img src="https://picsum.photos/200/200" class="img-rounded" alt="img"> <br><br>
+
+        <!-- Circle Shape Image -->
+        <h2>Circle Images</h2>
+        <p>The <code>.img-circle</code>class shapes image to a circle</p>
+        <img src="https://picsum.photos/200/200" class="img-circle" alt="img"> <br><br>
+
+        <!-- Thumbnail Image -->
+         <h2>Thumbnail Image</h2>
+         <p>The <code>.img-thumbnail</code> class shapes image to a thumbnail</p>
+         <img src="https://picsum.photos/200/200" class="img-thumbnail" alt="img">
+
+         <!-- Responsive Image -->
+          <h2>Responsive Image</h2>
+          <p>The <code>.img-responsive</code>class makes the image make responsive and scale nicely to the parent element</p>
+          <img src="https://picsum.photos/200/200" class="img-responsive" alt="img"><br><br>
+
+
+          <!-- Image Gallery -->
+           <h2>Image Gallery</h2>
+           <p>You can also use Bootstrap's grid system in conjuction with <code>.thumbnail</code> class to create an image gallery</p>
+
+           <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="https://picsum.photos/200/200">
+                        <img src="https://picsum.photos/200/200" alt="img" style="width: 100%;">
+                        <div class="caption">
+                        <p>lorem picsum....</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="https://picsum.photos/200/200">
+                        <img src="https://picsum.photos/200/200" alt="img" style="width: 100%;">
+                        <div class="caption">
+                        <p>lorem picsum....</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="https://picsum.photos/200/200">
+                        <img src="https://picsum.photos/200/200" alt="img" style="width: 100%;">
+                        <div class="caption">
+                        <p>lorem picsum....</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           </div>
+
+           <!-- Responsive Embeds -->
+
+            <!--16:9 Aspect ratio  -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h58BATHqqiE?si=u4STmhiUR6vSWl6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div><br><br>
+
+            <!-- 4:3 Aspect Ratio -->
+             <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h58BATHqqiE?si=u4STmhiUR6vSWl6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+    </div>
+</body>
+</html>
