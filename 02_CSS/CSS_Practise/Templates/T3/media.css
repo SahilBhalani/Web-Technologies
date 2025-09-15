@@ -17,12 +17,11 @@
     font-size: 35px !important;
   }
 
-  .head-content .btn{
+  .head-content .btn {
     padding: 10px 30px !important;
-
   }
-  
-  .head-content .scroll-icon{
+
+  .head-content .scroll-icon {
     font-size: 30px;
   }
   /* Everything you need */
@@ -140,7 +139,7 @@
   }
 
   /* Everything you need */
-  .eyn{
+  .eyn {
     padding: 20px !important;
   }
   .eyn-title {
@@ -158,11 +157,12 @@
 
   .eyn-card-a {
     text-align: center !important;
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
 
   .eyn-card-b {
     text-align: center !important;
+    margin: 15px 0;
   }
 
   .eyn-card-icon img {
@@ -170,7 +170,7 @@
   }
 
   /* detail */
-  .detail{
+  .detail {
     padding: 20px !important;
   }
 
@@ -186,10 +186,9 @@
     width: 50%;
     padding: 10px 5px;
     margin: 0 0px 30px 0px;
-    
   }
 
-   #card1,
+  #card1,
   #card2,
   #card3,
   #card5 {
@@ -197,22 +196,22 @@
   }
 
   /* Our-Work */
-  .work{
+  .work {
     padding: 20px !important;
   }
 
   .work-img .overlay .overlay-text,
-  .work-img .overlay .plus-icon{
+  .work-img .overlay .plus-icon {
     font-size: 20px;
   }
 
   /* Testimonial */
-  .testimonials{
+  .testimonials {
     padding: 20px !important;
   }
 
   /* Price */
-  .price{
+  .price {
     padding: 20px !important;
   }
 
@@ -253,7 +252,7 @@
   }
 
   /* Our Team */
-  .team{
+  .team {
     padding: 20px !important;
   }
 
@@ -319,12 +318,17 @@
     font-size: 20px;
   }
 
+  .uparrow img {
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+  }
 }
 
-@media screen  and (max-width:992px){
- .price-grid{
-  justify-content: space-evenly;
- }
+@media screen and (max-width: 992px) {
+  .price-grid {
+    justify-content: space-evenly;
+  }
 
   .price-card {
     width: 45%;
@@ -340,6 +344,11 @@
   .img-div {
     width: 100%;
     display: block;
+  }
+
+  /* Detail */
+   .detail-title {
+    font-size: 20px;
   }
 
   .showcase-main {
@@ -362,9 +371,8 @@
     margin-bottom: 30px;
   }
 
-
   .form-row #code {
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0;
     width: 53%;
     padding: 10px;
   }
@@ -379,8 +387,4 @@
   ::placeholder {
     text-align: left;
   }
-
-  
-
-
 }
