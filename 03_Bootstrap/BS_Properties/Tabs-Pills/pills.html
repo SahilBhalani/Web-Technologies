@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pills</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Basic Pills -->
+        <h2>Pills Example</h2>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+        </ul>
+
+        <!-- Vertical Pills -->
+        <h2>Vertical Pills</h2>
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+        </ul>
+
+        <!-- Vertical Pills In a Row -->
+         <h2>Vertical Pills In a Row</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore, pariatur adipisci
+                    iure ipsam asperiores quaerat dolorum fugiat labore atque.</p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur impedit cum omnis
+                    veniam commodi provident illo! Quisquam recusandae nemo non.</p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, laboriosam? Sapiente
+                    consequuntur, alias perferendis debitis distinctio quod praesentium quis dolor.</p>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Menu1</a></li>
+                    <li><a href="#">Menu2</a></li>
+                    <li><a href="#">Menu3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pills With Dropdown Menu -->
+         <h2>Pills With Dropdown Menu</h2>
+         <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Submenu1</a></li>
+                    <li><a href="#">Submenu2</a></li>
+                    <li><a href="#">Submenu3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+         </ul>
+
+         <!-- Centered Pills -->
+          <h2>Justified Pills</h2>
+          <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+          </ul>
+
+          <!-- Toggleable / Dynamic Pills -->
+           <h2>Dynamic Pills</h2>
+           <ul class="nav nav-pills">
+            <li class="active"><a href="#home" data-toggle="pill">Home</a></li>
+            <li><a href="#menu1" data-toggle="pill">Menu1</a></li>
+            <li><a href="#menu2" data-toggle="pill">Menu2</a></li>
+           </ul>
+
+           <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Home</h3>
+                <p>Some Content...</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu1</h3>
+                <p>Some Content in menu 1..</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu2</h3>
+                <p>Some Content in menu 2..</p>
+            </div>
+
+
+           </div>
+
+    </div>
+</body>
+
+</html>

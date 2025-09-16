@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Basic Tabs -->
+        <h2>Tabs</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+        <!-- Table With Dropdown Menu -->
+        <h2>Tabs With Dropdown Menu</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu 1 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+        <!-- Centered Tabs -->
+         <h2>Justified Tabs</h2>
+         <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+            <li><a href="#">Menu4</a></li>
+         </ul>
+
+
+         <!-- Toggleable / Dynamic Tabs -->
+          <h2>Taggleable / Dynamic Tabs</h2>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#menu1" data-toggle="tab">Menu 1</a></li>
+            <li><a href="#menu2" data-toggle="tab">Menu 2</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+                <h3>Home</h3>
+                <p>Some Content..</p>
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Some Content in menu 1.</p>
+            </div>
+
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Some Content in menu 2.</p>
+            </div>
+          </div>
+
+
+    </div>
+</body>
+</html>
