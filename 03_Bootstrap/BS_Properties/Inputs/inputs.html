@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Inputs -->
+        <h2>Bootstrap Input</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" id="comment" rows="5"></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="checkbox">
+                <label><input type="checkbox">Option1</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Option2</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Option3</label>
+            </div>
+
+            <!-- Checkbox Inline -->
+            <form>
+                <label class="checkbox-inline"><input type="checkbox">Option1</label>
+                <label class="checkbox-inline"><input type="checkbox">Option2</label>
+                <label class="checkbox-inline"><input type="checkbox">Option3</label>
+            </form>
+
+            <!-- Radio Buttons -->
+            <div class="radio">
+                <label><input type="radio" name="optradio" checked>Option 1</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio disabled">
+                <label><input type="radio" name="optradio" disabled>Option 1</label>
+            </div>
+
+            <!-- Radio Button Inline -->
+               <form>
+                <label class="radio-inline"><input type="radio" name="optradio" checked>Option1</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Option2</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Option1</label>     
+            </form>
+
+            <!-- Select List -->
+             <div class="form-group">
+                <label for="sel1">Select list:</label>
+                <select class="form-control" id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+
+                <br>
+
+                <label for="sel2">Multiple Select List:</label>
+                <select multiple class="form-control" id="sel2">
+                     <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+             </div>
+
+        </form>
+
+        </div>
+</body>
+
+</html>
