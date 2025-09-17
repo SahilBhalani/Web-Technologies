@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Creating A Tooltip -->
+         <h2>Tooltip Example</h2>
+         <a href="#" data-toggle="tooltip" title="Hooray!">Hover Over Me!</a>
+
+         <h2>Positioning Tooltips</h2>
+         <ul class="list-inline">
+            <li><a href="#" data-toggle="tooltip" title="Hooray-top" data-placement="top">Hover Over ME!</a></li>
+            <li><a href="#" data-toggle="tooltip" title="Hooray-bottom" data-placement="bottom">Hover Over ME!</a></li>
+            <li><a href="#" data-toggle="tooltip" title="Hooray-right" data-placement="right">Hover Over ME!</a></li>
+            <li><a href="#" data-toggle="tooltip" title="Hooray-left" data-placement="left">Hover Over ME!</a></li>
+         </ul>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+           $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+    
+</body>
+</html>
