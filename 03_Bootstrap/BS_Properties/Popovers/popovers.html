@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Popover Plugins</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Popover Example -->
+        <h2>Popover Example</h2>
+        <a href="#" data-toggle="popover" title="Popover Header" data-content="Somee Content inside the popover">Toggle
+            popover</a>
+        <hr>
+
+        <!-- Positioning Popovers -->
+        <h2>Positioning Popovers</h2>
+        <ul class="list-inline">
+            <li><a href="#" data-toggle="popover" title="popover Top" data-content="Some content at the top position"
+                    data-placement="top">Toogle Me!</a></li>
+            <li><a href="#" data-toggle="popover" title="popover Bottom"
+                    data-content="Some content at the bottom position" data-placement="bottom">Toogle Me!</a></li>
+            <li><a href="#" data-toggle="popover" title="popover right"
+                    data-content="Some content at the right position" data-placement="right">Toogle Me!</a></li>
+            <li><a href="#" data-toggle="popover" title="popover left"
+                    data-content="Some content at the top position" data-placement="left">Toogle Me!</a></li>
+        </ul><hr>
+
+        <!-- Closing Popovers -->
+         <h2>Closing Popover</h2>
+         <a href="#" data-trigger="focus" data-toggle="popover" title="Self-Close" data-content="Some text in content..">Toggle Me!</a>
+
+         <!-- Hoverable Popover -->
+          <h2>Hoverable Popover</h2>
+            <a href="#" data-trigger="hover" data-toggle="popover" title="Hover Header" data-content="Some Text in Content">Hover ME!</a>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+</body>
+
+</html>
