@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Media Objects</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Basic Media Objects</h2>
+        <!-- Left Aligned Media Objects -->
+        <div class="media">
+            <div class="media-left">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 60px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Left-Aligned</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus aliquam totam dolorum
+                    repellendus illum perspiciatis accusantium eveniet commodi libero quis rem praesentium maiores
+                    tempore, quaerat iusto a expedita adipisci?</p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Right-Aligned media object -->
+        <div class="media">
+            <div class="media-body">
+                <h4 class="media-heading">Right- Aligned</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nostrum sequi ex. Quas quo libero a
+                    officiis eius assumenda, deserunt sed neque impedit quidem dolorum magni laborum quam ipsam vitae.
+                </p>
+            </div>
+            <div class="media-right">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 60px;">
+            </div>
+        </div>
+        <hr>
+
+        <!-- Top, Middle or Bottom Aligment -->
+        <h2>Top, Middle or Bottom Alignment</h2>
+        <!-- Media-top -->
+        <div class="media">
+            <div class="media-left media-top">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 60px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Media top</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iusto eum minus id. Esse consectetur
+                    provident, ut aperiam perferendis qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iusto eum minus id. Esse consectetur
+                    provident, ut aperiam perferendis qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iusto eum minus id. Esse consectetur
+                    provident, ut aperiam perferendis qui!</p>
+            </div>
+        </div>
+
+        <!-- Media Middle -->
+        <div class="media">
+            <div class="media-left media-middle">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 60px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Media Middle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iusto eum minus id. Esse consectetur
+                    provident, ut aperiam perferendis qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iusto eum minus id. Esse consectetur
+                    provident, ut aperiam perferendis qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iusto eum minus id. Esse consectetur
+                    provident, ut aperiam perferendis qui!</p>
+            </div>
+        </div>
+
+        <!-- Media Bottom -->
+        <div class="media">
+            <div class="media-left media-bottom">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 60px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Media Bottom</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum hic, blanditiis impedit dolore
+                    deleniti libero similique placeat minima aspernatur consectetur?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum hic, blanditiis impedit dolore
+                    deleniti libero similique placeat minima aspernatur consectetur?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum hic, blanditiis impedit dolore
+                    deleniti libero similique placeat minima aspernatur consectetur?</p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Nesting Media Objects -->
+        <h2>Nesting Media Objects</h2>
+        <div class="media">
+            <div class="media-left">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 45px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">John Doe <small><i>Posted on February 19,2016</i></small></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus labore exercitationem maxime
+                    a quo consequuntur, quia maiores consequatur iure.</p>
+
+                <!-- Nesting Media Object In Parent's Media Body -->
+
+                <div class="media">
+                    <div class="media-left">
+                        <img src="https://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object"
+                            style="width: 45px;">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique, ut numquam nobis
+                            dolorem perferendis non facere iusto libero doloremque!</p>
+
+                        <!-- Nesting Media Object Into Child's Media Body -->
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://www.w3schools.com/bootstrap/img_avatar2.png" class="media-object"
+                                    style="width: 45px;">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maiores quae neque
+                                    vitae, dolorum suscipit debitis recusandae qui commodi. Illo vitae reprehenderit
+                                    fugiat harum quo vel molestias expedita beatae sit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- Another Example Of Nesting -->
+        <h2>Another Example Of Nesting</h2>
+        <div class="media">
+            <div class="media-left">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object"
+                    style="width: 45px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat culpa dolor at corporis
+                    obcaecati expedita quod nulla fugiat assumenda.</p>
+
+                <!-- Nesting Media Object 1 -->
+                <div class="media">
+                    <div class="media-left">
+                        <img src="https://www.w3schools.com/bootstrap/img_avatar2.png" class="media-object"
+                            style="width: 45px;">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">John Doe <small><i>Posted on February 20, 2016</i></small></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo accusantium non tempora
+                            molestiae maiores!</p>
+
+                        <!-- Nesting in Media Object 2 -->
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://www.w3schools.com/bootstrap/img_avatar3.png" class="media-object"
+                                    style="width: 45px;">
+                            </div>
+
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    John Doe <small><i>
+                                            Posted on February 21, 2016
+                                        </i></small>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore voluptas
+                                    recusandae alias error, sit qui voluptate natus rerum voluptates!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nesting in Media Object 1 -->
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="https://www.w3schools.com/bootstrap/img_avatar4.png" class="media-object"
+                                style="width: 45px;">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">John Doe <small><i>Posted on February 20, 2016</i></small></h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum odio
+                                architecto earum error corporis eveniet velit dolorem nulla maiores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Media Object -->
+        <div class="media">
+            <div class="media-left">
+                <img src="https://www.w3schools.com/bootstrap/img_avatar5.png" class="media-object"
+                    style="width: 45px;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur voluptatibus nemo nobis sint corporis quia praesentium voluptas. Quae, fuga!</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
