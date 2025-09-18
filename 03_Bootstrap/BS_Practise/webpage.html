@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar{
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        .row.content{
+            height: 450px;
+        }
+
+        .sidenav{
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        footer{
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        @media screen and  (max-width:767px){
+            .sidenav{
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content{
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navabar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">WebPage</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+
+                <div class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Links -->
+     <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">Link 1</a></p>
+                <p><a href="#">Link 2</a></p>
+                <p><a href="#">Link 3</a></p>
+            </div>
+
+            <!-- Main Content -->
+             <div class="col-sm-8 text-left">
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima quia placeat magni, iusto delectus architecto nulla optio odit voluptatibus debitis, consequuntur minus voluptatem officiis repudiandae totam harum error. Nihil possimus repudiandae labore pariatur, maiores quibusdam tempore necessitatibus consectetur aspernatur hic error dicta officia ut dolorum repellat minus laborum accusantium?</p>
+                <hr>
+                <h3>Test</h3>
+                <p>Lorem, ipsum..</p>
+             </div>
+
+             <!-- Ads Sidebar -->
+              <div class="col-sm-2 sidenav">
+                <div class="well">
+                    <p>Ads</p>
+                </div>
+
+                <div class="well">
+                    <p>Ads</p>
+                </div>
+              </div>
+        </div>
+     </div>
+
+     <footer class="container-fluid text-center">
+        <p>Footer Text</p>
+     </footer>
+    
+</body>
+</html>
