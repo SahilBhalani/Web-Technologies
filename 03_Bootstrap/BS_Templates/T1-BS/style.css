@@ -1,0 +1,480 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  transition: all 1s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo";
+  font-weight: 600;
+}
+
+/* Top Header Section */
+.top-header {
+  background-color: #1b2c7a;
+  color: white;
+  padding-top: 7px;
+  height: 35px;
+}
+
+/* Navbar Section */
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 7px 17px;
+  min-height: 50px;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  padding: 8px 0;
+  margin-right: 17px;
+}
+
+.nav-main {
+  float: right;
+}
+
+.navbar-header .glyphicon {
+  font-size: 20px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background: url("./imgs/hero-bg10.jpg") no-repeat center center / cover;
+  object-fit: cover;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.hero-heading {
+  font-size: 60px;
+  line-height: 1.3;
+  font-family: "Archivo";
+  margin-bottom: 11px;
+}
+
+.hero-description {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.btn1 {
+  color: #ffffff;
+  background-color: #e80566;
+  border-color: #e80566;
+  margin-top: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+}
+
+.gradient-right {
+  z-index: 1;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-right:before {
+  background: linear-gradient(
+    to right,
+    #ebe3e7 30%,
+    rgba(26, 44, 121, 0.18) 100%
+  );
+}
+
+.gradient-right:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Promo Section */
+
+.promo {
+  padding-bottom: 20px;
+  top: -100px;
+  position: relative;
+  z-index: 5 !important;
+}
+
+.promo-block {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  padding: 51px;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.icon {
+  width: auto;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.icon i {
+  font-size: 40px;
+}
+
+.promo-icon.icon-lg {
+  height: 64px;
+}
+
+.promo-heading {
+  font-size: 20px;
+}
+
+.promo-description {
+  font-size: 15px;
+}
+
+/* About US Section */
+.aboutus {
+  padding-bottom: 100px;
+}
+
+.about-heading {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.about-content ul {
+  line-height: 1.6;
+}
+
+.about-content ul li {
+  padding: 4px;
+}
+
+.about-content .glyphicon {
+  color: #e80566;
+}
+
+.about-img-card img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Services Section */
+.service {
+  background-color: #eee;
+  padding: 100px 0;
+}
+
+.service-head {
+  margin-bottom: 51px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 51px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.service-card .icon {
+  color: #e80566;
+  margin-bottom: 20px;
+}
+
+.service-heading {
+  margin-bottom: 20px;
+}
+
+.service-description {
+  margin-bottom: 20px;
+}
+
+/* Manage Business Apps Section */
+.business-apps {
+  padding: 100px 0;
+}
+
+.apps-head {
+  color: white;
+}
+
+.gradient-mix {
+  background: linear-gradient(
+    85deg,
+    rgba(26, 44, 121, 0.8) 30%,
+    rgba(232, 5, 102, 0.9) 100%
+  ) !important;
+}
+
+.apps-heading {
+  margin-bottom: 20px;
+}
+
+.apps-description {
+  margin-bottom: 40px;
+}
+
+.btn-pill {
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px 40px;
+  margin-right: 10px;
+  font-family: "Archivo";
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+}
+
+.btn-div .icon {
+  margin-right: 17px;
+  height: auto;
+  width: auto;
+}
+
+.btn-text {
+  display: block;
+}
+
+/* Work Section */
+
+.work {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.work-heading {
+  margin-bottom: 20px;
+}
+
+.work-description {
+  margin-bottom: 40px;
+}
+
+.work-pills {
+  color: darkblue;
+  border: 1px dashed darkblue;
+  border-radius: 10px;
+  padding: 15px 40px;
+  margin-right: 10px;
+  font-family: "Archivo";
+}
+
+.work-pills:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.work-imgs {
+  margin: 30px 0;
+}
+
+.work-imgs img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* News Section */
+
+.news {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ddd;
+}
+
+.news-heading {
+  margin-bottom: 20px;
+}
+
+.news-description {
+  margin-bottom: 40px;
+}
+
+.news-card {
+  background: white;
+  border-color: #e8e8e8;
+  box-shadow: 0 12px 25rem rgba(18, 38, 63, 0.03);
+  position: relative;
+  border-radius: 10px;
+}
+
+.news-img {
+  position: relative;
+}
+
+.news-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.news-label {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 5px 10px;
+}
+
+.news-content {
+  padding: 30px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.testimonials-heading {
+  margin-bottom: 20px;
+}
+
+.testimonials-description {
+  margin-bottom: 40px;
+}
+
+.card-main-test {
+  background-color: #ddd;
+}
+
+.testimonial-card {
+  margin: 20px;
+}
+
+.review-content {
+  padding: 25px;
+  background-color: #eee;
+}
+
+.review-content ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.review-content ul li i {
+  color: orange;
+}
+
+.test-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.test-media img {
+  margin-top: 20px;
+  margin-right: 10px;
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
+}
+
+.media-body {
+  margin-top: 30px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.media-body h5 {
+  margin-bottom: 0;
+}
+
+/* Team Section */
+
+.team {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ddd;
+}
+
+.team-heading {
+  margin-bottom: 20px;
+}
+
+.team-description {
+  margin-bottom: 40px;
+}
+
+.team-card {
+  background-color: white;
+}
+
+.team-card .team-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.team-content {
+  padding: 20px 15px;
+}
+
+.team-content .icons i {
+  font-size: 16px;
+  padding: 0 3px;
+}
+
+/* Contact Us */
+.contact {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.agency-description{
+    margin-bottom: 0;
+}
+
+.contact-btn{
+    text-align: right;
+    margin-top: 20px;
+    border-radius: 5px;
+   
+}
+
+.btn-primary{
+     padding: 10px 35px;
+     background-color: #e80566;
+     border-style: none;
+}
