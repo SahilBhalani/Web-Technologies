@@ -1,0 +1,148 @@
+@media (max-width:575px) {
+
+    .about-content{
+        margin-bottom: 20px;
+    }
+
+    .about-img-card{
+        text-align: left;
+    }
+
+     .news-card{
+        text-align: center !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        margin-left: 0 !important;
+    }
+
+     .team-card{
+         text-align: center !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        margin-left: 0 !important;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .hero-heading{
+        font-size: 35px;
+    }
+
+    .hero-description{
+        font-size: 11px;
+    }
+
+    .tophead-card p{
+        text-align: center;
+    }
+    
+    .nav-main{
+        float: left;
+    }
+
+
+    .about-img-card{
+        text-align: center;
+    }
+
+     .apps-buttons .btn-pill{
+        margin-bottom: 20px;
+    }
+
+    .work-head a{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+     .test-media{
+        margin-bottom: 30px;
+    }
+    .contact-btn{
+        text-align: left;
+    }
+
+    .foot-copyright{
+        text-align: center;
+    }
+
+    .social-links{
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width:992px) {
+    .top-header{
+        height: auto;
+    }
+
+    .navbar-brand img{
+        width: 80%;
+        padding: 11px 0;
+    }
+
+    .nav-main ul li{
+        font-size: 11px;
+    }
+
+    .about-content{
+        margin-bottom: 30px;
+    }
+
+    .about-img-card{
+        text-align: left;
+    }
+
+    .work-imgs{
+        text-align: center;
+    }
+
+    .news-head{
+        text-align: center;
+    }
+
+    .news-card{
+        text-align: center;
+        width: 70%;
+        margin-bottom: 20px;
+        margin-left: 100px;
+    }
+
+     .team-card{
+        text-align: center;
+        width: 70%;
+        margin-bottom: 20px;
+        margin-left: 100px;
+    }
+
+    .foot-top-content{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    
+    .about-content{
+        margin-bottom: 30px;
+    }
+
+    .about-img-card{
+        text-align: left;
+    }
+
+    .news-card{
+        margin-bottom: 20px;
+    }
+
+    .team-card{
+        margin-bottom: 20px;
+    }
+
+    .foot-top-content{
+        margin-bottom: 30px;
+    }
+}
