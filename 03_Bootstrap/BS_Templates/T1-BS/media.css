@@ -27,12 +27,13 @@
 
 @media (max-width:768px){
 
+
     .hero-heading{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .hero-description{
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .tophead-card p{
@@ -42,24 +43,38 @@
     .nav-main{
         float: left;
     }
+    
+   
 
+   
+
+    .aboutus{
+        padding-top: 0;
+    }
 
     .about-img-card{
         text-align: center;
     }
 
+   
+
      .apps-buttons .btn-pill{
         margin-bottom: 20px;
     }
-
+    
+    
     .work-head a{
         display: block;
         margin-bottom: 10px;
     }
 
+    
+
      .test-media{
         margin-bottom: 30px;
     }
+
+    
     .contact-btn{
         text-align: left;
     }
@@ -68,6 +83,7 @@
         text-align: center;
     }
 
+    
     .social-links{
         margin-top: 15px;
         text-align: center;
@@ -88,6 +104,11 @@
         font-size: 11px;
     }
 
+     .aboutus{
+         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .about-content{
         margin-bottom: 30px;
     }
@@ -96,8 +117,38 @@
         text-align: left;
     }
 
+    .business-apps{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .news{
+         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .testimonials{
+         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .work{
+         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .work-imgs{
         text-align: center;
+    }
+
+     .service{
+         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+     .service-card{
+        padding: 20px;
     }
 
     .news-head{
@@ -111,11 +162,22 @@
         margin-left: 100px;
     }
 
+
+    .team{
+         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
      .team-card{
         text-align: center;
         width: 70%;
         margin-bottom: 20px;
         margin-left: 100px;
+    }
+    
+    .footer-top{
+         padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .foot-top-content{
