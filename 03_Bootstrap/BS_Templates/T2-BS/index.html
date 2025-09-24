@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
     <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto+Thin" rel="stylesheet">
 </head>
@@ -36,7 +38,7 @@
                 <div class="collapse navbar-collapse navbar-nav-hover nav-main" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a href="#Home" class="dropdown-toggle" data-toggle="dropdown">Home <span
+                            <a href="#Home" class="dropdown-toggle" data-toggle="dropdown">HOME <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Sub 1</a></li>
@@ -46,7 +48,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#solutions" class="dropdown-toggle" data-toggle="dropdown">Pages <span
+                            <a href="#solutions" class="dropdown-toggle" data-toggle="dropdown">PAGES <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">P 1</a></li>
@@ -55,7 +57,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#work" class="dropdown-toggle" data-toggle="dropdown">Works <span
+                            <a href="#work" class="dropdown-toggle" data-toggle="dropdown">WORKS <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">P 1</a></li>
@@ -65,7 +67,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown">Blog <span
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown">BLOG <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Blog 1</a></li>
@@ -74,7 +76,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="#blocks" class="dropdown-toggle" data-toggle="dropdown">Blocks <span
+                            <a href="#blocks" class="dropdown-toggle" data-toggle="dropdown">BLOCKS <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Blog 1</a></li>
@@ -362,16 +364,77 @@
     <!-- Testimonial Section -->
     <section class="testimonials">
         <div class="container">
-            <div class="bg-img" style="background-image: url('./imgs/bg-d.jpg');">
-                <img src="./imgs/bg-d.jpg" alt="banner">
-            </div>
-        </div>
+            <div class="row">
+                <div class="col-md-9 col-lg-7">
+                    <div class="tes tes-s2">
+                        <div class="tes-block tc-light bg-darker">
+                            <h2>What clients say about us</h2>
+                            <div class="has-carousel" data-items="1" data-navs="true" data-loop="true">
+                                <div class="item">
+                                    <div class="tes-content">
+                                        <p class="ps">I recently hired Genox to develop a new version of my most popular
+                                            website and I’m extremely happy with their work.</p>
+                                    </div>
+                                    <div class="author-con d-flex">
+                                        <div class="img">
+                                            <img src="imgs/testimonial-quotes.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h6 class="author-name t-u">Mike Andrew</h6>
+                                            <p>CEO - Philan</p>
+                                        </div>
+                                    </div>
+                                </div><!-- .tes-item -->
+                                <div class="item">
+                                    <div class="tes-content">
+                                        <p class="ps">We love working with Genox Not only do they create beautiful,
+                                            interactive but they are also extremely helpful and amazing.</p>
+                                    </div>
+                                    <div class="author-con d-flex">
+                                        <div class="img">
+                                            <img src="imgs/testimonial-quotes.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h6 class="author-name t-u">John Doe</h6>
+                                            <p>Developer</p>
+                                        </div>
+                                    </div>
+                                </div><!-- .tes-item -->
+                                <div class="item">
+                                    <div class="tes-content">
+                                        <p class="ps">These guys are legit. I’ll never hire another agency as long as
+                                            I’m working. They are also extremely helpful and amazing.</p>
+                                    </div>
+                                    <div class="author-con d-flex">
+                                        <div class="img">
+                                            <img src="imgs/testimonial-quotes.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h6 class="author-name t-u">Tom Arthur</h6>
+                                            <p>Managin Director</p>
+                                        </div>
+                                    </div>
+                                </div><!-- .tes-item -->
+                            </div>
+                            <div class="tes-arrow">
+                                <a class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></a>
+                                <a class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
 
+
+        <div class="bg-img" style="background-image: url('./imgs/bg-d.jpg');">
+            <img src="./imgs/bg-d.jpg" alt="banner">
+        </div>
     </section>
 
 
     <!--  Logo Section-->
-      <section class="logo">
+    <section class="logo">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-sm-4 col-md-2 col-5">
@@ -404,7 +467,7 @@
     </section>
 
     <!-- Team Section -->
-     <section class="team">
+    <section class="team">
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-6 text-center">
@@ -462,12 +525,12 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
 
 
-     <!-- News Section -->
-      <section class="news">
+    <!-- News Section -->
+    <section class="news">
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-6 text-center">
@@ -513,22 +576,22 @@
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Contact Sectin -->
-       <section class="contact">
+    <!-- Contact Sectin -->
+    <section class="contact">
         <div class="container">
             <div class="row align-item-center justify-content-between">
                 <div class="col-lg-8 text-left">
                     <div class="contact-text">
                         <h2>
-                            <span>Ready to make  great ? </span> <br>
+                            <span>Ready to make great ? </span> <br>
                             <strong>Let's work together</strong>
                         </h2>
                     </div>
                 </div>
 
-                <div class="col-lg-4 text-center align-item-center">
+                <div class="col-lg-4 text-right">
                     <div class="contact-btn">
                         <a href="#" class="btn btn-lg">WORK WITH US</a>
                     </div>
@@ -537,14 +600,108 @@
         </div>
 
 
-         <div class="bg-img" style="background-image: url('./imgs/main-bg.jpg');">
+        <div class="bg-img" style="background-image: url('./imgs/main-bg.jpg');">
             <img src="./imgs/main-bg.jpg" alt="banner">
         </div>
-       </section>
+    </section>
+
+    <footer class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="foot-top">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <a href="#">
+                                    <img src="./imgs/logo2x.png" alt=""></a>
+                            </div>
+                            <p>We are 100% committed to the result. We will never stop halfway and apply our
+                                professional expertise to achieve zero fault delivery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 m-left">
+                    <div class="foot-top">
+                        <div class="footer-content">
+                            <h3 class="foot-title
+                        ">Company</h3>
+                            <ul class="foot-menu list-unstyled">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Why Genox</a></li>
+                                <li><a href="#">Meet the team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="foot-top">
+                        <div class="footer-content">
+                            <h3 class="foot-title
+                        ">Services</h3>
+                            <ul class="foot-menu list-unstyled">
+                                <li><a href="#">Digital Media</a></li>
+                                <li><a href="#">Strategy</a></li>
+                                <li><a href="#">Development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="foot-top">
+                        <div class="footer-content">
+                            <h3 class="foot-title">Get our staff</h3>
+                            <form action="#" class="foot-form">
+                                <div class="f-group btn-inline">
+                                    <input type="email" name="f_email" placeholder="Your Email" class="input">
+                                    <button type="submit" class="far fa-paper-plane button"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-bottom">
+        <div class="container foot-border">
+            <div class="row align-item-center justify-content-between">
+                <div class="col-md-6 text-left">
+                    <div class="copyright-content">
+                        <p>&copy; 2019. All rights reserved. Designed & Developed by <a href="#">Sahil Bhalani</a> </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-right">
+                    <div class="copyright-content">
+                        <ul class="foot-social links list-unstyled list-inline">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-dribbble"></i></li>
+                            <li><i class="fa-brands fa-behance"></i></li>
+                        </ul>
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
+    </footer>
 
-
+    <script>
+        $(document).ready(function () {
+            $('.has-carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                infinite: true,
+                prevArrow: $('.slick-prev'),
+                nextArrow: $('.slick-next')
+            });
+        });
+    </script>
 
 </body>
 
