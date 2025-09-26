@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
     <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto+Thin" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -35,11 +36,10 @@
                         <img src="./imgs/logo-white.png" alt="logo">
                     </a>
                 </div>
-                <div class="collapse navbar-collapse navbar-nav-hover nav-main" id="myNavbar">
+                <div class="collapse navbar-collapse navbar-nav-hover nav-main nav-main2" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a href="#Home" class="dropdown-toggle" data-toggle="dropdown">HOME <span
-                                    class="caret"></span></a>
+                            <a href="#Home" class="dropdown-toggle">HOME <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Sub 1</a></li>
                                 <li><a href="#">Sub 1</a></li>
@@ -48,8 +48,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#solutions" class="dropdown-toggle" data-toggle="dropdown">PAGES <span
-                                    class="caret"></span></a>
+                            <a href="#solutions" class="dropdown-toggle">PAGES <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">P 1</a></li>
                                 <li><a href="#">P 2</a></li>
@@ -57,8 +56,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#work" class="dropdown-toggle" data-toggle="dropdown">WORKS <span
-                                    class="caret"></span></a>
+                            <a href="#work" class="dropdown-toggle">WORKS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">P 1</a></li>
                                 <li><a href="#">P 2</a></li>
@@ -67,8 +65,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown">BLOG <span
-                                    class="caret"></span></a>
+                            <a href="#blog" class="dropdown-toggle">BLOG <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Blog 1</a></li>
                                 <li><a href="#">Blog 2</a></li>
@@ -76,8 +73,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="#blocks" class="dropdown-toggle" data-toggle="dropdown">BLOCKS <span
-                                    class="caret"></span></a>
+                            <a href="#blocks" class="dropdown-toggle">BLOCKS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Blog 1</a></li>
                                 <li><a href="#">Blog 2</a></li>
@@ -88,18 +84,11 @@
 
                         <li><a href="#"><i class="fa-solid fa-magnifying-glass icon-search"></i></a></li>
 
-                        <li><a href="#" class="btn btn-danger">START A PROJECT</a></li>
+                        <li><a href="#" class="btn btn-danger btn-nav">START A PROJECT</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-
-
-
-        <div class="bg-img" style="background-image: url('./imgs/main-bg.jpg');">
-            <img src="./imgs/main-bg.jpg" alt="banner">
-        </div>
     </header>
 
 
@@ -109,7 +98,7 @@
         <div class="hero-main">
             <div class="container">
                 <div class="row hero">
-                    <div class="col-md-2">
+                    <div class="col-md-2 scls">
                         <ul class="social-links">
                             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -122,7 +111,7 @@
                         <div class="banner-content">
                             <div class="line-animate active">
                                 <span class="line line-top"></span>
-                                <span class="line  line-right"></span>
+                                <span class="line line-right"></span>
                                 <span class="line line-left"></span>
                                 <span class="line line-bottom"></span>
                             </div>
@@ -137,16 +126,20 @@
                         </div>
                     </div>
                 </div>
+                 <!-- <div class="bg-img" style="background-image: url('./imgs/main-bg.jpg');">
+                    <img src="./imgs/main-bg.jpg" alt="banner">
+                </div>  -->
             </div>
+        </div>
     </section>
 
 
     <!-- Who Are We Section -->
     <section class="whoWe">
         <div class="container">
-            <div class="row justify-content-between align-item-start">
+            <div class="row justify-content-between align-item-start waw">
                 <div class="col-lg-6 col-md-6">
-                    <h5 class="sec-heading line-dash">
+                    <h5 class="sec-heading line-dash-both">
                         WHO ARE WE
                     </h5>
                     <h2 class="whoWe-heading">
@@ -231,7 +224,7 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row f-card">
                 <div class="col-lg-3 col-sm-6 text-center br">
                     <div class="features-card">
                         <div class="features-icon">
@@ -309,46 +302,45 @@
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-8 col-md-10 text-center">
-                    <ul class="work-feature list-inline list-unstyled breadcrumb">
-                        <li class="active">All</li>
-                        <li>UI/UX</li>
-                        <li>Branding</li>
-                        <li>Development</li>
-                        <li>Photography</li>
-                    </ul>
+                    <ol class="breadcrumb work-feature">
+                        <li class="active"><a href="#" data-filter="all">All</a></li>
+                        <li><a href="#" data-filter="ui-ux">UI/UX</a></li>
+                        <li><a href="#" data-filter="branding">Branding</a></li>
+                        <li><a href="#" data-filter="development">Development</a></li>
+                        <li><a href="#" data-filter="photography">Photography</a></li>
+                    </ol>
                 </div>
             </div>
 
-
-            <div class="row d-flex flex-wrap">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="work-image">
-                        <img src="./imgs/project-lg-a.jpg" alt="">
+            <div class="row" id="filterable-thumbs">
+                <div class="col-lg-4 col-sm-6" data-category="ui-ux">
+                    <div class="thumbnail work-thumb">
+                        <img src="./imgs/project-lg-a.jpg" alt="Project A">
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="work-image">
-                        <img src="./imgs/project-lg-b.jpg" alt="">
+                <div class="col-lg-4 col-sm-6" data-category="branding">
+                    <div class="thumbnail work-thumb">
+                        <img src="./imgs/project-lg-b.jpg" alt="Project B">
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="work-image">
-                        <img src="./imgs/project-lg-c.jpg" alt="">
+                <div class="col-lg-4 col-sm-6" data-category="development">
+                    <div class="thumbnail work-thumb">
+                        <img src="./imgs/project-lg-c.jpg" alt="Project C">
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="work-image">
-                        <img src="./imgs/project-lg-d.jpg" alt="">
+                <div class="col-lg-4 col-sm-6" data-category="photography">
+                    <div class="thumbnail work-thumb">
+                        <img src="./imgs/project-lg-d.jpg" alt="Project D">
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="work-image">
-                        <img src="./imgs/project-lg-e.jpg" alt="">
+                <div class="col-lg-4 col-sm-6" data-category="ui-ux">
+                    <div class="thumbnail work-thumb">
+                        <img src="./imgs/project-lg-e.jpg" alt="Project E">
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="work-image">
-                        <img src="./imgs/project-lg-f.jpg" alt="">
+                <div class="col-lg-4 col-sm-6" data-category="branding">
+                    <div class="thumbnail work-thumb">
+                        <img src="./imgs/project-lg-f.jpg" alt="Project F">
                     </div>
                 </div>
             </div>
@@ -369,8 +361,8 @@
                     <div class="tes tes-s2">
                         <div class="tes-block tc-light bg-darker">
                             <h2>What clients say about us</h2>
-                            <div class="has-carousel" data-items="1" data-navs="true" data-loop="true">
-                                <div class="item">
+                            <div class="has-carousel" data-items="1" data-navs="true" data-loop="false">
+                                <div class="item" id="item1">
                                     <div class="tes-content">
                                         <p class="ps">I recently hired Genox to develop a new version of my most popular
                                             website and I’m extremely happy with their work.</p>
@@ -385,7 +377,7 @@
                                         </div>
                                     </div>
                                 </div><!-- .tes-item -->
-                                <div class="item">
+                                <div class="item" id="item2">
                                     <div class="tes-content">
                                         <p class="ps">We love working with Genox Not only do they create beautiful,
                                             interactive but they are also extremely helpful and amazing.</p>
@@ -400,7 +392,7 @@
                                         </div>
                                     </div>
                                 </div><!-- .tes-item -->
-                                <div class="item">
+                                <div class="item" id="item3">
                                     <div class="tes-content">
                                         <p class="ps">These guys are legit. I’ll never hire another agency as long as
                                             I’m working. They are also extremely helpful and amazing.</p>
@@ -420,6 +412,25 @@
                                 <a class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></a>
                                 <a class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></a>
                             </div>
+
+
+                            <div class="content-alt">
+                                <p class="content-alt-desc">
+                                    <i>These guys are legit. I’ll never hire another agency as long as I’m working. They
+                                        are also extremely helpful and amazing.</i>
+                                </p>
+
+                                <div class="author-con d-flex">
+                                    <div class="img">
+                                        <img src="imgs/testimonial-quotes.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="author-name t-u">Mike Andrew</h6>
+                                        <p>CEO - Philan</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -436,7 +447,7 @@
     <!--  Logo Section-->
     <section class="logo">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between company-logo">
                 <div class="col-sm-4 col-md-2 col-5">
                     <div class="logo-img">
                         <img src="./imgs/client-a.png" alt="">
@@ -471,14 +482,16 @@
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-6 text-center">
-                    <h5 class="sec-heading line-dash-both">
-                        MEET THE TEAM
-                    </h5>
-                    <h2>People of Behind work</h2>
+                    <div class="team-head">
+                        <h5 class="sec-heading line-dash-both">
+                            MEET THE TEAM
+                        </h5>
+                        <h2>People of Behind work</h2>
+                    </div>
                 </div>
             </div>
 
-            <div class="row justify-content-between">
+            <div class="row justify-center">
                 <div class="col-lg-3 col-sm-5">
                     <div class="team-card text-center">
                         <div class="team-img">
@@ -534,8 +547,10 @@
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-6 text-center">
-                    <h5 class="sec-heading line-dash-both">LATEST NEWS</h5>
-                    <h2>From the Genox news room</h2>
+                    <div class="news-head">
+                        <h5 class="sec-heading line-dash-both">LATEST NEWS</h5>
+                        <h2>From the Genox news room</h2>
+                    </div>
                 </div>
             </div>
 
@@ -581,7 +596,7 @@
     <!-- Contact Sectin -->
     <section class="contact">
         <div class="container">
-            <div class="row align-item-center justify-content-between">
+            <div class="row align-item-center justify-content-between c-flex">
                 <div class="col-lg-8 text-left">
                     <div class="contact-text">
                         <h2>
@@ -608,7 +623,7 @@
     <footer class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 con1">
                     <div class="foot-top">
                         <div class="footer-content">
                             <div class="footer-logo">
@@ -621,7 +636,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-sm-6 m-left">
+                <div class="col-lg-2 col-sm-6 m-left cmpny">
                     <div class="foot-top">
                         <div class="footer-content">
                             <h3 class="foot-title
@@ -634,7 +649,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-sm-6">
+                <div class="col-lg-2 col-sm-6 srvc">
                     <div class="foot-top">
                         <div class="footer-content">
                             <h3 class="foot-title
@@ -700,6 +715,34 @@
                 prevArrow: $('.slick-prev'),
                 nextArrow: $('.slick-next')
             });
+        });
+    </script>
+
+    <script>
+        // Vanilla JS for filtering thumbnails
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterLinks = document.querySelectorAll('.work-feature a');
+            const filterableThumbs = document.querySelectorAll('#filterable-thumbs .thumbnail');
+
+            const filterThumbs = (e) => {
+                e.preventDefault();
+                // Remove active class from all li
+                document.querySelectorAll('.work-feature li').forEach(li => li.classList.remove('active'));
+                // Add active to clicked li
+                e.target.closest('li').classList.add('active');
+
+                const filter = e.target.dataset.filter;
+
+                filterableThumbs.forEach(thumb => {
+                    if (filter === 'all' || thumb.parentElement.dataset.category === filter) {
+                        thumb.parentElement.classList.remove('hide');
+                    } else {
+                        thumb.parentElement.classList.add('hide');
+                    }
+                });
+            };
+
+            filterLinks.forEach(link => link.addEventListener('click', filterThumbs));
         });
     </script>
 
