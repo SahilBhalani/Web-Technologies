@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Custom Forms</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck">
+                <label for="customCheck" class="custom-control-label">Check This Custom CheckBox</label>
+            </div>
+            <div class="custom-control custom-switch custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="sw1">
+                <label for="sw1" class="custom-control-label">Toggle Me!</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="rd1">
+                <label for="rd1" class="custom-control-label">Custom Radio</label>
+            </div>
+
+            <div>
+                <select name="cars" class="custom-select">
+                    <option selected>Custom Select Menu</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="BMW">BMW</option>
+                    <option value="mercedes">Merc</option>
+                </select>
+            </div>
+
+            <label for="customRange">Custom Range</label>
+            <input type="range" class="custom-range" id="customRange">
+        </form>
+    </div>
+</body>
+</html>
