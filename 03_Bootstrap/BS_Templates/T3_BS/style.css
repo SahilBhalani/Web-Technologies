@@ -39,6 +39,11 @@ p {
   font-family: "Kumbh Sans Bold";
 }
 
+ /* .container{
+  padding-left: 15px;
+  padding-right: 15px;
+ } */
+
 /* Navbar Section */
 
 .brand-logo {
@@ -599,7 +604,7 @@ p {
 
 .w-video-text {
   position: absolute;
-  top: 18%;
+  top: 0%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -848,3 +853,329 @@ p {
   color: #717178;
   text-decoration: none;
 }
+
+
+/* Brand Logo Section */
+.logo{
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.brand-logo-img img{
+  opacity: 0.5;
+  max-width: 100%;
+}
+
+/* Map Section */
+.g-map{
+  width: 100%;
+  height: 480px;
+
+}
+
+/* Get in touch section */
+.git{
+  padding-top: 120px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.git-image{
+  position: relative;
+  margin-right: 70px;
+}
+
+.git-image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.git-head h2{
+  margin-bottom: 30px;
+}
+
+.git-content-one h3{
+  font-family: 'Kumbh Sans';
+  margin-top: 50px;
+  margin-bottom: 3px;
+  font-size: 40px;
+  line-height: 50px !important;
+  font-weight: 400;
+}
+
+.git-content-one .pjs{
+  color: #fc653c;
+}
+
+.git-card{
+  position: relative;
+  padding: 50px 50px 75px;
+  background-color: #f1f1f5;
+  border-radius: 10px;
+}
+
+.git-location .location-icon i{
+  color: #fc653c;
+  font-size: 50px;
+}
+
+.location-city{
+  margin-left: 15px;
+}
+
+.location-city h4{
+  font-size: 22px;
+}
+
+.git-address{
+  margin-top: 22px;
+}
+
+.git-address p{
+  font-size: 18px;
+}
+
+.owl-dots{
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+}
+
+.owl-dot{
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0px 3px;
+  border-radius: 50%;
+  border: 2px solid transparent !important;
+  background-color: rgba(30, 30, 34, 0.2) !important;
+}
+.owl-dots .owl-dot.active {
+  border: 2px solid #fc653c !important;
+  margin: 0px 3px;
+}
+
+/* Consultation section */
+.consult{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  background-color: #fc653c;
+}
+
+.consult-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.consult-title h2{
+  color: white;
+  font-size: 45px;
+}
+
+.consult-btn{
+  background-color: black;
+  border-radius: 32px;
+  
+}
+
+.consult-btn a{
+  font-size: 18px;
+  font-family: 'Kumbh Sans Bold';
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding: 16px 50px;
+  border-radius: 32px;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #fc653c;
+  transition: all 0.5s ease;
+}
+
+/* Footer */
+.footer-top{
+  padding-top: 120px;
+  padding-bottom: 70px;
+  position: relative;
+  background-color: black;
+}
+
+.foot-bg{
+  background-image: url("./imgs/core-features-bg.webp");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.09;
+}
+
+.footer-logo img{
+  width: 125px;
+  padding-bottom: 20px;
+}
+
+.foot-social{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.foot-social a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border-radius: 50%;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  background-color: #17171a;
+  color: #9e9ea7;
+  text-decoration: none;
+}
+
+.foot-social a + a{
+  margin-left: 10px;
+}
+
+.footer-c2{
+  padding-left: 20px;
+}
+
+.foot-title{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.foot-phone{
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-c3 a{
+  color: #fc653c;
+}
+
+.sign-up{
+  position: relative;
+  background-color: #17171a;
+  border-radius: 10px;
+  padding: 45px 50px 40px;
+  margin-left: -30px;
+}
+
+.sign-up-form input{
+  color: #9e9ea7;
+  background-color: transparent;
+  height: 70px;
+  width: 100%;
+  padding-right: 60px;
+  border-style: none;
+  border-radius: 0;
+}
+
+.email-input{
+  position: relative;
+  display: block;
+}
+
+.email-input::before{
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  content: "";
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+.sign-up-btn{
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 65px;
+  height: 70px;
+  border: none;
+}
+
+.sign-up-bottom{
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.bottom-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #69696f;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+.bottom-icon i{
+  font-size: 8px;
+  color: #69696f;
+}
+
+.bottom-text p{
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.footer-bottom{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  background-color: #17171a;
+}
+
+.copyright{
+  font-size: 16px;
+  font-family: 'Kumbh Sans';
+  color: #9e9ea7;
+  margin: 0;
+}
+
+.copyright a{
+  color: #9e9ea7;
+  text-decoration: none;
+}
+
+.copyright a:hover{
+  color: #fc653c;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+
+
+
+
