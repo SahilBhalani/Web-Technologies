@@ -1,0 +1,425 @@
+@media (max-width: 575px) {
+  /* Hero Section */
+
+  .carousel-caption {
+    padding-bottom: 30px !important;
+  }
+
+  .navbar-toggler-icon {
+    float: right !important;
+  }
+
+  .navbar-collapse .collapsed {
+    float: right !important;
+  }
+
+  .socials {
+    display: none !important;
+  }
+
+  /* Blog Section */
+  .custom-owl {
+    display: none !important;
+  }
+
+
+  /* Logo Section */
+
+  .brand-logo-envato {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Hero Section */
+  .carousel-caption h2 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+  }
+
+  .og-btn {
+    padding: 5px !important;
+  }
+
+  .og-btn span {
+    font-size: 14px !important;
+  }
+
+  .section-heading {
+    font-size: 35px !important;
+  }
+
+  .section-description {
+    font-size: 15px !important;
+  }
+
+  /* aop section */
+
+  .aop-agency {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .agency-text {
+    margin-left: 0 !important;
+  }
+
+  /* Aop two */
+  .aop-two {
+    padding-top: 0px !important;
+  }
+
+  .aop-card {
+    padding: 15px 10px !important;
+    text-align: center !important;
+  }
+
+  /* Solutions Section */
+
+  .tab-btns {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .tab-btn span {
+    padding: 15px 0 !important;
+    text-align: center !important;
+  }
+
+  
+
+  /* Watch video */
+  .w-shape {
+    display: none !important;
+  }
+
+  .w-video-text p {
+    display: none !important;
+  }
+
+  /* Core Features */
+  .core-features {
+    padding-top: 185px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .core-head-sub {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .sub-text {
+    margin-left: 0 !important;
+  }
+
+  .core-list li {
+    padding: 10px 15px !important;
+  }
+
+  .list-text p {
+    font-size: 15px !important;
+  }
+
+  .list-icon {
+    padding: 16px !important;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding-top: 30px !important;
+  }
+
+  .custom-owl .left-arr,
+  .custom-owl .right-arr {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 15px !important;
+  }
+
+
+  .blog-title {
+    font-size: 21.5px !important;
+  }
+
+  .blog-content {
+    padding: 20px 22px 12px !important;
+  }
+
+  /* Consult section */
+  .consult {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .consult-main {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .consult-title h2 {
+    font-size: 35px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* Footer Top */
+
+  .footer-c2 {
+    padding-left: 0 !important;
+    padding-top: 30px !important;
+  }
+
+  .sign-up {
+    padding: 45px 20px 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Navbar Section */
+
+    .brand-logo {
+    margin-right: 0 !important;
+  }
+
+  /* Hero Section */
+
+  .og-btn {
+    padding: 15px;
+  }
+
+  .og-btn span {
+    font-size: 18px;
+  }
+
+  /* Aop Section */
+  .aop-one {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  /* Aop two */
+  .aop-two {
+    padding-top: 30px;
+    padding-bottom: 30px !important;
+  }
+
+  .agency-text h4 {
+    font-size: 22px !important;
+  }
+
+  /* Work Section */
+  .work {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  /* Solutions Section */
+  .solutions {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .solu-img {
+    margin: 0 !important;
+  }
+
+  /* Team Section */
+
+  .team {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  /* Watch video */
+  .w-shape {
+    z-index: 1;
+  }
+
+  .w-icon {
+    bottom: 0 !important;
+    right: 0 !important;
+    font-size: 15px !important;
+    height: 60px !important;
+    width: 60px !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50% !important;
+  }
+
+  /* Core-features Section */
+  .sub-text {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding-top: 30px !important;
+  }
+
+   /* Logo Section */
+
+  .logo {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .brand-logo-img {
+    padding-left: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* Git Section */
+  .git {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .git-image {
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .git-content-one h3 {
+    font-size: 35px !important;
+    margin-top: 25px !important;
+  }
+
+  /* Footer Top */
+  .footer-top {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .footer-c1{
+    margin-bottom: 20px;
+  }
+
+  .sign-up {
+    margin-left: 0 !important;
+  }
+
+  .foot-title {
+    margin-top: 15px !important;
+  }
+
+}
+
+@media (max-width:1199px){
+    /* Navbar Section */
+
+    .brand-logo {
+    margin-right: 400px;
+  }
+  .navbar-nav {
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+
+  .navbar-nav li + li {
+    margin-left: 0 !important;
+  }
+
+  .socials {
+    margin-top: 5px !important;
+  }
+
+  .social-link {
+    padding-left: 0 !important;
+  }
+
+  .social-link::before {
+    display: none !important;
+  }
+
+  /* Hero Section */
+  .carousel-inner {
+    height: 500px !important;
+  }
+
+   .carousel-caption {
+    padding-bottom: 90px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 15px !important;
+  }
+
+  .section-heading {
+    font-size: 45px;
+  }
+
+  .section-description {
+    font-size: 20px;
+  }
+
+  /* Aop Two */
+  
+  .aop-image {
+    margin-right: 0px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .aop-right {
+    margin-left: 0px !important;
+  }
+
+  .aop-points {
+    margin-left: 0 !important;
+  }
+
+  .aop-agency {
+    margin-left: 0 !important;
+  }
+
+  .agency-text h4 {
+    margin-top: 5px !important;
+    font-size: 26px;
+  }
+
+  /* Solution */
+  .solu-img .trusted {
+    bottom: 10px !important;
+    padding: 7px !important;
+    right: 7px !important;
+  }
+
+  .trusted-icon i {
+    font-size: 25px !important;
+  }
+
+  .trusted-text h3 {
+    font-size: 16px !important;
+  }
+
+  /* Git */
+
+  .git-image {
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .git-content-one h3 {
+    font-size: 35px !important;
+    margin-top: 25px !important;
+  }
+
+  /* footer top */
+
+  .footer-c1{
+    margin-bottom: 20px;
+  }
+
+  .sign-up {
+    margin-left: 0 !important;
+  }
+
+  .foot-title {
+    margin-top: 15px !important;
+  }
+
+}
