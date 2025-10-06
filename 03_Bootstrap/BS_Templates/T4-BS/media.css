@@ -1,3 +1,209 @@
-@media (max-width:575px){
+@media (max-width: 768px) {
+  /* hero Section */
+
+  .hero-slider {
+    padding: 0 !important;
+  }
+
+  .hero-slider .owl-dots {
+    display: none !important;
+  }
+
+  .slider-content {
+    margin: 0 !important;
+    padding: 40px 15px 50px !important;
+  }
+
+  .slider-title span::before {
+    height: 6px !important;
+  }
+
+  .socials {
+    padding: 0 !important;
+  }
+
+  .social-link::before {
+    display: none !important;
+  }
+
+  /* Product one Section */
+
+  .pro-1 {
+    margin-bottom: 30px !important;
+  }
+
+  .product-content {
+    padding: 15px 20px !important;
+  }
+
+  .product-content .content-title {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .product-content a {
+    font-size: 12px !important;
+  }
+
+  .product-slider .owl-prev,
+  .product-slider .owl-next {
+    display: none !important;
+  }
+
+  .products-two {
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .coll-menu-list {
+    margin-bottom: 20px !important;
+  }
+
+  /* Service Section */
+
+  .service-head h3 {
+    font-size: 30px !important;
+  }
+
+  /* Showcase Section */
+
+
+  .show-slider .btn-main {
+    line-height: 48px !important;
+    padding: 0 40px !important;
+    font-size: 16px !important;
+    bottom: 20px !important;
+    left: 40px !important;
+  }
+
+  /* Team Section */
+  
+
+  .team-head h2{
+    font-size: 28px !important;
+  }
+
+  /* testimonial Section */
+  .testimonial{
+    padding-top: 100px !important;
+  }
+
+  .testimonial-slider .item p{
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+ 
+
+  /* Git Section */
+
+  .git-head h2{
+    font-size: 36px !important;
+  }
+
+  .git-box{
+    padding: 0 !important;
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 991px){
+     .hero-slider {
+    padding: 20px;
+  }
+
+ .menu-list .nav-item{
+    margin-left: 0;
+    margin: 5px 0;
+ }
+
+  .owl-dots{
+    left: 0;
+  }
+  .slider-content{
+    margin-left: 60px;
+  }
+
+.social-link::before {
+    width: 65% !important;
+  }
+
+  .slider-title {
+    font-size: 44px !important;
+  }
+
+  .slider-title span::before {
+    bottom: 8px !important;
     
+  }
+
+  .slider-content p{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  /* product section  */
+  .pro-1 .pro-img img{
+    width: 100%;
+  }
+
+  .pro-1{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:1200px){
+    .hero-slider {
+    padding:15px 65px 65px ;
+  } 
+
+  .slider-title{
+    font-size: 65px;
+  }
+
+  .slider-title span::before {
+    bottom: 17px;
+  }
+
+  .social-link::before {
+    width: 70%;
+  }
+
+  /* Products Section */
+  .products-one {
+    padding-top: 50px !important;
+  }
+
+  /* Service Section */
+  .service {
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+  }
+
+  /* Showcase Section */
+  .showcase {
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+  }
+
+  /* Team Section */
+  .team{
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .team-social{
+    padding: 0;
+  }
+
+  /* Blog Section */
+   .blog{
+    padding-top: 80px !important;
+  }
+
+  /* Git Section */
+   .git{
+    padding-top: 80px !important;
+  }
+
+
 }
