@@ -1,3 +1,18 @@
 {
-    "folder-color.pathColors": []
+    "folder-color.pathColors": [],
+    "piny.project_settings": {
+        "open-pages": [
+            "pinyfakepage.html"
+        ],
+        "urls": {
+            "pinyfakepage.html": {
+                "open-page-views": [
+                    {
+                        "w": 1044,
+                        "h": 0
+                    }
+                ]
+            }
+        }
+    }
 }
