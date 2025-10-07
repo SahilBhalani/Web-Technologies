@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Grid Row Start-End</title>
+</head>
+<body class="text-center">
+    <h1 class="text-4xl font-bold">Row-span Class</h1>
+        <div class="m-8 grid grid-row-3 grid-flow-col gap-1">
+            <div class="bg-green-300 rounded-lg">1</div>
+            <div class="bg-green-300 rounded-lg">2</div>
+            <div class="bg-green-300 rounded-lg">3</div>
+            <div class="bg-green-500 row-span-2 rounded-lg">4</div>
+            <div class="bg-green-300 rounded-lg">5</div>
+            <div class="bg-green-500 row-span-3 rounded-lg">6</div>
+        </div><br>
+    <h1 class="text-4xl font-bold">row-start|end Class</h1>
+        <div class="m-8 grid grid-row-4 grid-flow-col gap-1">
+            <div class="bg-green-500 row-start-2 row-span-2  rounded-lg">1</div>
+            <div class="bg-green-300 rounded-lg">2</div>
+            <div class="bg-green-300 rounded-lg">3</div>
+            <div class="bg-green-500 row-start-2 col-end-4 rounded-lg">4</div>
+            <div class="bg-green-300 rounded-lg">5</div>
+            <div class="bg-green-300 rounded-lg">6</div>
+             <div class="bg-green-300 rounded-lg">7</div>
+              <div class="bg-green-500 row-start-2 row-span-3  rounded-lg">8</div>
+        </div>
+    
+</body>
+</html>

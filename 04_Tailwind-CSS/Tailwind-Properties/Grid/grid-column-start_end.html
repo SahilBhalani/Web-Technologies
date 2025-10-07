@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column Start End</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="text-center">
+    <h1 class="text-4xl font-bold">col-span class</h1>
+    <div class="m-8 grid grid-col-3 gap-1">
+        <div class="bg-green-300 rounded-lg h-12">1</div>
+        <div class="bg-green-300 rounded-lg h-12">2</div>
+        <div class="bg-green-300 rounded-lg h-12">3</div>
+        <div class="bg-green-500 col-span-2 rounded-lg h-12">4</div>
+        <div class="bg-green-300 rounded-lg h-12">5</div>
+        <div class="bg-green-500 col-span-3 rounded-lg h-12">6</div>
+    </div><br>
+
+    <h1 class="text-4xl font-bold">col-start|end class</h1>
+    <div class="m-8 grid grid-col-4 gap-1">
+        <div class="bg-green-500 col-start-2 col-span-2 rounded-lg h-12">1</div>
+        <div class="bg-green-300 rounded-lg h-12">2</div>
+        <div class="bg-green-300 rounded-lg h-12">3</div>
+        <div class="bg-green-500 col-start-2 col-end-4 rounded-lg h-12">4</div>
+        <div class="bg-green-300 rounded-lg h-12">5</div>
+        <div class="bg-green-300 rounded-lg h-12">6</div>
+        <div class="bg-green-300 rounded-lg h-12">7</div>
+        <div class="bg-green-500 col-start-2 col-span-3 rounded-lg h-12">8</div>
+    </div><br>
+
+
+
+
+    
+</body>
+
+</html>
