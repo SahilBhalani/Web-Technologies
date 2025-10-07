@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Top-Right-Bottom-Left</title>
+</head>
+<body>
+    <div class="text-green-600 font-bold m-4">
+        <h1 class="text-3xl my-4">
+            <p class="text-2xl">Top/Right/Bottom/Left</p>
+        </h1>
+    </div>
+
+    <div class="relative h-24 w-24 bg-green-400 m-4">
+        <div class="absolute inset-0 bg-green-800"></div>
+    </div>
+
+    <div class="relative h-28 w-28 bg-green-400 m-4">
+        <div class="absolute inset-y-0 w-16 bg-green-800"></div>
+    </div>
+
+    <div class="relative h-28 w-28 bg-green-400 m-4">
+        <div class="absolute inset-x-0 h-9 bg-green-800"></div>
+    </div>
+
+    <div class="relative h-36 w-36 bg-green-400 m-4">
+        <div class="absolute left-0 top-0 w-16 h-16 bg-green-800"></div>
+    </div>
+
+    <div class="relative h-36 w-36 bg-green-400 m-4">
+        <div class="absolute right-0 bottom-0 w-16 h-16 bg-green-800"></div>
+    </div>
+</body>
+</html>
