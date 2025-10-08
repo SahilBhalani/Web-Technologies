@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Transitions</title>
+</head>
+<body>
+    <h1 class="text-4xl font-bold">Tailwind CSS Transitions</h1>
+    <div class="bg-green-200 m-8 grid grid-flow-col gap-4 p-5">
+
+        <button class="transition duration-300 ease-in-out bg-green-300 hover:bg-green-600 transform hover:-translate-y-1 hover:scale-110 rounded-lg p-4 border border-green-900">Hover Me</button>
+
+        <button class="transition-opacity duration-500 ease-in-out bg-green-300 hover:-translate-y-1 hover:scale-110 rounded-lg p-4 border border-green-900">Hover Me</button>
+
+        <button class="transition-none duration-500 ease-in-out bg-green-300 hover:-translate-y-1 hover:scale-110 rounded-lg p-4 border border-green-900">Hover Me</button>
+        
+        <button class="transition-colors duration-500 ease-in-out bg-green-300 hover:bg-yellow-400 hover:scale-110 rounded-lg p-4 border border-green-900">Hover Me</button>
+    </div>
+
+    <!-- <div class="bg-gray-900 py-24 sm:py-32 font-sans">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-400">Transactions every 24 hours</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">44 million</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-400">Assets under holding</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">$119 trillion</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-400">New users annually</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">46,000</dd>
+      </div>
+    </dl>
+  </div>
+</div> -->
+
+</body>
+</html>
