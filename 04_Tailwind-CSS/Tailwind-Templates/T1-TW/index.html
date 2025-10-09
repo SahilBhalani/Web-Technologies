@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inno Template</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="relative h-full w-full border-b-8 border-green-500" id="home">
+    <div class="hero-slider owl-carousel owl-theme w-full h-full">
+      <div class="item py-32"
+        style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg'); background-position: center; background-size: cover; height: 100%; position: relative;">
+        <div class="absolute inset-0 bg-blue-900 opacity-60 w-full h-full"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <div class="mb-6 border-2 border-white rounded-full w-24 h-24 flex items-center justify-center">
+            <span class="text-xl font-bold tracking-widest">INNO</span>
+          </div>
+
+          <div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">WELCOME TO INNO</h1>
+            <p class="text-sm md:text-base font-medium mb-12"> a platform for inventions of new things</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item py-32"
+        style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg'); background-position: center; background-size: cover; height: 100%; position: relative;">
+        <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <div class="mb-6 border-2 border-white rounded-full w-24 h-24 flex items-center justify-center">
+            <span class="text-xl font-bold tracking-widest">INNO</span>
+          </div>
+
+          <div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">WELCOME TO INNO</h1>
+            <p class="text-sm md:text-base font-medium mb-12"> a platform for inventions of new things</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="invisible md:visible md:absolute md:top-109 md:left-90 md:z-10 md:bg-transparent md:py-4 lg:py-2 flex items-center">
+      <div class="container max-w-6xl px-4 mx-auto md:flex md:items-center ">
+
+        <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 font-bold" id="navbar-collapse">
+          <a href="#home" class="p-2 lg:px-2 md:mx-4 text-white hover:bg-blue-900">HOME</a>
+          <a href="#services"
+            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">SERVICES</a>
+          <a href="#about"
+            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">ABOUT</a>
+          <a href="#portfolio"
+            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">PORTFOLIO</a>
+          <a href="#blog"
+            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">BLOG</a>
+          <a href="#contact"
+            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+
+    <button
+      class="absolute left-4 top-1/2 transform -translate-y-1/2 border border-white rounded-full w-10 h-10 flex items-center justify-center text-white hover:bg-white hover:text-blue-900 transition owl-prev">
+      &larr;
+    </button>
+
+    <button
+      class="absolute right-4 top-1/2 transform -translate-y-1/2 border border-white rounded-full w-10 h-10 flex items-center justify-center text-white hover:bg-white hover:text-blue-900 transition owl-next">
+      &rarr;
+    </button>
+  </header>
+
+  <section class="services py-12 bg-gray-50" id="services">
+    <div class="max-w-6xl mx-auto px-4 text-center mb-14">
+      <h2 class="text-4xl font-extrabold mb-2">SERVICES</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-gray-600 w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-gray-600 w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-gray-600 mb-12">Your Great Services</p>
+
+
+      <div class="flex flex-col md:flex-row justify-center gap-2">
+        <!-- Service-Card 1 -->
+        <div class="flex flex-col items-center max-w-xs">
+          <div
+            class="border-2 transition-colors hover:border-green-400 border-gray-700 rounded-full w-24 h-24 flex items-center justify-center mb-4 text-4xl text-gray-700 font-bold">
+            <a href="#" class="flex items-center text-4xl  hover:text-green-400 transition-colors"><i
+                class="fa-solid fa-pencil"></i></a>
+          </div>
+          <h3 class="font-bold uppercase mb-2 hover:text-green-400 transition-colors">WEB DESIGN</h3>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-green-400 transition">READ MORE</button>
+        </div>
+
+        <!-- Service-card 2 -->
+        <div class="flex flex-col items-center max-w-xs">
+          <div
+            class="border-2 transition-colors hover:border-green-400 border-gray-700 rounded-full w-24 h-24 flex items-center justify-center mb-4 text-4xl text-gray-700 font-bold">
+            <a href="#" class="flex items-center text-4xl hover:text-green-400 transition-colors"><i
+                class="fa-solid fa-mobile-screen-button"></i></a>
+          </div>
+          <h3 class="font-bold uppercase mb-2 hover:text-green-400 transition-colors">MOBILE APPLICATION</h3>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-green-400 transition">READ MORE</button>
+        </div>
+
+
+        <!-- Service Card 3 -->
+        <div class="flex flex-col items-center max-w-xs mb-8">
+          <div
+            class="border-2 transition-colors hover:border-green-400 rounded-full w-24 h-24 flex items-center justify-center mb-4 text-4xl text-gray-700 font-bold">
+            <a href="#" class="flex items-center text-4xl hover:text-green-400 transition-colors"><i
+                class="fa-solid fa-shirt"></i></a>
+          </div>
+          <h3 class="font-bold uppercase text-gray-700 mb-2 hover:text-green-400 transition-colors">GAME DEVELOPING</h3>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="bg-gray-700 text-white px-6 py-2 rounded hover:bg-green-600 transition">READ MORE</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- New Section with Four Icons -->
+    <div
+      class="flex flex-col md:flex-row justify-center gap-0 w-full max-w-6xl mx-auto mb-12 border-b-8 border-green-400">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col items-center px-3.5 py-4 max-w-xs mx-auto bg-gray-100">
+        <div class="flex justify-between items-center">
+          <div
+            class="bg-gray-700 hover:bg-green-400 transition-colors rounded-full w-16 h-16 flex items-center justify-center mb-4 text-white text-2xl">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="font-bold uppercase ml-2 mb-2">STRATEGY</h3>
+        </div>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
+      </div>
+
+      <!-- Item2 -->
+      <div class="flex flex-col items-center px-3.5 py-4 max-w-xs mx-auto bg-gray-200">
+        <div class="flex justify-between items-center">
+          <div
+            class="bg-gray-700 hover:bg-green-400 transition-colors rounded-full w-16 h-16 flex items-center justify-center mb-4 text-white text-2xl">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h3 class="font-bold uppercase ml-2 mb-2">CREATIVE</h3>
+        </div>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
+      </div>
+
+      <!-- Item3 -->
+      <div class="flex flex-col items-center px-3.5 py-4 max-w-xs mx-auto bg-gray-200">
+        <div class="flex justify-between items-center">
+          <div
+            class="bg-gray-700 hover:bg-green-400 transition-colors rounded-full w-16 h-16 flex items-center justify-center mb-4 text-white text-2xl">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3 class="font-bold uppercase ml-2 mb-2">DEVELOPMENT</h3>
+        </div>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
+      </div>
+
+      <!-- item4 -->
+      <div class="flex flex-col items-center px-3.5 py-4 max-w-xs mx-auto bg-gray-200">
+        <div class="flex justify-between items-center">
+          <div
+            class="bg-gray-700 hover:bg-green-400 transition-colors rounded-full w-16 h-16 flex items-center justify-center mb-4 text-white text-2xl">
+            <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <h3 class="font-bold uppercase ml-2 mb-2">MARKETING</h3>
+        </div>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="max-w-6xl mx-auto px-4 text-center my-3">
+      <h2 class="text-4xl font-extrabold mb-2">ABOUT</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-gray-600 w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-gray-600 w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-gray-600 mb-12">We are Creatives</p>
+      <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+      <div class="flex flex-col md:flex-row justify-center gap-2">
+        <!-- About Card 1 -->
+        <div class="flex flex-col items-center max-w-xs overflow-hidden">
+          <div class="w-40 h-40 mb-4">
+            <img src="./imgs/team-1-1.webp"
+              class="rounded-[50%] flex items-center w-full h-full justify-center text-4xl text-gray-700 font-bold object-cover"
+              alt="">
+          </div>
+          <h3 class="text-2xl font-bold uppercase hover:text-green-400 transition-colors">John Doe</h3>
+          <p class="text-xs mb-2 text-gray-700">Senior ui Designer</p>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          </p>
+        </div>
+        <!-- About Card 2 -->
+        <div class="flex flex-col items-center max-w-xs overflow-hidden">
+          <div class="w-40 h-40 mb-4">
+            <img src="./imgs/team-1-2.webp"
+              class="rounded-[50%] flex items-center w-full h-full justify-center text-4xl text-gray-700 font-bold object-cover"
+              alt="">
+          </div>
+          <h3 class="text-2xl font-bold uppercase hover:text-green-400 transition-colors">Donna Joe</h3>
+          <p class="text-xs mb-2 text-gray-700">Web Developer</p>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          </p>
+        </div>
+        <!-- About Card 3 -->
+        <div class="flex flex-col items-center max-w-xs overflow-hidden">
+          <div class="w-40 h-40 mb-4">
+            <img src="./imgs/team-1-3.webp"
+              class="rounded-[50%] flex items-center w-full h-full justify-center text-4xl text-gray-700 font-bold object-cover"
+              alt="">
+          </div>
+          <h3 class="text-2xl font-bold uppercase hover:text-green-400 transition-colors">Jonna Donna</h3>
+          <p class="text-xs mb-2 text-gray-700">Web Designer</p>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          </p>
+        </div>
+        <!-- About Card 4 -->
+        <div class="flex flex-col items-center max-w-xs overflow-hidden">
+          <div class="w-40 h-40 mb-4">
+            <img src="./imgs/team-1-4.webp"
+              class="rounded-[50%] flex items-center w-full h-full justify-center text-4xl text-gray-700 font-bold object-cover"
+              alt="">
+          </div>
+          <h3 class="text-2xl font-bold uppercase hover:text-green-400 transition-colors">Ron Joe</h3>
+          <p class="text-xs mb-2 text-gray-700">IOS App Developer</p>
+          <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icons- Count Section -->
+    <div class="max-w-6xl mx-auto px-4 text-center my-16">
+      <div class="flex flex-col md:flex-row mx-auto justify-around">
+
+        <!-- Count-Card 1 -->
+        <div class="flex flex-col items-center justify-center max-w-xs">
+          <i class="fa-regular fa-user text-5xl text-green-400 mb-2.5"></i>
+          <h2 class="text-6xl font-medium text-blue-500 mb-2.5">150</h2>
+          <p class="font-semibold text-xl">CLIENTS WORKED</p>
+        </div>
+        <!-- Count-Card 2 -->
+        <div class="flex flex-col items-center justify-center max-w-xs">
+          <i class="fa-regular fa-heart text-5xl text-green-400 mb-2.5"></i>
+          <h2 class="text-6xl font-medium text-blue-500 mb-2.5">125</h2>
+          <p class="font-semibold text-xl">PROJECTS COMPLTED</p>
+        </div>
+        <!-- Count-Card 3 -->
+        <div class="flex flex-col items-center justify-center max-w-xs">
+          <i class="fa-regular fa-gem text-5xl text-green-400 mb-2.5"></i>
+          <h2 class="text-6xl font-medium text-blue-500 mb-2.5">120</h2>
+          <p class="font-semibold text-xl">WINNING AWARDS</p>
+        </div>
+        <!-- Count-Card 4 -->
+        <div class="flex flex-col items-center justify-center max-w-xs">
+          <i class="fa-solid fa-mug-hot text-5xl text-green-400 mb-2.5"></i>
+          <h2 class="text-6xl font-medium text-blue-500 mb-2.5">112</h2>
+          <p class="font-semibold text-xl">COFFEE CUPS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonial" class="relative bg-blue-900 bg-cover bg-center"
+    style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg');">
+    <div class="absolute inset-0 bg-blue-900 opacity-80"></div>
+    <div class="relative max-w-6xl mx-auto px-6 py-20 text-center text-white">
+      <h2 class="text-4xl font-extrabold uppercase mb-2">TESTIMONIALS</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-white w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-white w-20 ml-3 opacity-50" />
+      </div>
+      <p class="mb-12 text-sm md:text-base font-medium">What our clients say!</p>
+
+      <!-- Slider -->
+      <div class="testimonial-slider">
+        <div class="owl-carousel owl-theme">
+          <!-- Item -->
+          <div class="item">
+            <div class="flex flex-col items-center max-w-xl mx-auto">
+              <div class="w-28 h-28 mb-4 rounded-full border-4 border-green-400 overflow-hidden">
+                <img src="./imgs/team-1-1.webp" alt="Client Photo" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="font-semibold uppercase mb-2">JIMMY SMITH MANAGER</h3>
+              <p class="relative text-center text-sm md:text-base max-w-xl text-white mb-6 px-6">
+                <span class="absolute left-0 top-0 text-4xl md:text-6xl font-bold select-none"
+                  style="line-height: 0.5;">“</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui vel consequuntur explicabo cum modi
+                impedit quam nihil veritatis minus aliquid eos ipsum at, nesciunt reprehenderit ut assumenda tempore
+                omnis optio dicta quasi ab debitis! Enim porro tempore, quibusdam reprehenderit ut, eius voluptatibus
+                fugiat ipsum nobis aliquid esse dolore sint.
+                <span class="absolute right-0 bottom-0 text-4xl md:text-6xl font-bold select-none"
+                  style="line-height: 0.5;">”</span>
+              </p>
+              <p class="text-xs md:text-sm mb-8">Date: March 24, 2014 &nbsp; Posted by: Admin &nbsp; 16 Comments</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="flex flex-col items-center max-w-xl mx-auto">
+              <div class="w-28 h-28 mb-4 rounded-full border-4 border-green-400 overflow-hidden">
+                <img src="./imgs/team-1-3.webp" alt="Client Photo" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="font-semibold uppercase mb-2">JOHN DOE</h3>
+              <p class="relative text-center text-sm md:text-base max-w-xl text-white mb-6 px-6">
+                <span class="absolute left-0 top-0 text-4xl md:text-6xl font-bold select-none"
+                  style="line-height: 0.5;">“</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut totam corrupti repellendus
+                reprehenderit. Impedit magni labore dolorum optio quidem temporibus accusamus maiores quisquam eveniet
+                tempore, mollitia ipsa commodi quaerat facilis, esse ea ab voluptatem, illum reiciendis dignissimos
+                quasi eligendi!
+                <span class="absolute right-0 bottom-0 text-4xl md:text-6xl font-bold select-none"
+                  style="line-height: 0.5;">”</span>
+              </p>
+              <p class="text-xs md:text-sm mb-8">Date: Aug 02, 2014 &nbsp; Posted by: Admin &nbsp; 40 Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex space-x-4 justify-center">
+        <button
+          class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-white hover:bg-green-400 hover:text-blue-900 transition owl-next-2">
+          &#x276E;
+        </button>
+        <button
+          class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-white hover:bg-green-400 hover:text-blue-900 transition owl-prev-2">
+          &#x276F;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="max-w-6xl mx-auto px-4 text-center my-14">
+      <h2 class="text-4xl font-extrabold mb-2">PORTFOLIO</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-gray-600 w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-gray-600 w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-gray-600 mb-12">We are Creatives</p>
+      <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+      <div class="portfolio-slider mb-10">
+        <div class="owl-carousel owl-theme">
+          <div class="item flex justify-center">
+            <div class="w-full flex justify-center">
+              <img src="./imgs/p-1.webp" alt="img" class="object-cover rounded-4xl max-w-5xl">
+            </div>
+          </div>
+          <div class="item flex justify-center">
+            <div class="w-full flex justify-center">
+              <img src="./imgs/p-2.webp" alt="img" class="object-cover rounded-4xl max-w-5xl">
+            </div>
+          </div>
+          <div class="item flex justify-center">
+            <div class="w-full flex justify-center">
+              <img src="./imgs/p-3.webp" alt="img" class="object-cover rounded-4xl max-w-5xl">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Images Section -->
+      <div class="filterable-images-section max-w-6xl mx-auto px-4 mb-14">
+        <div
+          class="flex flex-col md:flex-row justify-center space-x-6 mb-8 text-sm font-bold uppercase tracking-wide text-gray-700 border-y-2 border-gray-700">
+          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+            data-filter="all">All.</button>
+          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+            data-filter="web">Web.</button>
+          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+            data-filter="development">Development.</button>
+          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+            data-filter="graphics">Graphics.</button>
+          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+            data-filter="art">Art.</button>
+          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+            data-filter="multimedia">Multimedia.</button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Item 1 -->
+          <div
+            class="filter-item relative rounded-full overflow-hidden cursor-pointer web development flex justify-center">
+            <img src="./imgs/f-1.jpg" alt="Project 1" class="w-70 h-70 object-cover rounded-[50%]" />
+            <div
+              class="absolute top-0 left-auto w-70 h-70 rounded-[50%] bg-green-500 bg-opacity-75 opacity-0 hover:opacity-100 transition flex flex-col items-center justify-center text-white">
+              <div class="flex space-x-4 mb-2">
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <h3 class="text-sm font-bold">Same Project Title</h3>
+              <p class="text-xs">Web Design</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="filter-item relative rounded-full overflow-hidden cursor-pointer graphics art flex justify-center">
+            <img src="./imgs/f-2.jpg" alt="Project 2" class="w-70 h-70 object-cover rounded-[50%]" />
+            <div
+              class="absolute top-0 left-auto w-70 h-70 rounded-[50%] bg-green-500 bg-opacity-75 opacity-0 hover:opacity-100 transition flex flex-col items-center justify-center text-white">
+              <div class="flex space-x-4 mb-2">
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <h3 class="text-sm font-bold">Same Project Title</h3>
+              <p class="text-xs">Graphics</p>
+            </div>
+          </div>
+
+          <!-- Item3 -->
+          <div class="filter-item relative rounded-full overflow-hidden cursor-pointer multimedia flex justify-center">
+            <img src="./imgs/f-3.jpg" alt="Project 3" class="w-70 h-70 object-cover rounded-[50%]" />
+            <div
+              class="absolute top-0 left-auto w-70 h-70 rounded-[50%] bg-green-500 bg-opacity-75 opacity-0 hover:opacity-100 transition flex flex-col items-center justify-center text-white">
+              <div class="flex space-x-4 mb-2">
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <h3 class="text-sm font-bold">Same Project Title</h3>
+              <p class="text-xs">Multimedia</p>
+            </div>
+          </div>
+
+          <!-- Item4 -->
+          <div class="filter-item relative rounded-full overflow-hidden cursor-pointer web art flex justify-center">
+            <img src="./imgs/f-4.jpg" alt="Project 4" class="w-70 h-70 object-cover rounded-[50%]" />
+            <div
+              class="absolute top-0 left-auto w-70 h-70 rounded-[50%] bg-green-500 bg-opacity-75 opacity-0 hover:opacity-100 transition flex flex-col items-center justify-center text-white">
+              <div class="flex space-x-4 mb-2">
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <h3 class="text-sm font-bold">Same Project Title</h3>
+              <p class="text-xs">Web & Art</p>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <div
+            class="filter-item relative rounded-full overflow-hidden cursor-pointer development multimedia flex justify-center">
+            <img src="./imgs/f-5.jpg" alt="Project 5" class="w-70 h-70 object-cover rounded-[50%]" />
+            <div
+              class="absolute top-0 left-auto w-70 h-70 rounded-[50%] bg-green-500 bg-opacity-75 opacity-0 hover:opacity-100 transition flex flex-col items-center justify-center text-white">
+              <div class="flex space-x-4 mb-2">
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <h3 class="text-sm font-bold">Same Project Title</h3>
+              <p class="text-xs">Development & Multimedia</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div
+            class="filter-item relative rounded-full overflow-hidden cursor-pointer graphics art multimedia flex justify-center">
+            <img src="./imgs/f-6.jpg" alt="Project 6" class="w-70 h-70 object-cover rounded-[50%]" />
+            <div
+              class="absolute top-0 left-auto w-70 h-70 rounded-[50%] bg-green-500 bg-opacity-75 opacity-0 hover:opacity-100 transition flex flex-col items-center justify-center text-white">
+              <div class="flex space-x-4 mb-2">
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="p-2 border border-white rounded-full hover:bg-white hover:text-green-500 transition">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <h3 class="text-sm font-bold">Same Project Title</h3>
+              <p class="text-xs">Graphics, Art & Multimedia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog" id="blog">
+    <div class="max-w-6xl mx-auto px-4 text-center my-28">
+      <h2 class="text-4xl font-extrabold mb-2">BLOG</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-gray-600 w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-gray-600 w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-gray-600 mb-12">We are Creatives</p>
+      <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+      <div class="blog-slider mb-6">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="flex flex-col text-left">
+              <img src="./imgs/b-1.jpg" alt="" class="max-w-lg rounded-2xl object-cover mb-2.5">
+              <h2 class="text-3xl font-bold mb-2">BLOG POST HEADING</h2>
+              <p class="text-xl font-medium mb-2.5">24 MARCH, 2014</p>
+              <p class="text-gray-700 max-w-2xl mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                praesentium amet rerum harum excepturi architecto reprehenderit ab, voluptas quia mollitia commodi
+                voluptatem! Nemo inventore libero dignissimos reiciendis, consectetur mollitia dolorum?</p>
+              <button
+                class="text-white max-w-40 p-3 rounded-2xl bg-gray-700 hover:bg-green-500 hover:text-gray-700 transition-colors">READ
+                MORE</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="flex flex-col text-left">
+              <img src="./imgs/b-2.jpg" alt="" class="max-w-lg rounded-2xl object-cover mb-2.5">
+              <h2 class="text-3xl font-bold mb-2">BLOG POST HEADING</h2>
+              <p class="text-xl font-medium mb-2.5">24 MARCH, 2014</p>
+              <p class="text-gray-700 max-w-2xl mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                praesentium amet rerum harum excepturi architecto reprehenderit ab, voluptas quia mollitia commodi
+                voluptatem! Nemo inventore libero dignissimos reiciendis, consectetur mollitia dolorum?</p>
+              <button
+                class="text-white max-w-40 p-3 rounded-2xl bg-gray-700 hover:bg-green-500 hover:text-gray-700 transition-colors">READ
+                MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex space-x-4 justify-center mt-10">
+        <button
+          class="w-15 h-15 rounded-full border border-gray-500 flex items-center justify-center text-gray-500 hover:border-green-400 hover:text-green-400 transition owl-next-2">
+          &#x276E;
+        </button>
+        <button
+          class="w-15 h-15 rounded-full border border-gray-500 flex items-center justify-center text-gray-500 hover:border-green-400 hover:text-green-400 transition owl-prev-2">
+          &#x276F;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Pricing Section -->
+  <section class="pricing">
+    <div class="max-w-6xl mx-auto px-4 text-center my-14">
+      <h2 class="text-4xl font-extrabold mb-2">OUR PRICING</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-gray-600 w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-gray-600 w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-gray-600 mb-12">We are Creatives</p>
+      <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+      <div class="flex flex-col md:flex-row justify-center items-stretch gap-0 text-center">
+        <!-- Standard -->
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+          <div class="border-b border-gray-300 p-4 text-center font-semibold">Standard</div>
+          <div class="p-6  bg-blue-200 opacity-80">
+            <div class="text-blue-700 font-extrabold text-6xl flex justify-center items-baseline justify-center">
+              <span class="text-2xl mr-1">$</span>19<span class="text-sm ml-1">99</span>
+            </div>
+            <div class="text-xs text-gray-600">monthly</div>
+          </div>
+          <div class="flex flex-col gap-2 px-6 pb-6 pt-2 text-center text-gray-700 text-md">
+            <div>5 projects</div>
+            <div>5 GB Storage</div>
+            <div>Unlimited Users</div>
+            <div>10 GB Bandwidth</div>
+            <div>Enhanced Security</div>
+          </div>
+          <div class="p-6">
+            <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">Sign Up</button>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+          <div class="border-b border-gray-300 p-4 text-center font-semibold">Premium</div>
+          <div class="p-6  bg-blue-200 opacity-80">
+            <div class="text-blue-700 font-extrabold text-6xl flex items-baseline justify-center">
+              <span class="text-2xl mr-1">$</span>29<span class="text-sm ml-1">99</span>
+            </div>
+            <div class="text-xs text-gray-600">monthly</div>
+          </div>
+          <div class="flex flex-col gap-2 px-6 pb-6 pt-2 text-center text-gray-700 text-md">
+            <div>10 projects</div>
+            <div>15 GB Storage</div>
+            <div>Unlimited Users</div>
+            <div>20 GB Bandwidth</div>
+            <div>Enhanced Security</div>
+          </div>
+          <div class="p-6">
+            <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">Sign Up</button>
+          </div>
+        </div>
+
+        <!-- Professional (highlighted) -->
+        <div class="flex flex-col shadow-2xl bg-white w-full max-w-xs z-10 scale-105">
+          <div class="border-b border-green-400 p-4 text-center font-bold text-green-700">Professional</div>
+          <div class="p-6 bg-green-300 opacity-100">
+            <div class="text-green-700 font-extrabold text-6xl flex items-baseline justify-center">
+              <span class="text-2xl mr-1">$</span>39<span class="text-sm ml-1">99</span>
+            </div>
+            <div class="text-xs text-green-700">monthly</div>
+          </div>
+          <div class="flex flex-col gap-2 px-6 pb-6 pt-2 text-center text-md">
+            <div>25 projects</div>
+            <div>20 GB Storage</div>
+            <div>Unlimited Users</div>
+            <div>30 GB Bandwidth</div>
+            <div>Enhanced Security</div>
+          </div>
+          <div class="p-6">
+            <button class="w-full bg-green-400 text-green-900 py-2 rounded hover:bg-green-500 transition">Sign
+              Up</button>
+          </div>
+        </div>
+
+        <!-- Maximum -->
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+          <div class="border-b border-gray-300 p-4 text-center font-semibold">Maximum</div>
+          <div class="p-6  bg-blue-200 opacity-80">
+            <div class="text-blue-700 font-extrabold text-6xl flex items-baseline justify-center">
+              <span class="text-2xl mr-1">$</span>49<span class="text-sm ml-1">99</span>
+            </div>
+            <div class="text-xs text-gray-600">monthly</div>
+          </div>
+          <div class="flex flex-col gap-2 px-6 pb-6 pt-2 text-center text-gray-700 text-md">
+            <div>35 projects</div>
+            <div>30 GB Storage</div>
+            <div>Unlimited Users</div>
+            <div>40 GB Bandwidth</div>
+            <div>Enhanced Security</div>
+          </div>
+          <div class="p-6">
+            <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">Sign Up</button>
+          </div>
+        </div>
+
+        <!-- Extreme -->
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+          <div class="border-b border-gray-300 p-4 text-center font-semibold">Extreme</div>
+          <div class="p-6  bg-blue-200 opacity-80">
+            <div class="text-blue-700 font-extrabold text-6xl flex items-baseline justify-center">
+              <span class="text-2xl mr-1">$</span>59<span class="text-sm ml-1">99</span>
+            </div>
+            <div class="text-xs text-gray-600">monthly</div>
+          </div>
+          <div class="flex flex-col gap-2 px-6 pb-6 pt-2 text-center text-gray-700 text-md">
+            <div>50 projects</div>
+            <div>45 GB Storage</div>
+            <div>Unlimited Users</div>
+            <div>50 GB Bandwidth</div>
+            <div>Enhanced Security</div>
+          </div>
+          <div class="p-6">
+            <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="client">
+    <div class="max-w-6xl mx-auto px-4 text-center my-24">
+      <h2 class="text-4xl font-extrabold mb-2">CLIENTS</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-gray-600 w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-gray-600 w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-gray-600 mb-12">We are Creatives</p>
+      <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-1.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-2.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-3.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-4.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-4.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-3.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-2.png" alt="logo">
+        </div>
+        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+          <img src="./imgs/logo-1.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="testimonial" class="relative bg-blue-800 py-24 bg-cover bg-center"
+    style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg');">
+    <div class="absolute inset-0 bg-blue-800 opacity-70"></div>
+    <div class="max-w-6xl mx-auto px-4  text-center relative">
+      <h2 class="text-4xl font-extrabold text-white mb-2">CONTACT US</h2>
+      <div class="flex items-center justify-center mb-2">
+        <hr class="border-t border-white w-20 mr-3 opacity-50" />
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <hr class="border-t border-white w-20 ml-3 opacity-50" />
+      </div>
+      <p class="text-white mb-12">We are Creatives</p>
+      <p class="text-white mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+       <div>
+        <iframe class="aspect-video mb-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.518612030755!2d2.781018075753941!3d48.86738930007413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61d19ca7ae2bd%3A0x57faf8cb6310e660!2sDisneyland%20Paris!5e0!3m2!1sen!2sin!4v1760015558846!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+
+        <p class="text-white mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
+        voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
+
+        <form class="grid grid-cols-1 md:grid-cols-3">
+          <div class="mb-3 mr-2 text-left">
+            <input type="text" name="fname" placeholder="Full Name" class="text-white w-full placeholder:text-white focus: shadow-green-400 border-2 border-white px-2.5 py-5 ">
+          </div>
+          <div class="mb-3 mr-2  text-left">
+            <input type="text" name="lname" placeholder="Last Name" class="text-white w-full placeholder:text-white focus:shadow-green-500 border-2 border-white px-2.5 py-5 ">
+          </div>
+          <div class="mb-3 mr-2  text-left">
+            <input type="email" name="fname" placeholder="Email" class="text-white w-full placeholder:text-white focus:shadow-green-500 border-2 border-white px-2.5 py-5 ">
+          </div>
+        </form>
+
+
+    </div>
+  </section>
+
+
+
+  <script>
+    // Hero Slider
+    $(document).ready(function () {
+      var owl = $('.hero-slider.owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          },
+          1400: {
+            items: 1
+          }
+        }
+      });
+
+      $('.owl-prev').click(function () {
+        owl.trigger('prev.owl.carousel');
+      });
+      $('.owl-next').click(function () {
+        owl.trigger('next.owl.carousel');
+      });
+    });
+
+    // Testimonial Slider
+    $(document).ready(function () {
+      var owl = $('.testimonial-slider .owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          },
+          1400: {
+            items: 1
+          }
+        }
+      });
+
+      $('.owl-prev-2').click(function () {
+        owl.trigger('prev.owl.carousel');
+      });
+      $('.owl-next-2').click(function () {
+        owl.trigger('next.owl.carousel');
+      });
+    });
+
+    // Portfolio Slider
+    $(document).ready(function () {
+      var owl = $('.portfolio-slider .owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: false,
+        dots: true,
+        autoplay: false,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          },
+          1400: {
+            items: 1
+          }
+        }
+      });
+
+      $('.owl-prev-2').click(function () {
+        owl.trigger('prev.owl.carousel');
+      });
+      $('.owl-next-2').click(function () {
+        owl.trigger('next.owl.carousel');
+      });
+    });
+
+    // Blog Slider
+    $(document).ready(function () {
+      var owl = $('.blog-slider .owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1024: {
+            items: 2
+          },
+          1400: {
+            items: 2
+          }
+        }
+      });
+
+      // Custom navigation events
+      $('.owl-prev-2').click(function () {
+        owl.trigger('prev.owl.carousel');
+      });
+      $('.owl-next-2').click(function () {
+        owl.trigger('next.owl.carousel');
+      });
+    });
+
+
+    // Filter Image Section 
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const filterItems = document.querySelectorAll('.filter-item');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          filterItems.forEach(item => {
+            if (filterValue === 'all') {
+              item.style.display = 'block';
+            } else {
+              if (item.classList.contains(filterValue)) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>

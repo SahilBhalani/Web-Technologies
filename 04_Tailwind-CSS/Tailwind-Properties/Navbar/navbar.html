@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <link href="https://db.onlinewebfonts.com/c/8262f126733d938c0010c9b02f3bb610?family=Inter+Variable"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter Variable';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white py-2 md:py-4">
+            <div class="container px-4 mx-auto md:flex md:items-center">
+
+                <div class="flex justify-between items-center">
+                    <a href="#" class="font-bold text-xl text-red-500">NETFLIX</a>
+
+                    <button
+                        class="border border-solid border-red-500 px-3 py-1 rounded text-black opacity-50 hover:opacity-75 md:hidden"
+                        id="navbar-toggle">
+                        <i class="fas fa-bars">Icon</i>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+                    <a href="#" class="p-2 lg:px-4 rounded-md md:mx-4 text-white bg-red-500">Home</a>
+                    <a href="#"
+                        class="p-2 lg:px-4 md:mx-2 text-red-500 rounded hover:bg-red-100 transition-colors duration-300">About</a>
+                    <a href="#"
+                        class="p-2 lg:px-4 md:mx-2 text-red-500 rounded hover:bg-red-100 transition-colors duration-300">Features</a>
+                    <a href="#"
+                        class="p-2 lg:px-4 md:mx-2 text-red-500 rounded hover:bg-red-100 transition-colors duration-300">Pricing</a>
+                    <a href="#"
+                        class="p-2 lg:px-4 md:mx-2 text-red-500 rounded hover:bg-red-100 transition-colors duration-300">Contact</a>
+                    <a href="#" 
+                    class="p-2 lg:px-4 md:mx-2 text-red-500 text-center border border-transparent rounded hover:bg-red-500 hover:text-white transition-colors duration-300">
+                    Login
+                    </a>
+
+                    <a href="#"
+                    class="p-2 lg:px-4 md:mx-2 text-red-500 border border-red-500 rounded hover:bg-red-500 hover:text-white text-center transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
+                    >Signup
+                </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+<script>
+    let toggleBtn = document.querySelector("#navbar-toggle");
+let collapse = document.querySelector("#navbar-collapse");
+
+toggleBtn.onclick = () => {
+  collapse.classList.toggle("hidden");
+  collapse.classList.toggle("flex");
+};
+</script>
+
+</html>

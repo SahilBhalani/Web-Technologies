@@ -1,0 +1,40 @@
+body {
+  font-family: "Lato";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  border-color: #2eff05;
+  color: white;
+}
+.owl-prev {
+  left: 10px;
+}
+.owl-next {
+  right: 10px;
+}

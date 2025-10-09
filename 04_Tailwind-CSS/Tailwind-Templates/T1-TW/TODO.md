@@ -1,0 +1,5 @@
+- [x] Remove the navbar ul from the header
+- [x] Replace SVG in previous button with ←
+- [x] Replace SVG in next button with →
+- [x] Add JavaScript for carousel functionality: define image array, current index, event listeners for prev/next buttons to cycle background images
+- [x] Test the carousel in browser
