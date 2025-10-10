@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #707070;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-font {
+  font-family: "Open Sans", sans-serif !important;
+}
+.sub-font {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+
+/* Hero Slider Fixes for Owl Carousel Full Height */
+.hero-slider {
+  height: 100vh;
+}
+.hero-slider .owl-stage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero-slider .owl-item {
+  height: 100vh;
+}
+.hero-slider .item {
+  height: 100vh;
+  position: relative;
+}
