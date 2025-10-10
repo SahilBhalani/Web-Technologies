@@ -26,11 +26,11 @@
 
 <body>
   <!-- Header Section -->
-  <header class="relative h-full w-full border-b-8 border-green-500" id="home">
+  <header class="relative h-full w-full border-b-8 border-green-500" id="home" style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg'); background-position: center; background-size: cover; height: 100%; position: relative;">
+    <div class="absolute inset-0 bg-blue-900 opacity-60 w-full h-full"></div>
     <div class="hero-slider owl-carousel owl-theme w-full h-full">
-      <div class="item py-32"
-        style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg'); background-position: center; background-size: cover; height: 100%; position: relative;">
-        <div class="absolute inset-0 bg-blue-900 opacity-60 w-full h-full"></div>
+      <!-- Item1 -->
+      <div class="item py-32">
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
           <div class="mb-6 border-2 border-white rounded-full w-24 h-24 flex items-center justify-center">
             <span class="text-xl font-bold tracking-widest">INNO</span>
@@ -43,9 +43,8 @@
         </div>
       </div>
 
-      <div class="item py-32"
-        style="background-image: url('./imgs/gettyimages-1090495910-612x612.jpg'); background-position: center; background-size: cover; height: 100%; position: relative;">
-        <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
+      <!-- item2 -->
+      <div class="item py-32">
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
           <div class="mb-6 border-2 border-white rounded-full w-24 h-24 flex items-center justify-center">
             <span class="text-xl font-bold tracking-widest">INNO</span>
@@ -60,21 +59,22 @@
     </div>
 
     <nav
-      class="invisible md:visible md:absolute md:top-109 md:left-90 md:z-10 md:bg-transparent md:py-4 lg:py-2 flex items-center">
-      <div class="container max-w-6xl px-4 mx-auto md:flex md:items-center ">
+      class="hidden relative md:bg-transparent text-white md:border-t md:border-green-500 md:flex items-center justify-center">
+      <div class="max-w-6xl px-4 mx-auto md:flex md:items-center ">
 
+        <!-- Navbar Item -->
         <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 font-bold" id="navbar-collapse">
-          <a href="#home" class="p-2 lg:px-2 md:mx-4 text-white hover:bg-blue-900">HOME</a>
+          <a href="#home" class="p-3 lg:px-2  text-white hover:bg-blue-900 ">HOME</a>
           <a href="#services"
-            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">SERVICES</a>
+            class="p-3 lg:px-2  text-white hover:bg-blue-900  transition-colors duration-300">SERVICES</a>
           <a href="#about"
-            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">ABOUT</a>
+            class="p-3 lg:px-2  text-white hover:bg-blue-900  transition-colors duration-300">ABOUT</a>
           <a href="#portfolio"
-            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">PORTFOLIO</a>
+            class="p-3 lg:px-2  text-white hover:bg-blue-900  transition-colors duration-300">PORTFOLIO</a>
           <a href="#blog"
-            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">BLOG</a>
+            class="p-3 lg:px-2  text-white hover:bg-blue-900  transition-colors duration-300">BLOG</a>
           <a href="#contact"
-            class="p-2 lg:px-2 md:mx-2 text-white hover:bg-blue-900 transition-colors duration-300">CONTACT</a>
+            class="p-3 lg:px-2  text-white hover:bg-blue-900  transition-colors duration-300">CONTACT</a>
         </div>
       </div>
     </nav>
@@ -101,9 +101,9 @@
       <p class="text-gray-600 mb-12">Your Great Services</p>
 
 
-      <div class="flex flex-col md:flex-row justify-center gap-2">
+      <div class="flex flex-col md:flex-row items-center md:justify-center gap-2">
         <!-- Service-Card 1 -->
-        <div class="flex flex-col items-center max-w-xs">
+        <div class="flex flex-col items-center max-w-xs mb-6">
           <div
             class="border-2 transition-colors hover:border-green-400 border-gray-700 rounded-full w-24 h-24 flex items-center justify-center mb-4 text-4xl text-gray-700 font-bold">
             <a href="#" class="flex items-center text-4xl  hover:text-green-400 transition-colors"><i
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Service-card 2 -->
-        <div class="flex flex-col items-center max-w-xs">
+        <div class="flex flex-col items-center max-w-xs mb-6">
           <div
             class="border-2 transition-colors hover:border-green-400 border-gray-700 rounded-full w-24 h-24 flex items-center justify-center mb-4 text-4xl text-gray-700 font-bold">
             <a href="#" class="flex items-center text-4xl hover:text-green-400 transition-colors"><i
@@ -180,7 +180,7 @@
             class="bg-gray-700 hover:bg-green-400 transition-colors rounded-full w-16 h-16 flex items-center justify-center mb-4 text-white text-2xl">
             <i class="fa-solid fa-gear"></i>
           </div>
-          <h3 class="font-bold uppercase ml-2 mb-2">DEVELOPMENT</h3>
+          <h3 class="font-bold uppercase ml-2 mb-2">DEVELOPER</h3>
         </div>
         <p class="text-gray-600 text-sm">Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
       </div>
@@ -213,7 +213,7 @@
       <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
         voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
 
-      <div class="flex flex-col md:flex-row justify-center gap-2">
+      <div class="flex flex-col md:flex-row items-center md:justify-center gap-2">
         <!-- About Card 1 -->
         <div class="flex flex-col items-center max-w-xs overflow-hidden">
           <div class="w-40 h-40 mb-4">
@@ -267,28 +267,28 @@
 
     <!-- Icons- Count Section -->
     <div class="max-w-6xl mx-auto px-4 text-center my-16">
-      <div class="flex flex-col md:flex-row mx-auto justify-around">
+      <div class="flex flex-col md:flex-row mx-auto items-center md:justify-around">
 
         <!-- Count-Card 1 -->
-        <div class="flex flex-col items-center justify-center max-w-xs">
+        <div class="flex flex-col items-center  justify-center mb-5 max-w-xs">
           <i class="fa-regular fa-user text-5xl text-green-400 mb-2.5"></i>
           <h2 class="text-6xl font-medium text-blue-500 mb-2.5">150</h2>
           <p class="font-semibold text-xl">CLIENTS WORKED</p>
         </div>
         <!-- Count-Card 2 -->
-        <div class="flex flex-col items-center justify-center max-w-xs">
+        <div class="flex flex-col items-center justify-center mb-5 max-w-xs">
           <i class="fa-regular fa-heart text-5xl text-green-400 mb-2.5"></i>
           <h2 class="text-6xl font-medium text-blue-500 mb-2.5">125</h2>
           <p class="font-semibold text-xl">PROJECTS COMPLTED</p>
         </div>
         <!-- Count-Card 3 -->
-        <div class="flex flex-col items-center justify-center max-w-xs">
+        <div class="flex flex-col items-center justify-center mb-5 max-w-xs">
           <i class="fa-regular fa-gem text-5xl text-green-400 mb-2.5"></i>
           <h2 class="text-6xl font-medium text-blue-500 mb-2.5">120</h2>
           <p class="font-semibold text-xl">WINNING AWARDS</p>
         </div>
         <!-- Count-Card 4 -->
-        <div class="flex flex-col items-center justify-center max-w-xs">
+        <div class="flex flex-col items-center justify-center mb-5 max-w-xs">
           <i class="fa-solid fa-mug-hot text-5xl text-green-400 mb-2.5"></i>
           <h2 class="text-6xl font-medium text-blue-500 mb-2.5">112</h2>
           <p class="font-semibold text-xl">COFFEE CUPS</p>
@@ -405,22 +405,22 @@
       <!-- Images Section -->
       <div class="filterable-images-section max-w-6xl mx-auto px-4 my-20">
         <div
-          class="flex flex-col md:flex-row justify-center space-x-6 mb-8 text-sm font-bold uppercase tracking-wide text-gray-700 border-y-2 border-gray-700">
-          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+          class="flex flex-col md:flex-row items-center md:justify-center md:space-x-6 mb-8 text-sm font-bold uppercase tracking-wide text-gray-700 border-y border-gray-700">
+          <button class="filter-btn px-3 py-3 hover:bg-gray-600 hover:text-white transition-colors"
             data-filter="all">All.</button>
-          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+          <button class="filter-btn px-3 py-3 hover:bg-gray-600 hover:text-white transition-colors"
             data-filter="web">Web.</button>
-          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+          <button class="filter-btn px-3 py-3 hover:bg-gray-600 hover:text-white transition-colors"
             data-filter="development">Development.</button>
-          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+          <button class="filter-btn px-3 py-3 hover:bg-gray-600 hover:text-white transition-colors"
             data-filter="graphics">Graphics.</button>
-          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+          <button class="filter-btn px-3 py-3 hover:bg-gray-600 hover:text-white transition-colors"
             data-filter="art">Art.</button>
-          <button class="filter-btn px-3 py-1 hover:bg-gray-600 hover:text-white transition-colors"
+          <button class="filter-btn px-3 py-3 hover:bg-gray-600 hover:text-white transition-colors"
             data-filter="multimedia">Multimedia.</button>
         </div>
 
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Item 1 -->
           <div
             class="filter-item relative rounded-full overflow-hidden cursor-pointer web development flex justify-center">
@@ -607,12 +607,12 @@
       <p class="text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint magni quasi
         voluptates <br> modi. Corporis nihil et tempore adipisci veritatis!</p>
 
-      <div class="flex flex-col md:flex-row justify-center items-stretch gap-0 text-center">
+      <div class="flex flex-col md:flex-row md:justify-center items-center md:items-stretch gap-0 text-center">
         <!-- item1 -->
-        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm  mb-2 w-full max-w-xs">
           <div class="border-b border-gray-300 p-4 text-center font-semibold">Standard</div>
           <div class="p-6  bg-blue-200 opacity-80">
-            <div class="text-blue-700 font-extrabold text-6xl flex justify-center items-baseline justify-center">
+            <div class="text-blue-700 font-extrabold text-6xl flex justify-center items-baseline">
               <span class="text-2xl mr-1">$</span>19<span class="text-sm ml-1">99</span>
             </div>
             <div class="text-xs text-gray-600">monthly</div>
@@ -630,7 +630,7 @@
         </div>
 
         <!-- item2 -->
-        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm mb-2 w-full max-w-xs">
           <div class="border-b border-gray-300 p-4 text-center font-semibold">Premium</div>
           <div class="p-6  bg-blue-200 opacity-80">
             <div class="text-blue-700 font-extrabold text-6xl flex items-baseline justify-center">
@@ -651,7 +651,7 @@
         </div>
 
         <!-- item3 -->
-        <div class="flex flex-col shadow-2xl bg-white w-full max-w-xs z-10 scale-105">
+        <div class="flex flex-col shadow-2xl bg-white w-full max-w-xs z-10 mb-2 md:scale-105">
           <div class="border-b border-green-400 p-4 text-center font-bold text-green-700">Professional</div>
           <div class="p-6 bg-green-300 opacity-100">
             <div class="text-green-700 font-extrabold text-6xl flex items-baseline justify-center">
@@ -673,7 +673,7 @@
         </div>
 
         <!-- item4 -->
-        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm mb-2 w-full max-w-xs">
           <div class="border-b border-gray-300 p-4 text-center font-semibold">Maximum</div>
           <div class="p-6  bg-blue-200 opacity-80">
             <div class="text-blue-700 font-extrabold text-6xl flex items-baseline justify-center">
@@ -694,7 +694,7 @@
         </div>
 
         <!-- item5 -->
-        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm w-full max-w-xs">
+        <div class="flex flex-col border border-gray-300 bg-gray-50 shadow-sm mb-2 w-full max-w-xs">
           <div class="border-b border-gray-300 p-4 text-center font-semibold">Extreme</div>
           <div class="p-6  bg-blue-200 opacity-80">
             <div class="text-blue-700 font-extrabold text-6xl flex items-baseline justify-center">
@@ -733,28 +733,28 @@
 
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-1.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-2.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-3.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-4.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-4.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-3.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-2.png" alt="logo">
         </div>
-        <div class="max-w-sm border-2 border-gray-400 p-9 mb-2.5">
+        <div class="md:max-w-sm w-full flex justify-center items-center border-2 border-gray-400 p-9 mb-2.5">
           <img src="./imgs/logo-1.png" alt="logo">
         </div>
       </div>
@@ -832,7 +832,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer py-14">
+  <footer class="footer py-14 border-b-8 border-green-500">
     <div class="max-w-6xl mx-auto px-4  text-center relative">
       <div class="flex flex-col justify-center items-center">
         <button
