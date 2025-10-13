@@ -21,26 +21,4 @@ html {
   font-family: "Montserrat", sans-serif !important;
 }
 
-/* Hero Slider Fixes for Owl Carousel Full Height */
-.hero-slider {
-  height: 100vh;
-}
 
-.hero-slider .owl-stage {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.hero-slider .owl-item {
-  height: 100vh;
-}
-.hero-slider .item {
-  height: 100vh;
-  position: relative;
-}
-
-@media (max-width:768px){
-  .hero-slider{
-    height: auto;
-  }
-}
