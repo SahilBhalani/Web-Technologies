@@ -25,6 +25,7 @@ html {
 .hero-slider {
   height: 100vh;
 }
+
 .hero-slider .owl-stage {
   height: 100%;
   display: flex;
@@ -36,4 +37,10 @@ html {
 .hero-slider .item {
   height: 100vh;
   position: relative;
+}
+
+@media (max-width:768px){
+  .hero-slider{
+    height: auto;
+  }
 }
