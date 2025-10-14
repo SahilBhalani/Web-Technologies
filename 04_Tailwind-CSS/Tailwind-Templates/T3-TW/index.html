@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadGen Food Template</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="fixed top-0 w-full z-40 bg-black lg:bg-transparent border-b border-yellow-500">
+        <nav class="bg-transparent py-6 max-w-6xl mx-auto">
+            <div class=" px-4 md:flex md:items-center">
+
+                <div class="flex justify-between items-center">
+                    <a href="#" class="font-bold text-xl"><img src="./imgs/logo-white.png" class="max-w-full max-h-9"
+                            alt=""></a>
+
+                    <button
+                        class="border border-solid border-yellow-500 px-3 py-1 rounded text-white hover:opacity-75 md:hidden"
+                        id="navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="hidden lg:flex flex-col lg:flex-row lg:ml-auto lg-3 lg:mt-0 text-white font-semibold"
+                    id="navbar-collapse">
+                    <a href="#about"
+                        class="p-2 lg:px-4 sub-font rounded-md md:mx-4 mt-5 md:mt-0 hover:opacity-80 text-white font-semibold ">ABOUT</a>
+                    <a href="#service"
+                        class="p-2 lg:px-4 sub-font lg:mx-2 rounded transition duration-300 hover:opacity-80 text-white font-semibold ">SERVICE</a>
+                    <a href="#menu"
+                        class="p-2 lg:px-4 sub-font lg:mx-2 transition duration-300 hover:opacity-80 text-white font-semibold ">MENU</a>
+                    <a href="#gallery"
+                        class="p-2 lg:px-4 sub-font lg:mx-2 transition duration-300 hover:opacity-80 text-white font-semibold ">GALLERY</a>
+                    <a href="#chefs"
+                        class="p-2 lg:px-4 sub-font lg:mx-2 transition duration-300 hover:opacity-80 text-white font-semibold ">CHEFS</a>
+                    <a href="#blog"
+                        class="p-2 lg:px-4 sub-font lg:mx-2 transition duration-300 hover:opacity-80 text-white font-semibold ">BLOG</a>
+                    <a href="#contact"
+                        class="p-2 lg:px-4 sub-font lg:mx-2 transition duration-300 hover:opacity-80 text-white font-semibold">
+                        CONTACT
+                    </a>
+                    <a href="#booknow"
+                        class="p-2 lg:px-4 lg:mx-2 text-white border border-transparent hover:border-yellow-500 bg-yellow-500 hover:bg-white hover:text-yellow-500 text-center transition-colors duration-300 mt-1 md:mt-0 md:ml-1">BOOK
+                        NOW
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about">
+        <div class="hero-slider owl-carousel owl-theme min-h-screen relative">
+            <!-- Item 1 -->
+            <div class="item relative flex items-center justify-center min-h-screen w-full">
+                <div class="absolute inset-0 top-0"
+                    style="background:linear-gradient(rgba(15,15,15,0.4), rgba(15,15,15,0.4)), url('imgs/agency-slider-04.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+                </div>
+                <!-- Content card -->
+                <div class="absolute lg:top-1/4 lg:left-1/2 z-20 max-w-md p-16 bg-orange-600/90 border-4 border-white">
+                    <h1 class="text-3xl md:text-5xl font-extrabold sub-font text-white uppercase mb-4">DELICIOUS
+                        BREAKFAST</h1>
+                    <p class="text-white text-sm md:text-base leading-relaxed mb-6">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button
+                        class="bg-transparent text-white px-6 py-2 border-2 hover:opacity-75 transition sub-font duration-300 font-semibold">DISCOVER
+                        MENU</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item relative flex items-center justify-center min-h-screen w-full">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background:linear-gradient(rgba(15,15,15,0.4), rgba(15,15,15,0.4)), url('imgs/agency-slider-05.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+                </div>
+                <!-- Content card -->
+                <div class="absolute lg:top-1/4 lg:left-1/2 z-20 max-w-md p-16 bg-orange-600/90 border-4 border-white">
+                    <h1 class="text-3xl md:text-5xl font-extrabold sub-font text-white uppercase mb-4">HEALTHY & NATURAL
+                    </h1>
+                    <p class="text-white text-sm md:text-base leading-relaxed mb-6">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button
+                        class="bg-transparent text-white px-6 py-2 border-2 sub-font hover:opacity-75 transition duration-300 font-semibold">MEET
+                        A CHEF</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item relative flex items-center justify-center min-h-screen w-full">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background:linear-gradient(rgba(15,15,15,0.4), rgba(15,15,15,0.4)), url('imgs/agency-slider-06.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+                </div>
+                <!-- Content card -->
+                <div class="absolute lg:top-1/4 lg:left-1/2 z-20 max-w-md p-16 bg-orange-600/90 border-4 border-white">
+                    <h1 class="text-3xl md:text-5xl font-extrabold sub-font text-white uppercase mb-4">ORGANIC FOODS
+                    </h1>
+                    <p class="text-white text-sm md:text-base leading-relaxed mb-6">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button
+                        class="bg-transparent text-white px-6 py-2 border-2 hover:opacity-75 transition sub-font duration-300 font-semibold">OUR
+                        STORY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="abt relative py-28 max-w-6xl mx-auto" id="about">
+
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Left Item -->
+            <div class="px-4">
+                <img src="./imgs/content-50.jpg" alt="cimg" class="max-w-full h-auto border-0">
+            </div>
+
+            <!-- Right Item -->
+            <div class="flex flex-col items-center justify-center text-left px-4">
+                <h2 class="text-amber-950 sub-font font-medium text-4xl mb-6">The best food in town at one of the best
+                    locations!!</h2>
+                <p class="text-lg mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It
+                    has survived not only five centuries.</p>
+                <p class="text-sm mb-5.5">Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                    unknown printer took a galley of type scrambled it to make a type specimen book. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the when an unknown printer took a galley of type
+                    scrambled.</p>
+                <a href="#" class="py-2 px-6 text-yellow-500 hover:text-white border border-yellow-500 hover:border-white bg-white hover:bg-yellow-500 sub-font font-semibold rounded-3xl max-w-44 transition-colors duration-300 md:self-start
+                ">EXPLORE MENU &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="service py-28 max-w-6xl mx-auto border-t border-gray-500/10 " id="service">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- serv-item1 -->
+            <div class="flex flex-col justify-center items-center px-4">
+                <img src="./imgs/restaurant-service-icon01.png" alt="simg" class="max-w-full h-auto mb-6.5">
+                <h3 class="text-lg text-black font-medium sub-font mb-1.5">BREAKFAST</h3>
+                <p class="text-sm mb-5.5 text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been.</p>
+            </div>
+            <!-- serv-item1 -->
+            <div class="flex flex-col justify-center items-center px-4">
+                <img src="./imgs/restaurant-service-icon02.png" alt="simg" class="max-w-full h-auto mb-6.5">
+                <h3 class="text-lg text-black font-medium sub-font mb-1.5">LUNCH</h3>
+                <p class="text-sm mb-5.5 text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been.</p>
+            </div>
+            <!-- serv-item1 -->
+            <div class="flex flex-col justify-center items-center px-4">
+                <img src="./imgs/restaurant-service-icon03.png" alt="simg" class="max-w-full h-auto mb-6.5">
+                <h3 class="text-lg text-black font-medium sub-font mb-1.5">DINNER</h3>
+                <p class="text-sm mb-5.5 text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been.</p>
+            </div>
+            <!-- serv-item1 -->
+            <div class="flex flex-col justify-center items-center px-4">
+                <img src="./imgs/restaurant-service-icon04.png" alt="simg" class="max-w-full h-auto mb-6.5">
+                <h3 class="text-lg text-black font-medium sub-font mb-1.5">DRINKS</h3>
+                <p class="text-sm mb-5.5 text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover relative">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+
+            <!-- Left Item -->
+            <div class="flex flex-col items-center justify-center text-center p-21 bg-amber-100/50">
+                <img src="./imgs/restaurant-about-icon.png" alt="aimg" class="max-w-full h-auto mb-4">
+                <p class="text-lg text-black mb-2.5">Speciality of the Restaurant</p>
+                <h2 class="text-amber-950 sub-font font-bold text-5xl mb-4">DISCOVER OUR TASTY MEALS</h2>
+                <p class="text-sm mb-5.5">Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="py-2 px-6 text-white hover:text-yellow-500 border hover:border-yellow-500 bg-yellow-500 hover:bg-white sub-font font-semibold rounded-3xl max-w-44 transition-colors duration-300 
+                ">BOOK A TABLE &rarr;</a>
+            </div>
+
+            <!-- Right Item -->
+            <div
+                style="background: linear-gradient(rgba(0, 0, 0, 0.008), rgba(0, 0, 0, 0.008)), url(./imgs/restaurant-about-bg.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Menu Section -->
+    <section class="menu relative py-28" id="menu"
+        style="position: relative; background: linear-gradient(rgba(0, 0, 0, 0.00784314), rgba(0, 0, 0, 0.00784314)), url('imgs/restaurant-menu-bg.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat; overflow: hidden;">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col items-center justify-center text-center">
+                <h2 class="text-4xl font-bold sub-font text-amber-950 mb-6">MAIN MENU</h2>
+                <p class="text-sm mb-20 w-3/5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley.</p>
+            </div>
+
+            <!-- menu tavs -->
+            <div class="flex flex-col md:flex-row items-center justify-center mb-16">
+                <!-- Item1 -->
+                <div class="flex flex-col justify-center text-center items-center mx-10">
+                    <img src="./imgs/restaurant-menu-iteam01.png" alt="mimg"
+                        class="max-w-full h-auto mb-3.5 opacity-50 hover:opacity-100 transition duration-300">
+                    <span class="text-yellow-500 sub-font text-sm font-semibold mb-1.5">STARTERS</span>
+                </div>
+                <!-- Item2 -->
+                <div class="flex flex-col justify-center text-center items-center mx-10">
+                    <img src="./imgs/restaurant-menu-iteam02.png" alt="mimg"
+                        class="max-w-full h-auto mb-3.5 opacity-50 hover:opacity-100 transition duration-300">
+                    <span class="text-yellow-500 sub-font text-sm font-semibold mb-1.5">MEAT</span>
+                </div>
+                <!-- Item3 -->
+                <div class="flex flex-col justify-center text-center items-center mx-10">
+                    <img src="./imgs/restaurant-menu-iteam03 (1).png" alt="mimg"
+                        class="max-w-full h-auto mb-3.5 opacity-50 hover:opacity-100 transition duration-300">
+                    <span class="text-yellow-500 sub-font text-sm font-semibold mb-1.5">FISH</span>
+                </div>
+                <!-- Item4 -->
+                <div class="flex flex-col justify-center text-center items-center mx-10">
+                    <img src="./imgs/restaurant-menu-iteam04.png" alt="mimg"
+                        class="max-w-full h-auto mb-3.5 opacity-50 hover:opacity-100 transition duration-300">
+                    <span class="text-yellow-500 sub-font text-sm font-semibold mb-1.5">VEGETARIAN</span>
+                </div>
+                <!-- Item5 -->
+                <div class="flex flex-col justify-center text-center items-center mx-10">
+                    <img src="./imgs/restaurant-menu-iteam05.png" alt="mimg"
+                        class="max-w-full h-auto mb-3.5 opacity-50 hover:opacity-100 transition duration-300">
+                    <span class="text-yellow-500 sub-font text-sm font-semibold mb-1.5">DESSERT</span>
+                </div>
+                <!-- Item6 -->
+                <div class="flex flex-col justify-center text-center items-center mx-10">
+                    <img src="./imgs/restaurant-menu-iteam06.png" alt="mimg"
+                        class="max-w-full h-auto mb-3.5 opacity-50 hover:opacity-100 transition duration-300">
+                    <span class="text-yellow-500 sub-font text-sm font-semibold mb-1.5">DRINKS</span>
+                </div>
+            </div>
+
+            <!-- menu-list -->
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <!-- List grp-1 -->
+                <div class="flex flex-col px-4">
+
+                    <!-- list-item1 -->
+                    <div class="flex flex-col text-left border-b border-gray-500/20 mb-5.5">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-black">Green Salad</span>
+                            <span class="text-lg font-semibold text-black">$12.00</span>
+                        </div>
+                        <p class="text-sm text-left mb-5.5 font-medium w-5/6">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                    </div>
+                    <!-- list-item2 -->
+                    <div class="flex flex-col text-left border-b border-gray-500/20 mb-5.5">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-black">Egg Any Style</span>
+                            <span class="text-lg font-semibold text-black">$23.00</span>
+                        </div>
+                        <p class="text-sm text-left mb-5.5 font-medium w-5/6">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                    </div>
+                    <!-- list-item3 -->
+                    <div class="flex flex-col text-left border-b border-gray-500/20 lg:border-0 mb-5.5">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-black">Chicken Wings</span>
+                            <span class="text-lg font-semibold text-black">$45.00</span>
+                        </div>
+                        <p class="text-sm text-left mb-5.5 font-medium w-5/6">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                    </div>
+                </div>
+
+                <!-- List grp-2 -->
+                <div class="flex flex-col px-4">
+
+                    <!-- list-item1 -->
+                    <div class="flex flex-col text-left border-b border-gray-500/20 mb-5.5">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-black">Appeteaser Platter</span>
+                            <span class="text-lg font-semibold text-black">$23.00</span>
+                        </div>
+                        <p class="text-sm text-left mb-5.5 font-medium w-5/6">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                    </div>
+                    <!-- list-item2 -->
+                    <div class="flex flex-col text-left border-b border-gray-500/20 mb-5.5">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-black">Spicy Mixed Olives</span>
+                            <span class="text-lg font-semibold text-black">$53.00</span>
+                        </div>
+                        <p class="text-sm text-left mb-5.5 font-medium w-5/6">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                    </div>
+                    <!-- list-item3 -->
+                    <div class="flex flex-col text-left border-b border-gray-500/20 lg:border-0 mb-5.5">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-lg font-semibold text-black">Wing Roulette</span>
+                            <span class="text-lg font-semibold text-black">$25.00</span>
+                        </div>
+                        <p class="text-sm text-left mb-5.5 font-medium w-5/6">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Gallary Section -->
+    <section class="fgallery pt-28 relative" id="gallery">
+        <div class="flex flex-col items-center justify-center text-center max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold sub-font text-amber-950 mb-6">FOOD GALLERY</h2>
+            <p class="text-sm mb-20 w-3/5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley.</p>
+        </div>
+
+
+        <!-- Photos Gallery -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Col1 -->
+            <div class="grid">
+                <div>
+                    <img src="./imgs/agency-work-13.jpg" alt="gimg" class="h-auto max-w-full">
+                </div>
+            </div>
+
+            <!-- col-2 -->
+            <div class="grid">
+                <div>
+                    <img src="./imgs/agency-work-08.jpg" alt="gimg" class="h-auto max-w-full">
+                </div>
+                <div>
+                    <img src="./imgs/agency-work-02.jpg" alt="gimg" class="h-auto max-w-full">
+                </div>
+            </div>
+
+            <!-- Col3 -->
+            <div class="grid">
+                <div>
+                    <img src="./imgs/agency-work-14.jpg" alt="gimg" class="h-auto max-w-full">
+                </div>
+            </div>
+
+            <!-- col-4 -->
+            <div class="grid">
+                <div>
+                    <img src="./imgs/agency-work-04.jpg" alt="gimg" class="h-auto max-w-full">
+                </div>
+                <div>
+                    <img src="./imgs/agency-work-06.jpg" alt="gimg" class="h-auto max-w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Chef Section -->
+    <section class="chefs relative py-28 max-w-6xl mx-auto" id="chefs">
+        <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-4xl font-bold sub-font text-amber-950 mb-6">MEET OUR CHEF</h2>
+            <p class="text-sm mb-20 w-3/5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley.</p>
+        </div>
+
+        <div class="chef-slider">
+            <div class="owl-carousel owl-theme">
+                <!-- item1 -->
+                <div class="grid grid-col-1 lg:grid-cols-2  px-4">
+                    <div class="flex flex-col items-start p-24 bg-yellow-100/50">
+                        <span class="text-black text-2xl sub-font font-semibold">Bryan Johnson</span>
+                        <p class="text-sm mb-5.5">Executive Chef</p>
+                        <p class="text-black text-sm mb-5.5">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+
+                        <p class="text-black text-sm mb-5.5">Lorem Ipsum is simply dummy text of the printing
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it.</p>
+                        <img src="./imgs/signature.png" alt="sign" class="max-w-full h-auto mt-4">
+                    </div>
+
+                    <div>
+                        <img src="./imgs/restaurant-chef-01.jpg" alt="chef" class="max-w-full h-auto">
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="grid grid-col-1 lg:grid-cols-2  px-4">
+                    <div class="flex flex-col items-start p-24 bg-yellow-100/50">
+                        <span class="text-black text-2xl sub-font font-semibold">Jeremy Dupont</span>
+                        <p class="text-sm mb-5.5">Executive Chef</p>
+                        <p class="text-black text-sm mb-5.5">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+
+                        <p class="text-black text-sm mb-5.5">Lorem Ipsum is simply dummy text of the printing
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it.</p>
+                        <img src="./imgs/signature.png" alt="sign" class="max-w-full h-auto mt-4">
+                    </div>
+
+                    <div>
+                        <img src="./imgs/restaurant-chef-02.jpg" alt="chef" class="max-w-full h-auto">
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="grid grid-col-1 lg:grid-cols-2  px-4">
+                    <div class="flex flex-col items-start p-24 bg-yellow-100/50">
+                        <span class="text-black text-2xl sub-font font-semibold">Gustave Bernier</span>
+                        <p class="text-sm mb-5.5">Executive Chef</p>
+                        <p class="text-black text-sm mb-5.5">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+
+                        <p class="text-black text-sm mb-5.5">Lorem Ipsum is simply dummy text of the printing
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it.</p>
+                        <img src="./imgs/signature.png" alt="sign" class="max-w-full h-auto mt-4">
+                    </div>
+
+                    <div>
+                        <img src="./imgs/restaurant-chef-03.jpg" alt="chef" class="max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book a Table Section -->
+    <section class="book relative py-36"
+        style="background: linear-gradient(rgba(39, 39, 39, 0.65098), rgba(39, 39, 39, 0.65098)), url('imgs/hero-bg9.jpg'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+
+        <div class="max-w-3xl mx-auto flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-white sub-font font-semibold text-5xl mb-10">
+                Amazing restaurant come and experience inspired cooking!
+            </h1>
+            <a href="#" class="py-2 px-6 text-white hover:text-yellow-500 border border-transparent hover:border-yellow-500 bg-yellow-500 hover:bg-transparent sub-font font-semibold rounded-3xl max-w-44 transition-colors duration-300 
+                ">BOOK A TABLE</a>
+        </div>
+    </section>
+
+    <!-- Our Blog Section -->
+    <section class="blog relative py-28 max-w-6xl mx-auto">
+        <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-4xl font-bold sub-font text-amber-950 mb-6">OUR BLOG</h2>
+            <p class="text-sm mb-20 w-3/5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a gallery.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <!-- blog-item-1 -->
+            <div class="flex flex-col text-left px-4">
+                <img src="./imgs/agency-content-img01.jpg" alt="bimg" class="max-w-full text-lg h-auto mb-5.5">
+                <a href="#" class="text-black font-semibold mb-3 sub-font">WARM HUMMUS WITH SPICED LAMB</a>
+                <p class="text-sm font-medium md-5.5">Lorem Ipsum has been the industry's standard dummy text ever
+                    since, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+            </div>
+            <!-- blog-item-2 -->
+            <div class="flex flex-col text-left px-4">
+                <img src="./imgs/agency-content-img02.jpg" alt="bimg" class="max-w-full text-lg h-auto mb-5.5">
+                <a href="#" class="text-black font-semibold mb-3 sub-font">SCRATCH MADE MOSCOW MULES</a>
+                <p class="text-sm font-medium md-5.5">Lorem Ipsum has been the industry's standard dummy text ever
+                    since, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+            </div>
+            <!-- blog-item-3 -->
+            <div class="flex flex-col text-left px-4">
+                <img src="./imgs/agency-content-img03.jpg" alt="bimg" class="max-w-full text-lg h-auto mb-5.5">
+                <a href="#" class="text-black font-semibold mb-3 sub-font">CRUMB TOPPED APPLE SLAB PIE</a>
+                <p class="text-sm font-medium md-5.5">Lorem Ipsum has been the industry's standard dummy text ever
+                    since, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meal Section -->
+    <section class="meal relative"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.00784314), rgba(0, 0, 0, 0.00784314)), url('imgs/fitness-about-bg.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat; overflow: hidden;">
+        <div class="max-w-xl flex lg:w-1/2 lg:ml-29.5 justify-start bg-yellow-50 p-20">
+            <div class="flex flex-col self-start text-left">
+                <h2 class=" text-amber-950 leading-12.5 text-5xl sub-font font-medium mb-8">Enjoyed the meal & friendly
+                    service!</h2>
+                <p class="text-2xl text-black leading-8 font-light mb-6">
+                    We Offer a wide variety of trainings to achieve the best results
+                </p>
+                <p class="text-sm font-medium mb-5.5">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the when an unknown printer took a galley of type
+                    scrambled it to make a type specimen book. It has survived not only five centuries.
+                </p>
+                <a href="#booknow"
+                    class="p-2 px-4 rounded-md text-white border border-transparent hover:border-yellow-500 bg-yellow-500 hover:bg-transparent hover:text-yellow-500 text-center transition-colors sub-font duration-300 max-w-38">BOOK
+                    A TABLE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact relative py-28 max-w-6xl mx-auto" id="contact">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- con-item1 -->
+            <div class="flex flex-col justify-center items-center text-center px-4">
+                <i class="fa-solid fa-location-dot text-yellow-500 mb-4 text-4xl"></i>
+                <h3 class="text-black text-sm font-semibold sub-font mb-1.5">Contact Address</h3>
+                <p class="text-sm">301 The Greenhouse, Custard, <br> Factory, London, E2 8DY.</p>
+            </div>
+            <!-- con-item2 -->
+            <div class="flex flex-col justify-center items-center text-center px-4">
+                <i class="fa-solid fa-mobile-screen text-yellow-500 mb-4 text-4xl"></i>
+                <h3 class="text-black text-sm font-semibold sub-font mb-1.5">Call Us Today!</h3>
+                <p class="text-sm">(M) +44 (0) 123 456 7890 <br> (O) +44 (0) 123 456 7890</p>
+            </div>
+            <!-- con-item3 -->
+            <div class="flex flex-col justify-center items-center text-center px-4">
+                <i class="fa-regular fa-envelope text-yellow-500 mb-4 text-4xl"></i>
+                <h3 class="text-black text-sm font-semibold sub-font mb-1.5">Email</h3>
+                <p class="text-sm"> no-reply@domain.com <br> help@domain.com</p>
+            </div>
+            <!-- con-item4 -->
+            <div class="flex flex-col justify-center items-center text-center px-4">
+                <i class="fa-regular fa-clock text-yellow-500 mb-4 text-4xl"></i>
+                <h3 class="text-black text-sm font-semibold sub-font mb-1.5">Opening Hour</h3>
+                <p class="text-sm"> Mon to Sat - 9 AM to 11 PM <br> Sunday 8 AM to 12 PM </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Now Section -->
+    <section class="booknow relative py-28" id="booknow"
+        style="background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imgs/hero-bg3.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col justify-center items-center px-4 text-center">
+                <h2 class="text-4xl text-white font-medium sub-font mb-6">BOOK A TABLE</h2>
+                <p class="text-sm mb-10 text-white w-3/5">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a gallery.</p>
+
+                <form action="#" class="w-1/2 px-4">
+                    <input type="text" id="name" placeholder="*Your Name"
+                        class="bg-white w-full focus-within:border-0 text-sm rounded-md  py-3 px-5 mb-5" required>
+                    <input type="email" id="email" placeholder="*Your Email"
+                        class="bg-white w-full focus-within:border-0 text-sm rounded-md  py-3 px-5 mb-5" required>
+                    <textarea name="massage" id="msg" rows="4" placeholder="*Your Massage"
+                        class="bg-white rounded-md  resize-none w-full py-3 px-5 mb-6"></textarea>
+                    <a href="#booknow"
+                        class="p-3 px-5 rounded-md text-white border border-transparent hover:border-yellow-500 bg-yellow-500 hover:bg-transparent hover:text-yellow-500 text-center transition-colors sub-font duration-300 max-w-38">BOOK
+                        TABLE
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="foot py-10 relative max-w-6xl mx-auto">
+        <div class="flex flex-col justify-center items-center px-4 mb-3 border-b border-gray-500/20">
+            <div class="pb-9">
+            <img src="./imgs/logo.png" alt="foot-logo" class="max-w-full h-auto">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+
+            <div class="flex flex-row px-4 justify-around items-center mt-6">
+                <a href="#" class="text-sm">Privacy Policy</a>
+                <a href="#" class="text-sm">Terms and Conditions</a>
+                <a href="#" class="text-sm">Legal</a>
+            </div>
+
+            <div class="flex flex-row px-4 mt-6 justify-center items-center">
+                <p>© 2016 LeadGen is proudly powered by <a href="#">SahilB.</a></p>
+            </div>
+
+            <div class="flex flex-row px-4 mt-6 justify-end-safe items-center">
+                <a href="#" class="mr-7"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="mr-7"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="mr-7"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="mr-7"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="mr-7"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#" class="mr-7"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            
+        </div>
+     </footer>
+
+
+</body>
+
+<script>
+    let toggleBtn = document.querySelector("#navbar-toggle");
+    let collapse = document.querySelector("#navbar-collapse");
+    if (toggleBtn && collapse) {
+        toggleBtn.onclick = () => {
+            collapse.classList.toggle("hidden");
+            collapse.classList.toggle("flex");
+        };
+    }
+
+    // Hero Slider
+    $(document).ready(function () {
+        var owl = $('.hero-slider.owl-carousel');
+        if (owl.length) {
+            owl.owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                autoplay: false,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    },
+                    1400: {
+                        items: 1
+                    }
+                }
+            });
+        }
+    });
+
+    // Chef Slider
+    $(document).ready(function () {
+        var owl = $('.chef-slider .owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 100,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                },
+                1400: {
+                    items: 1
+                }
+            }
+        });
+    });
+</script>
+
+</html>
