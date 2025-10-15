@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="datatypes.js"></script>
+</head>
+<body>
+    <p id="demo"></p> <br>
+    <p id="demo2"></p>
+</body>
+<script>
+    document.getElementById('demo').innerHTML = 
+    typeof "" + "<br>" + 
+    typeof "John" + "<br>" +
+    typeof "John Doe";
+
+    document.getElementById('demo2').innerHTML = 
+    typeof 0 + "<br>" + 
+    typeof 314 + "<br>" +
+    typeof 3.14 + "<br>" +
+    typeof (3) + "<br>" +
+    typeof(3 + 4);
+</script>
+</html>
