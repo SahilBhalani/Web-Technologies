@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Output</title>
+</head>
+<body>
+    <h2>Using innerHTML</h2>
+    <p>My First Paragraph</p>
+    <p id="demo"></p>
+
+    <h2>Using innerText</h2>
+    <p>My First Paragraph</p>
+    <p id="demo2"></p>
+
+    <h2>Using Document Write Method</h2>
+    <button type="button" onclick="document.write(5 + 6)">Try IT!</button>
+
+    <h2>Using Window Print Method</h2>
+    <button type="button" onclick="window.print()">Print This Page</button>
+</body>
+
+<script>
+
+    // InnerHTMl Example
+    document.getElementById("demo").innerHTML = "<h2> Hello World! </h2>"
+
+    // InnerText Example
+    document.getElementById("demo2").innerText = "Hello World!"
+
+    // document.write Example
+    document.write(5 + 6);
+
+    //Window Alert Example
+    // window.alert(5 + 6);
+    // You Can Skip window keyword.
+    alert(5 + 6);
+
+    // Console log for Debugging
+    console.log(70 + 70);
+</script>
+</html>
