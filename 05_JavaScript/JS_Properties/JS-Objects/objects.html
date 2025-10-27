@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="objects.js"></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+</body>
+
+<script>
+    //Display Data From Object:
+    document.getElementById('demo').innerHTML = person.firstName + " is " + person.age + " years old.";
+
+    document.getElementById('demo2').innerHTML = people.fullName();
+
+    let text = man;
+    document.getElementById('demo3').innerHTML = text;
+
+    text = woman.name + ", " + woman.age + ", " + woman.city;
+    document.getElementById('demo4').innerHTML = text;
+</script>
+</html>
