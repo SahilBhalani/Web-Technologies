@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Functions</title>
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+  </body>
+  <script>
+    //function to compute the product of p1 and p2
+    let result = myFunction(5, 10);
+    document.getElementById("p1").innerHTML = "The Result is: " + result;
+
+    //Farenheit To Celsius
+    let value = toCelsius(77);
+
+    //Accessing a function without () returns the function and not the function result:
+    //let value = toCelcius;
+    document.getElementById("p2").innerHTML = value;
+
+    document.getElementById('p3').innerHTML = greet("John", 21);
+  </script>
+</html>
