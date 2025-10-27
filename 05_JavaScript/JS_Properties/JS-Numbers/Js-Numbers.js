@@ -223,6 +223,6 @@
 	console.log(a == b);
 	console.log(a === b);
 
-	//? Comparing two JavaScript objects always returns false.Pb
+	//? Comparing two JavaScript objects always returns false.
  }
 
