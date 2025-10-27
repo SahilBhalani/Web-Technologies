@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <script src="Js-Numbers.js"></script> -->
-     <!-- <script src="Js-Numbers_Methods.js"></script> -->
-      <!-- <script src="Js-Number-Properties.js"></script> -->
-       <script src="BigInt.js"></script>
-</head>
-<body>
-    
-</body>
+    <!-- <script src="Js-Numbers_Methods.js"></script> -->
+    <!-- <script src="Js-Number-Properties.js"></script> -->
+    <!-- <script src="BigInt.js"></script> -->
+    <script src="Bitwise.js"></script>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+  </body>
+  <script>
+    //dec2bin function is located in Bitwise.js file.
+    document.getElementById("demo").innerHTML = dec2bin(-5);
+
+    //bin2dec funcion is located in Bitwise.js file.
+    document.getElementById('demo2').innerHTML = bin2dec(101);
+
+  </script>
 </html>
