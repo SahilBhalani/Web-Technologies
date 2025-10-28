@@ -80,6 +80,11 @@
   const d = new Date("January 01, 2024");
   d.setSeconds(50);
   console.log(d);
+
+  //ToJSON String
+  const z = new Date();
+  let text =  z.toJSON();
+  console.log(text);
 }
 
 //* Compare Dates
