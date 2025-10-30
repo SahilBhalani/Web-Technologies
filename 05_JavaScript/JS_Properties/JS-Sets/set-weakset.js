@@ -81,6 +81,10 @@
     track(Paul);
     track(Ringo);
     track(Paul);
+    track(John);
+    track(George);
+    track(George);
+    track(George);
 
     //Function to track visitors
     function track(visitors){
