@@ -6,12 +6,25 @@
     <title>JS Functions</title>
     <!-- <script src="js-functions_Definitions.js"></script> -->
      <!-- <script src="js-arrow-functions.js"></script> -->
-     <script src="js-function_invoking.js"></script>
+     <!-- <script src="js-function_invoking.js"></script> -->
+      <script src="js-function-this.js"></script>
 </head>
 <body>
     <!-- <button id="btn">Click Me!</button> -->
     <button id="btn2">Click Me!</button>
     <!-- <p id="demo"></p> -->
     <p id="demo2"></p>
+
+    <!-- * this in Event Handlers -->
+     <!-- In HTML event handlers, this refers to the html element that received the event: -->
+      <button onclick="this.style.display='none'">
+        Click to Remove Me!
+      </button>
+    
 </body>
+<script>
+    
+    let x = this;
+    document.getElementById('demo2').innerHTML = x;
+</script>
 </html>
