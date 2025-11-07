@@ -6,9 +6,31 @@
     <title>Document</title>
     <!-- <script src="js-control_flow.js"></script> -->
      <!-- <script src="js-callbacks.js"></script> -->
-      <script src="js-asynchronous.js"></script>
+      <!-- <script src="js-asynchronous.js"></script> -->
+       <script src="js-promises.js"></script>
 </head>
 <body>
-    
+    <h1>Hey There!</h1>
+   
+    <p id="demo"></p>
 </body>
+<script>
+    function myDisplayer(some){
+        document.getElementById('demo').innerHTML = some;
+    }
+
+    function getFile(myCallback){
+        let req = new XMLHttpRequest();
+        req.onload = function() {
+            if(req.status == 200) {
+                myCallback(this.responseText);
+            } else {
+                myCallback("Error: " + req.responseText.status);
+            }
+        } 
+        req.open('GET','asynchronus.html');
+        req.send();
+    }
+    getFile(myDisplayer);
+</script>
 </html>
