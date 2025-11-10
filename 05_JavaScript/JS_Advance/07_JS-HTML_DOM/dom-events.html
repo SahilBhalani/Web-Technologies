@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Events</title>
+</head>
+<body onload="checkCookies()">
+    <!-- Example 1 -->
+    <h1 onclick="this.innerHTML = 'Oooops!'">Click on This Text!</h1><hr>
+
+    <!-- Example2 -->
+     <h1 onclick="changeText(this)">Tap on this text Buddy!</h1><hr>
+
+     <!-- * HTML Event Attributes 
+     To assign events to HTML elements you can use event attributes.
+     Assign an onclick event to a button element: 
+     -->
+     <button onclick="displayDate()">Try IT</button>
+     <p id="demo"></p><hr>
+     <!-- In the example above, a function named displayDate will be executed when the button is clicked. -->
+
+     <!-- * Assign Events Using the HTML DOM 
+     The HTML DOM allows you to assign events to HTML elements using JavaScript
+     -->
+     <button id="myBtn">TRYYYYYYY</button>
+     <p id="demoo"></p><hr>
+
+     <!-- * The onload and onunload Events -->
+      <p id="demo1"></p>
+      <script>
+        function checkCookies() {
+            let text = "";
+            if(navigator.cookieEnabled == true) {
+                text = "Cookies are enabled.";
+            } else { 
+                text = "Cookies are not enabled."
+            }
+
+            document.getElementById('demo1').innerHTML = text;
+        }
+      </script><hr>
+
+      <!-- * The oninput Attribute -->
+       Enter your Name: <input type="text" id="fname" oninput="upperCase()">
+       <p>When you write in the input field, a function is triggered to transform the input to upper case</p>
+       <script>
+        function upperCase() {
+            const x = document.getElementById('fname');
+            x.value = x.value.toUpperCase();
+        }
+       </script><hr>
+
+       <!-- * The onchange Event -->
+        Enter Your Name: <input type="text" id="lname" onchange="upperCase()">
+        <p>When you leave the input field, a function transforms the input to upper case.</p>
+        <script>
+            function upperCase() {
+                const x = document.getElementById('lname');
+                x.value = x.value.toUpperCase();
+            }
+        </script><hr>
+
+        <!-- * The onmouseover and onmouseout Events 
+        The onmouseover and onmouseout events can be used to trigger a function when the user mouses over, or out of, an HTML element: 
+        -->
+        <div onmouseover="mOver(this)"
+        onmouseout="mOut(this)"
+        style="background-color: red; width: 120px; height: 20px; padding: 40px;">Mouse Over Me</div>
+        <script>
+            function mOver(obj){
+                obj.innerHTML = "Thank You"
+            }
+
+            function mOut(obj) {
+                obj.innerHTML = "Mouse Over Me"
+            }
+        </script><hr>
+
+        <!-- * The onmousedown, onmouseup and onnclick Events 
+        The onmousedown, onmouseup, and onclick events are all parts of a mouse-click. First when a mouse-button is released, the onmouseup event is triggered, finally, when the mouse-click is completed, the onclick event is triggered.
+        -->
+        <div onmousedown="mDown(this)"
+        onmouseup="mUp(this)"
+        style="background-color: red; width: 90px; height: 20px;padding: 40px;">Click Me</div>
+        <script>
+            function mDown(obj) {
+                obj.style.backgroundColor = "lightgreen";
+                obj.innerHTML = "Release Me";
+            }
+
+            function mUp(obj) {
+                obj.style.backgroundColor = "red";
+                obj.innerHTML = "Thank You";
+            }
+        </script>
+
+
+
+</body>
+<script>
+    {
+        function changeText(id) {
+            id.innerHTML = "Gotchha! I Had You!"
+        }
+    }
+
+    {
+        function displayDate() {
+            document.getElementById('demo').innerHTML = Date();
+        }
+    }
+    {
+        document.getElementById('myBtn').onclick = displayDate;
+        function displayDate() {
+            document.getElementById('demoo').innerHTML = Date();
+        }
+    }
+</script>
+</html>
