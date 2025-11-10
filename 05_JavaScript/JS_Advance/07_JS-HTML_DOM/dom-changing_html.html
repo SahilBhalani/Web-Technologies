@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Changing HTML</title>
+</head>
+<body>
+    <!-- * Changing HTML Content 
+    The easiest way to modify the content of an HTML element is by using the innerHTML property.
+    To change the content an HTML element, use this syntax:
+    This example changes the content of a <p> element: 
+    -->
+     <h1 id="id01"></h1>   
+    <p id="p1">Hello World!</p>
+    <p>The paragraph & Heading above was changed by a script</p>
+    
+    <!-- * Changing the Value of an Attribute 
+    The example changes the value of the src attribute of an <img> element:
+    -->
+    <img src="smiley.gif" id="image" width="160" height="120">
+    <script>
+        document.getElementById('image').src = "https://www.w3schools.com/js/landscape.jpg";
+        </script>    
+    <p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+    
+    <!-- * Dynamic HTML content 
+    JavaScript can create dynamic HTML content: 
+    -->
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = "Date : " + Date();;
+    </script>
+
+    <!-- * document.write() 
+    In JavScript, document.write()  can be used to write directly to the HTML output stream:
+    -->
+    <p>Bla bla bla</p>
+
+
+    <script>
+        document.write(Date());
+    </script>
+
+    <p>Bla bla bla</p>
+
+
+    
+</body>
+<script>
+    //Changing HTML Content
+    {
+    const element = document.getElementById('id01');
+    element.innerHTML = "New Heading"    
+    document.getElementById('p1').innerHTML = "New text!";
+    }
+</script>
+</html>
