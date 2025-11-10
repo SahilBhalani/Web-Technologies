@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <!-- * JavaScript Form Validation 
+    HTML form validation can be done by JavaScript
+    If a form field(fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted 
+    -->
+    <h2>JavaScript Validation</h2>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+      Name: <input type="text" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr />
+
+    <!-- * JavaScript Can Validate Numeric Input -->
+    <p>Please input a number betwen 1 to 10:</p>
+    <input id="numb" />
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+    <hr>
+
+    <!-- * Automatic HTML Form Validation 
+    HTML Form validation can be performed automatically by the browser:
+    if the form field (fname) is empty, the required attribute prevents this form from being submitted: 
+    -->
+
+    <h2>Automatic Form Validation</h2>
+    <form action="*" method="post">
+        <input type="text" name="fname" required>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+
+
+  <script>
+    {
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == 0) {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+    }
+
+    {
+        function myFunction(){
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById('numb').value;
+
+            //if x is not a number or less than one or greater than 10;
+            let text;
+            if(isNaN(x)) {
+                text = "Not a Number";
+            } else if(x < 1 || x > 10)  {
+                text = "Input Not Valid"
+            } else {
+                text = "Input OK"
+            }
+
+            document.getElementById('demo').innerHTML = text;
+        }
+    }
+  </script>
+</html>
