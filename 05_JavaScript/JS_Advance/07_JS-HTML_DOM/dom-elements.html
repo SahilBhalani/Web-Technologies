@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Elements</title>
+</head>
+<body>
+    <!-- * Finding HTML Elements 
+    Often, with JavaScript, you want to manipulate HTML elements.
+    To do so, yoiu have to find the elements first. There are several way to do this:
+    
+    ~ Finding HTML elements by id
+    ~ Finding HTML elements by tag name
+    ~ Finding HTML elements by class name
+    ~ Finding HTML elements by CSS selectors
+    ~ Finding HTML elements by HTML object collections
+    -->
+
+    <!-- * Finding HTML Elements by Id
+    The easiest way to find an HTML element in the DOM, is by using the element id.
+    -->
+    <p id="intro">Finding HTML Elements by Id</p>
+    <p>This Examples demonstrates <b>getElementById</b> method.</p>
+    <p id="demo"></p>
+    <!-- If the element is found, the method will return the element as an object(in element).
+    If the element is not found, element will contain null.
+    -->
+    <hr>
+
+    <!-- * Finding HTML Elements by Tag Name 
+    This example finds all <p> elements: 
+    -->
+    <h5>JavaScript HTML DOM</h5>    
+    <h5 id="demo2">
+    </h5>
+    <div id="main">
+        <p>Finding HTML Element by Tag Name</p>
+        <p>This example demonstrates the <b>getElementsByTagName            
+        </b> method.</p>
+    </div>
+
+    <p id="demo3"></p>
+
+    <hr>
+    <!-- * Finding HTML Elements by Class Name 
+    If you want to find all HTML elements with the same class na,e,use getElementsByClassName().
+    This example returns a list of all elements with class="intro"
+    -->
+    <p>Finding HTML Element by Class Name.</p>
+    <p class="intro">Hello World!</p>
+    <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+    <p id="demo4"></p>
+
+    <hr>
+
+    <!-- * Finding HTML Elements by CSS Selectors 
+    If you want to find all HTML elements that match a specified CSS selector(id, claa names, types, attributes, value of attributes), use the querySelectorAll() method.
+    This example returns a list of all <p> elements with class="intro"
+    -->
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+    <p id="demo5"></p>
+
+    <hr>
+
+    <!-- * Finding HTML Elements by HTML Object Collections 
+    This example finds the form element with id="frm1", in the forms collection, and displays all element values: 
+    -->
+    <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+    <form id="frm1">
+        First Name: <input type="text" name="fname" value="Sahil"> <br>
+        Last Name: <input type="text" name="lname" value="Bhalani"> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>These are the values of each element in the form:</p>
+    <p id="demo6"></p>
+    <hr>
+
+    <!-- * Finding HTML Elements Using document.anchors -->
+     <h2>Finding HTML Elements Using document.anchors</h2>
+     <a name="html">HTML Tutorial</a><br>
+     <a name="css">CSS Tutorial</a><br>
+     <a name="xml">XML Tutorial</a><br>
+     <p id="demo7"></p>
+</body>
+<script>
+
+    //Finding Element by Id
+    {
+    const element = document.getElementById('intro');
+    document.getElementById('demo').innerHTML = "The text from the intro paragraph is " + element.innerHTML;
+    }
+    //Finding Element by TagName
+    {
+    const element2 = document.getElementsByTagName('h5');
+    document.getElementById('demo2').innerHTML = 'The text is first paragraph(index 0) is: ' + element2[0].innerHTML;
+    
+    const x = document.getElementById('main');
+    const y = x.getElementsByTagName('p');
+    document.getElementById('demo3').innerHTML = "The First Paragraph (index 0) inside 'main' is: " + y[0].innerHTML;
+    }
+    //Finding Elements by ClassName
+    {
+    const a = document.getElementsByClassName('intro');
+    document.getElementById('demo4').innerHTML = 'The first paragraph (index 0) with class = "intro" is: ' + a[0].innerHTML;
+    }
+    //Finding Element by CSS Selectors
+    {
+    const b = document.querySelectorAll('p.intro');
+    document.getElementById('demo5').innerHTML = 'The first paragraph (index 0) is: ' + b[0].innerHTML;
+    }
+    //Finding Element by HTML Object Collections
+    {
+    const x = document.forms["frm1"];
+    let text = "";
+    for (let i = 0; i < x.length; i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById('demo6').innerHTML = text;
+    } 
+
+    //Finding HTML Elements Using document.anchors
+    document.getElementById('demo7').innerHTML = "Numbers of Anchors are :" + document.anchors.length;
+
+
+</script>
+
+</html>
