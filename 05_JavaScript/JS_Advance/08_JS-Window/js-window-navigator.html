@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Navigator</title>
+</head>
+<body>
+    <!-- * JavaScript Window Navigator 
+    The navigator object contains imformation about the visitor's browser.
+    It can be written with or without the window prefix like:
+    window.navigator or just navigator 
+    -->
+
+    <!-- * Browser Cookies 
+    The cookieEnabled property returns true if cookies are enabled, otherwise false: 
+    -->
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 
+        "cookiesEnabled is " + navigator.cookieEnabled;
+    </script>
+
+    <!-- * The Browser Language 
+    The language property returns the browser's language: 
+    -->
+    <p id="p1"></p>
+    <script>
+        document.getElementById('p1').innerHTML = navigator.language;
+    </script>
+
+    <!-- * Is The Browser Online? 
+    The onLine property returns true if the browser is online: 
+    -->
+    <p id="p2"></p>
+    <script>
+        document.getElementById('p2').innerHTML = navigator.onLine;
+    </script>
+
+    <!-- * Browser Application Name 
+    The appName property returns the application name of the browser: 
+    -->
+    <p id="p3"></p>
+    <script>
+        document.getElementById('p3').innerHTML = "navigator.appName is " + navigator.appName;
+    </script>
+
+    <!-- * Browser Appliation Code Name 
+    The appCodeName property returns the application code name of the browser 
+    -->
+    <p id="p4"></p>
+    <script>
+        document.getElementById('p4').innerHTML = "navigator.appCodeName is " + navigator.appCodeName;
+    </script>
+
+    <!-- * The Browser Engine 
+    The product property returns the product name of the browser engine: 
+    -->
+    <p id="p5"></p>
+    <script>
+        document.getElementById('p5').innerHTML = "navigator.product.is " + navigator.product;
+    </script>
+
+    <!-- * The Browser Version 
+    The appVersion property returns version information about the browser: 
+    -->
+    <p id="p6"></p>
+    <script>
+        document.getElementById('p6').innerHTML = navigator.appVersion;
+    </script>
+
+    <!-- * The Browser Agent 
+    The userAgent property returns the user-agent header sent by the browser to the server: 
+    -->
+    <p id="p7"></p>
+    <script>
+        document.getElementById('p7').innerHTML = navigator.userAgent;
+    </script>
+
+    <!-- * The Browser Platform 
+    The platform property returns the browser platform(operating system): 
+    -->
+    <p id="p8"></p>
+    <script>
+        document.getElementById('p8').innerHTML = navigator.platform;
+    </script>
+
+    <!-- * Is Java Enabled? -->
+     <p id="demo2"></p>
+     <script>
+        document.getElementById('demo2').innerHTML = navigator.javaEnabled();
+     </script>
+
+</body>
+</html>
