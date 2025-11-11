@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Window Screen</title>
+</head>
+<body>
+    <!-- * Window Screen
+    The window.screen object contains information about the user's screen.  
+    The window.screen object can be written without the window prefix.
+    ? Properties:
+    ~ screen.width 
+    ~ screen.height 
+    ~ screen.availWidth 
+    ~ screen.availHeight 
+    ~ screen.colorDepth 
+    ~ screen.pixelDepth 
+    -->
+
+    <!-- * Window Screen Width -->
+     <p id="demo"></p>
+     <script>
+        document.getElementById('demo').innerHTML = "Screen Width is " + screen.width;
+     </script>
+
+    <!-- * Window Screen Height -->
+     <p id="p1"></p>
+     <script>
+        document.getElementById('p1').innerHTML = "Screen Height is " + screen.height;
+     </script>
+
+    <!-- * Window Screen Available Width -->
+     <p id="p2"></p>
+     <script>
+        document.getElementById('p2').innerHTML = "Available Screen Width: " + screen.availWidth;
+     </script>
+
+    <!-- * Window Screen Available height -->
+     <p id="p3"></p>
+     <script>
+        document.getElementById('p3').innerHTML = "Available Screen Height: " + screen.availHeight;
+     </script>
+
+    <!-- * Window Screen Color Depth  
+    The screen.colorDepth property returns the number of bits used to display one color.
+
+    All modern computers use 24 bit or 32 bit hardware for color resolution:
+    -->
+    <p id="p4"></p>
+    <script>
+        document.getElementById('p4').innerHTML = "Screen Color Depth: " + screen.colorDepth;
+    </script>
+
+    <!-- * Window Screen Pixel Depth  -->
+     <p id="p5"></p>
+     <script>
+        document.getElementById('p5').innerHTML = "Screen Pixel Depth: " + screen.pixelDepth;
+     </script>
+</body>
+</html>
