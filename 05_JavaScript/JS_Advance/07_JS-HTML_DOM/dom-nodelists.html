@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM Nodelists</title>
+  </head>
+  <body>
+    <!-- * The HTML DOM NodeList Object 
+    A NodeList object is a list (Collection) of nodes extracted from a document.
+    A NodeList object is almost the same as an HTMLCollecftion object.
+    Some (older) browser return a NodeList object instead of an HTMLCollection for methods like getElementsByClassName().
+    All browser return a NodeList object for the property childNodes.
+    Most browser return a NodeList object for the method querySelectorAll(). 
+    -->
+    <p>Hello World!</p>
+    <p>Hello Monaco!</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <button onclick="myFunction()">Try It!</button>
+    <script>
+      const myNodelist = document.querySelectorAll("p");
+      document.getElementById("demo").innerHTML =
+        "The innerHTML of the second paragraph is: " + myNodelist[1].innerHTML;
+
+      //The length property defines the number of nodes in a node list:
+      document.getElementById("demo2").innerHTML =
+        "This documents contains " + myNodelist.length + " Paragraphs.";
+
+      //The length property is useful when you want to loop through the nodes in a node list:
+      function myFunction() {
+        for (let i = 0; i < myNodelist.length; i++) {
+          myNodelist[i].style.color = "red";
+        }
+      }
+    </script>
+
+    <!-- * The Difference Between an HTMLCollection and a NodeList 
+    A NodeList and an HTMLcollection is very much the same thing.
+    
+    Both are array-like collections (lists) of nodes (elements) extracted from a document. The nodes can be accessed by index numbers. The index starts at 0.
+
+    Both have a length property that returns the number of elements in thi list.
+
+    An HTMLCollection is a collection of document elements.
+
+    A NodeList is a collection of document nodes(element nodes, attribute nodes, and text nodes).
+
+    HTMLCollection items can be accessed by their name, id or index numebr.
+
+    NodeList items can be accessed by their index number
+
+    An HTMLCollection is always a live collection. Example: If you add a <li> element to a list in the DOM, the list in the HTMLCollection will also change.
+
+    A NodeList is most often a static collection. Example: If you add a <li> element to a list in the DOM, the list in NodeList will not change
+        
+    The getElementsByTagName() and getElementsByClassName() methods return a live HTMLCollection.
+    
+    The querySelectorAll() method returns a static NodeList.
+
+    The childNodes property returns a live NodeList.
+    -->
+  </body>
+</html>
