@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Boxes</title>
+</head>
+<body>
+    <!-- * JavaScript Popup Boxes 
+    ~ Alert box
+    ~ Confirm box
+    ~ Prompt box 
+    -->
+
+    <!-- * Alert Box 
+    An alert box is often used if you want to make sure information comes through to the user.
+    When an alert box pops up, the user will have to click "OK" to proceed. 
+    -->
+    <button onclick="myFunction()">Try IT!</button>
+    <script>
+        function myFunction(){
+            alert("I am an alert box!")
+        }
+    </script>
+
+    <!-- * Confirm Box 
+    A confirm box is often used if you want the user to verify or accept something.
+    When a confirm box pops up, the user will have to click either "OK" or "CANCEL" to proceed.
+    If the user clicks "OK", the box returns true. if the user clicks "Cancel", the box returns false. 
+    -->
+    <button onclick="myFunction2()">Try it too!</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction2() {
+            var txt;
+            if(confirm("Press a button!")) {
+                txt = "You Pressed OK!"
+            } else {
+                txt = "You Pressed Cancel!"
+            }
+
+            document.getElementById('demo').innerHTML = txt;
+        }
+    </script>
+
+    <!-- * Prompt Box 
+    A prompt box is often used if you want the user to input a value before entering a page.
+    When a prompt box pops up, the user will have to click either "OK" and "CANCEL" to proceed after entering an input value.
+    If the user clicks "OK" the box returns the input value. if The user clicks "Cancel" the box returns null. 
+
+    The window.prompt() method can be written without the window prefix.
+    -->
+    <button onclick="myFunction3()">TRY TRY TRY!</button>
+    <p id="demoo"></p>
+    <script>
+        function myFunction3() {
+            let text;
+            let person = prompt("Please Enter your name: ", "Sahil Patel");
+            if(person == null || person == ""){
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + person + "! How are you today?"
+            }
+
+            document.getElementById('demoo').innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>
