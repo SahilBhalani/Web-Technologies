@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Window Location</title>
+</head>
+<body>
+    <!-- * Window Location 
+    The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+    
+    The window.location object can be written without the window prefix.
+
+    ~ window.location.href returns the href(URL) of the current page
+    ~ windoe.location.hostname returns the domain name of the web host
+    ~ window.location.pathname returns the path and filename of the current page
+    ~ window.location.protocol returns the web protocol used(http: or https:)
+    ~ window.location.assign() loads  a new document
+    -->
+
+    <!-- * Window Location Href 
+    The window.location.href property returns the URL of the current page.
+    -->
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = "The Full URL of this page is: <br> " + window.location.href;
+    </script>
+
+    <!-- * Window Location Hostname 
+    The window.location.hostname property returns the name of the internet host (of the current page). 
+    -->
+    <p id="p1"></p>
+    <script>
+        document.getElementById('p1').innerHTML = "Page Hostname is " + window.location.hostname;
+    </script>
+
+    <!-- * Window Location Pathname 
+    The window.location.pathname property returns the pathname of the current page. 
+    -->
+    <p id="p2"></p>
+    <script>
+        document.getElementById('p2').innerHTML = " Page Path is: " + window.location.pathname;
+    </script>
+
+    <!-- * Window Location Protocol 
+    The window.location.protocol property returns the web protocol of the web page 
+    -->
+    <p id="p3"></p>
+    <script>
+        document.getElementById('p3').innerHTML = "Page Protocol is " + window.location.protocol;
+    </script>
+
+    <!-- * Window Location Port 
+    The window.location.port property returns the number of the internet host port ( of the current page.) 
+    -->
+    <p id="p4"></p>
+    <script>
+        document.getElementById('p4').innerHTML = "Page port is " + window.location.port;
+    </script>
+
+    <!-- * Window Location Assign 
+    The window.location.assign() method loads a new document. 
+    -->
+    <h3>The window.location object</h3>
+    <input type="button" value="Load google Website" onclick="newDoc()">
+    <script>
+        function newDoc() {
+            window.location.assign("https://www.google.com");
+        }
+    </script>
+
+</body>
+</html>
