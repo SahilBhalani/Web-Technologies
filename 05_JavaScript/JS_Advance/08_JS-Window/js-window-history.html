@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window History</title>
+</head>
+<body>
+    <!-- * JavaScript Window History 
+    The window.history object contains the browsers history
+    
+    The window.history object can be written without the windoe prefix.
+
+    To protect the privacy of the users, there are limitations to how JavaScript can access this object.
+
+    Some Methods:
+    ~ history.back() - same as clicking back in the browser
+    ~ history.forward() - same as clicking forward in the browser
+    -->
+
+    <!-- * Window History Back 
+    The history.back() method loads the previous URL in the history list.
+    This is the same as clicking the back button in the browser 
+    -->
+    <input type="button" value="back" onclick="goBack()">
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
+
+    <!-- * Windows History Forward 
+    The history.forward() method loads the next URL in the history list. 
+    -->
+    <input type="button" value="Forward" onclick="goForward()">
+    <script>
+        function goForward() {
+            window.history.forward()
+        }
+    </script>
+</body>
+</html>
