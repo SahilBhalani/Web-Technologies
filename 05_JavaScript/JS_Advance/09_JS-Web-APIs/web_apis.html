@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web APIs</title>
     <script src="js-web_api_intro.js"></script>
     <script src="js-validation_api.js"></script>
     <script src="js-history_api.js"></script>
     <script src="js-web_storage_api.js"></script>
-</head>
-<body>
+    <script src="js-web_worker_api.js"></script>
+  </head>
+  <body>
     <p id="demo"></p>
-    <button onclick="getLocation()">Try It!</button><hr>
+    <button onclick="getLocation()">Try It!</button>
+    <hr />
 
     <h2>JavaScript Validation</h2>
-    <p> Enter a number and click OK: </p>
+    <p>Enter a number and click OK:</p>
 
-    <input type="number" id="id1" min="100" max="300" required>
+    <input type="number" id="id1" min="100" max="300" required />
     <button onclick="myFunction()">OK?</button>
-    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
-    <p id="p1"></p><hr>
+    <p>
+      If the number is less than 100 or greater than 300, an error message will
+      be displayed.
+    </p>
+    <p id="p1"></p>
+    <hr />
 
-    <input type="number" id="id2" max="100">
+    <input type="number" id="id2" max="100" />
     <button onclick="myFunc()">OK!</button>
-    <p id="p2"></p><hr>
+    <p id="p2"></p>
+    <hr />
 
-    <input type="number" min="100" id="id3">
+    <input type="number" min="100" id="id3" />
     <button onclick="myFunction2()">OK!</button>
-    <p id="p3"></p><hr>
+    <p id="p3"></p>
+    <hr />
 
-    <button onclick="hisback()">Go Back</button><hr>
-    <button onclick="hisgo()">Go Back 2 Pages</button><hr>
+    <button onclick="hisback()">Go Back</button>
+    <hr />
+    <button onclick="hisgo()">Go Back 2 Pages</button>
+    <hr />
 
     <p id="ls1"></p>
     <p id="ls2"></p>
-</body>
-<script>
+    <hr />
+
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+  </body>
+  <script>
     {
-  //Get the latitude and longitude of the user's position:
-  const myElement = document.getElementById("demo");
+      //Get the latitude and longitude of the user's position:
+      const myElement = document.getElementById("demo");
 
-  function getLocation() {
-    try {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } catch (err) {
-      myElement.innerHTML = err;
+      function getLocation() {
+        try {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } catch (err) {
+          myElement.innerHTML = err;
+        }
+      }
+
+      function showPosition(position) {
+        myElement.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
     }
-  }
 
-  function showPosition(position) {
-    myElement.innerHTML =
-      "Latitude: " +
-      position.coords.latitude +
-      "<br>Longitude: " +
-      position.coords.longitude;
-  }
-}
+    localStorage.setItem("name", "Sahil Bhalani");
+    document.getElementById("ls1").innerHTML = localStorage.getItem("name");
 
-localStorage.setItem("name", "Sahil Bhalani");
-document.getElementById('ls1').innerHTML = localStorage.getItem("name");
+    essionStorage.setItem("name2", "Sahil Patel");
+    document.getElementById("ls2").innerHTML = sessionStorage.getItem("name2");
 
-essionStorage.setItem("name2", "Sahil Patel");
-document.getElementById('ls2').innerHTML = sessionStorage.getItem("name2");
-</script>
+    let w;
+
+    function startWorker() {
+      if (typeof w == "undefined") {
+        w = new Worker("demo_workers.js");
+      }
+      w.onmessage = function (event) {
+        document.getElementById("result").innerHTML = event.data;
+      };
+    }
+
+    function stopWorker() {
+      w.terminate();
+      w = undefined;
+    }
+  </script>
 </html>
