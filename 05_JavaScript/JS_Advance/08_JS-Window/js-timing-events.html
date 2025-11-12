@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Timing Events</title>
+</head>
+<body>
+    <!-- * Timing Events 
+    The window object allows execution of code at specified time intervals.
+    These time intervals are called timing events.
+    These two key methods to use with JavaScript are:
+    1. setTimeout(function, milliseconds)
+    ~ executes a function, after waiting a specified number of milliseconds
+
+    2. setInterval(function, milliseconds)
+    ~ Same as setTimeout(), but repeats the execution of the function continuosly.
+
+    The setTimeout() and setInterval() ar both methods of the HTML DOM Window object.
+    -->
+
+    <!-- * The setTimeout() Method 
+    The window.setTimeout() method can be written without the window prifix.
+    The first parameter is a function to be executed.
+    The second parameter indicates the number of milliseconds before excution. 
+    -->
+    <h2>setTimeout() method</h2>
+    <p>Click "Try it". wait 3 seconds and the page will alert "Hello"</p> 
+
+    <button onclick="myVar = setTimeout(myFunction,3000);">Try it</button>
+    <button onclick="clearTimeout(myVar)">Stop it</button><hr>
+    <script>
+        function myFunction() {
+            alert("Hello");
+        }
+    </script>
+
+    <!-- ? How to Stop the Execution? 
+    The clearTimeout() method stops the execution of the function specified in setTimeout().
+    The window.clearTimeout() method can be written without the window prefix.
+    The clearTimeout() method uses the variable returned from setTimeout(): 
+    -->
+
+    <!-- * The setInterval() Method 
+    The setInterval() method repeats a given function at every given time-interval.
+    The window.setInterval() method can be written without the window prefix.
+    The first parameter is the function to be executed.
+    The second parameter indicates the length of the time-interval between each execution.
+    -->
+    <h2>The setInterval() method</h2>
+    <p>A script on this page starts this clock:</p>
+    <p id="demo"></p>
+    <button onclick="clearInterval(myVar)">Stop Time</button>
+    <script>
+       let myVar =  setInterval(myTimer,1000);
+
+        function myTimer() {
+            const d = new Date();
+
+            document.getElementById('demo').innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+
+    <!-- ? How to Stop the Execution? 
+    The clearInterval() method stops the execution of the function specified in the setInterval method.
+    The window.clearInterval method can be written without thr window prefix. 
+    -->
+
+</body>
+</html>
