@@ -9,6 +9,7 @@
     <script src="js-history_api.js"></script>
     <script src="js-web_storage_api.js"></script>
     <script src="js-web_worker_api.js"></script>
+    <script src="js-fetch_api.js"></script>
   </head>
   <body>
     <p id="demo"></p>
@@ -48,7 +49,10 @@
 
     <p>Count numbers: <output id="result"></output></p>
     <button onclick="startWorker()">Start Worker</button>
-    <button onclick="stopWorker()">Stop Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button><hr>
+
+    <p id="ftch">Fetch a file to change this text.</p>
+    <p id="ftch2">Fetch a file to change this text.</p>
   </body>
   <script>
     {
