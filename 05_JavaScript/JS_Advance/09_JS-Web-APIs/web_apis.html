@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web APIs</title>
+    <script src="js-web_api_intro.js"></script>
+    <script src="js-validation_api.js"></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="getLocation()">Try It!</button><hr>
+
+    <h2>JavaScript Validation</h2>
+    <p> Enter a number and click OK: </p>
+
+    <input type="number" id="id1" min="100" max="300" required>
+    <button onclick="myFunction()">OK?</button>
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+    <p id="p1"></p>
+</body>
+<script>
+    {
+  //Get the latitude and longitude of the user's position:
+  const myElement = document.getElementById("demo");
+
+  function getLocation() {
+    try {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } catch (err) {
+      myElement.innerHTML = err;
+    }
+  }
+
+  function showPosition(position) {
+    myElement.innerHTML =
+      "Latitude: " +
+      position.coords.latitude +
+      "<br>Longitude: " +
+      position.coords.longitude;
+  }
+}
+</script>
+</html>
