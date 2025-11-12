@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Cookies</title>
+  </head>
+  <script>
+       
+        
+         function setCookies(cname,cvalue,exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+         }
+
+          function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if(c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+         function checkCookie() {
+            let username = getCookie("username");
+            if(username != "") {
+                alert("Welcome again" + username);
+            } else { 
+                username = prompt("Please enter your name:" , "");
+                if(username != "" && username != null) {
+                    setCookies("username",username, 365);
+                }
+            }
+        }
+  </script>
+  <body onload="checkCookie()">
+    <!-- * What are Cookies 
+    Cookies let you store user information in web pages.
+    Cookies are data, stored in mall text files, on you computer.
+    When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+    
+    Cookies were invented to solve the problem "how to remember information about user":
+    ~ When a user visits a web page, his/her name can be stored in a cookie.
+    ~ Next time the user visits the page, the cookie "remembers" his/her name.
+    Cookies are saved in name-value pairs like:
+    username = John Doe
+
+    When a browser requests a web page from a server, cookies belongings to the page are added to the request. This way the server gets the necessary data to "remember" info about users.
+    -->
+
+    <!-- * Create a cookie with JavaScript 
+    JavaScript can create, read and delete cookies with the document.cookie property.
+    With JavaScript, a cookie can be created like this: 
+    -->
+    <script>
+      document.cookie = "username=Sahil Patel";
+
+      //You can also add an expiry date (in UTC time). By Default, the cookie is deleted when the browser is closed;
+      document.cookie =
+        "username=sahil patel; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+
+      //With a path parameter, you can tell the browser what path the cookie belongs to. By defualt, the cookie belongs to the current page.
+      document.cookie =
+        "username=sahilll; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/";
+    </script>
+
+    <!-- * Read a Cookie with JavaScript 
+    With JavaScript, cookies can be read like this: 
+    -->
+    <script>
+      let x = document.cookie;
+      console.log(x);
+    </script>
+
+    <!-- * Chnage a Cookie with JavaScript 
+    With JavaScript, you can change a cookie the same way as you create it:
+    -->
+    <script>
+      document.cookie =
+        "username=Sahil Patel; expires=Thu, 18 Dec 2026 12:00:00 UTC; path=/";
+      let y = document.cookie;
+      console.log(y);
+    </script>
+
+    <!-- * Delete a Cookie with JavaScript
+     Deleting a cookie is very simple.
+    You don't have to specify a cookie value when you delete a cookie.
+    -->
+    <script>
+        document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    </script>
+
+    <!-- * JavaScript Cookie Example 
+    Im the example to follow ,we will create a cookie that stores the name of a visitor.
+    The first time a visitor arraives to the web page, he/she will be asked to fill in his/her name. the name is then stored in a cookie 
+    -->
+
+    <!-- * A Function to Set a Cookie
+    First, we create a function that stores the name of the visitor in a cookie variable: 
+    -->
+    <script>
+        function setCookies(cname,cvalue,exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+         }
+    </script>
+
+    <!-- * A Function to Get a Cookie -->
+     <script>
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if(c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+     </script>
+
+    <!-- * A Function to Check a Cookie
+    Last, we create the function that checks if a cookie is set.
+    If the cookie is set it will display a greeting.
+    If the cookie is not set, it will display a prompr box, asking for the name of the user, and stores the username cookie for 365 days, by calling the setCookie function: 
+    -->
+    <script>
+        function checkCookie() {
+            let username = getCookie("username");
+            if(username != "") {
+                alert("Welcome again" + username);
+            } else { 
+                username = prompt("Please enter your name:" , "");
+                if(username != "" && username != null) {
+                    setCookies("username",username, 365);
+                }
+            }
+        }
+    </script>
+
+    <!-- * All Together Now -->
+  
+  </body>
+</html>
