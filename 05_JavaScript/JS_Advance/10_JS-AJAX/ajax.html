@@ -19,7 +19,8 @@
     <!-- <script src="the_XMLHttpsRequest_object.js"></script>
     <script src="ajax-request.js"></script> -->
     <!-- <script src="ajax-server-response.js"></script> -->
-    <script src="ajax-xml.js"></script>
+    <!-- <script src="ajax-xml.js"></script> -->
+     <script src="ajax-database.js"></script>
   </head>
   <body>
     <!--  * AJAX Introduction 
@@ -93,9 +94,22 @@
     <p>Last modified: <span id="pp3"></span></p>
     <hr />
 
+
+    <!-- AJAX XML -->
     <h2>The XMLHttpRequest Object</h2>
     <button type="button" onclick="loadXML()">Get my CD collection</button>
     <br /><br />
-    <table id="tab1"></table>
+    <table id="tab1"></table><hr>
+
+    <!-- AJAX Database -->
+     <h2>AJAX Database</h2>
+     <form action="">
+      <select name="customers" onchange="showCustomer(this.value)">
+        <option value="SAII">Sahil Bhalani</option>
+        <option value="NIYA">Nitya Patel</option>
+        <option value="AKKI">Akhil Navadiya</option>
+      </select>
+     </form><br>
+     <div id="txtHint">Customer info will be listed here...</div>
   </body>
 </html>
