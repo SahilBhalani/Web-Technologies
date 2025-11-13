@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <!-- Finding an HTML element by Id -->
+    <p id="id01">Hello World!</p>
+    <p id="id02">Hello Sweden!</p>
+    <p id="id03">Hello Japan!</p>
+
+    <p class="intro">Hello World!</p>
+    <p class="intro">Hello Sweden!</p>
+    <p class="intro">Hello Japan!</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+  </body>
+  <script>
+    // Finding an HTML Elements by Id
+    $(document).ready(function () {
+      var myElements = $("#id01");
+      $("#demo").text(
+        "The text from the id01 paragraph is: " + myElements[0].innerHTML
+      );
+    });
+
+    //Finding an HTML Element by Tag Name.
+    $(document).ready(function () {
+      var myEles = $("p");
+      $("#demo2").text(
+        "The text in the first paragraph is: " + myEles[0].innerHTML
+      );
+    });
+
+    //Finding HTML Elements by Class Name
+    //Return all elements with class = "intro"
+    $(document).ready(function () {
+      var vElements = $(".intro");
+      $("#demo3").text(
+        "The first paragraph with class='intro' is: " + vElements[0].innerHTML
+      );
+    });
+    //Finding HTML Elements by Query Selector
+    //Return all elements with class = "intro"
+    $(document).ready(function () {
+      var vElements = $("p.intro");
+      $("#demo4").text(
+        "The Second paragraph with class='intro' is: " + vElements[1].innerHTML
+      );
+    });
+  </script>
+</html>
