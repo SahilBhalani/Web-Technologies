@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AJAX Introduction</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 5px;
+      }
+    </style>
     <!-- <script src="the_XMLHttpsRequest_object.js"></script>
     <script src="ajax-request.js"></script> -->
-    <script src="ajax-server-response.js"></script>
+    <!-- <script src="ajax-server-response.js"></script> -->
+    <script src="ajax-xml.js"></script>
   </head>
   <body>
     <!--  * AJAX Introduction 
@@ -68,10 +81,21 @@
       a resource, like length, server-type, content-type, last-modified, etc:
     </p>
 
-    <pre id="pp2"></pre><hr>
+    <pre id="pp2"></pre>
+    <hr />
 
-    <p>The getResponseHeader() function is used to return specific header information from a resource, like length, server-type, content-type, last-modified, etc:</p>
+    <p>
+      The getResponseHeader() function is used to return specific header
+      information from a resource, like length, server-type, content-type,
+      last-modified, etc:
+    </p>
 
-<p>Last modified: <span id="pp3"></span></p>
+    <p>Last modified: <span id="pp3"></span></p>
+    <hr />
+
+    <h2>The XMLHttpRequest Object</h2>
+    <button type="button" onclick="loadXML()">Get my CD collection</button>
+    <br /><br />
+    <table id="tab1"></table>
   </body>
 </html>
