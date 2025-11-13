@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AJAX Introduction</title>
-    <script src="the_XMLHttpsRequest_object.js"></script>
+    <!-- <script src="the_XMLHttpsRequest_object.js"></script>
+    <script src="ajax-request.js"></script> -->
+    <script src="ajax-server-response.js"></script>
   </head>
   <body>
     <!--  * AJAX Introduction 
@@ -33,12 +35,27 @@
                 document.getElementById('demo').innerHTML = this.responseText;
             }
             xhttp.open("GET", "ajax_info.txt", true);
-            xhttp.send()
+            xhttp.send();
         }
       </script>  
 
       <!-- * What is AJAX? 
        AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. this means that it is possible to update parts of a web page, without reloading the whole page.
       -->
+
+      <hr>
+
+      <h2>The XMLHttpRequest Object</h2>
+      <button type="button" onclick="loadDoc()">Request Data</button>
+      <p id="d1"></p><hr>
+
+      <h2>The POST Method</h2>
+      <button type="button" onclick="loadPost()">Request Data</button>
+      <p id="d2"></p><hr>
+      <button type="button" onclick="loadsync()">Change Content</button>
+      <p id="d3">Let's change this text</p><hr>
+
+      <h2>The XMLHttpRequest object</h2>
+      <p id="pp1"></p>
   </body>
 </html>
