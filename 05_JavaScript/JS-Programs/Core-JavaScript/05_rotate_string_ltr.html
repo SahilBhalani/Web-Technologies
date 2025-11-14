@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate a String</title>
+</head>
+<body onload="animate_string('target')">
+    <pre id="target">Sahil Bhalani</pre>
+</body>
+
+<script>
+    const animate_string = (id) => {
+        const element = document.getElementById(id);
+        const textNode = element.childNodes[0];
+
+        let text = textNode.data;
+
+        //Use Setinterval to animate the string every 100 miliseconds
+        setInterval(() => {
+            //shift last character to the front of the text
+            text = text[text.length - 1] + text.substring(0, text.length -1);
+
+            //Update the text node with the new text
+            textNode.data = text;
+
+        }, 100);
+    };
+
+    //call the function with a sample id
+    animate_string('target');
+</script>
+</html>
