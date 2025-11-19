@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Image Display</title>
+    <style>
+      body {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="jsstyle" onclick="display_random_image();">
+        Show Images
+      </button>
+    </div>
+  </body>
+  <script>
+    function display_random_image() {
+      var theImages = [
+        {
+          src: "https://picsum.photos/id/247/240/195",
+          width: "240",
+          height: "195",
+        },
+        {
+          src: "https://picsum.photos/id/347/320/343",
+          width: "320",
+          height: "343",
+        },
+        {
+          src: "https://picsum.photos/id/240/500/343",
+          width: "500",
+          height: "343"
+        }];
+
+        var preBuffer = [];
+        for(var i = 0, j = theImages.length; i < j; i++){
+            preBuffer[i] = new Image();
+            preBuffer[i].src = theImages[i].src;
+            preBuffer[i].width = theImages[i].width;
+            preBuffer[i].height = theImages[i].height
+        }
+
+        function getRandomInt(min, max){
+            imn = Math.floor(Math.random() * (max - min + 1)) + min;
+            return preBuffer[imn];
+        }
+
+        var newImage = getRandomInt(0, preBuffer.length - 1);
+
+        var images = document.getElementsByTagName('img');
+
+        var l = images.length;
+        for (let p = 0; p < l; p++) {
+            images[0].parentNode.removeChild(images[0]);
+        }
+
+        document.body.appendChild(newImage);
+    }
+  </script>
+</html>
