@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set the background color of a paragraph</title>
+</head>
+<body>
+    <input type="button" value="Click to set paragraph background color" onclick="setBgColor()">
+    <p>Sahil Bhalani</p>
+    <p>India USA Canada</p>
+</body>
+<script>
+    function setBgColor(){
+    let docBody = document.getElementsByTagName('body')[0];
+
+    let myBodyElements = docBody.getElementsByTagName("p");
+
+    let myp1 = myBodyElements[0];
+    myp1.style.background = "rgb(255,0,0)";
+
+    let myp2 = myBodyElements[1];
+    myp2.style.background = "rgb(255,255,0)"
+    }
+
+
+</script>
+</html>
