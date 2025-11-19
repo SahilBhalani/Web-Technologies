@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    />
+    <style>
+      /* styles.css */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f3f4f6;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #4a4a4a;
+      }
+
+      .section {
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid #4caf50;
+        border-radius: 5px;
+        padding: 10px;
+        resize: none;
+        font-size: 16px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>TEXT EDITOR</h1>
+      <div class="button-container">
+        <button onclick="editoroption1()" title="Bold Text">Bold</button>
+        <button onclick="editoroption2()" title="Italic Text">Italic</button>
+        <button onclick="editoroption3()" title="Left Align">
+          <i class="fas fa-align-left"></i>
+        </button>
+        <button onclick="editoroption4()" title="Center Align">
+          <i class="fas fa-align-center"></i>
+        </button>
+        <button onclick="editoroption5()" title="Right Align">
+          <i class="fas fa-align-right"></i>
+        </button>
+        <button onclick="editoroption6()" title="Uppercase Text">
+          Upper Case
+        </button>
+        <button onclick="editoroption7()" title="Lowercase Text">
+          Lower Case
+        </button>
+        <button onclick="editoroption8()" title="Capitalize Text">
+          Capitalize
+        </button>
+        <button onclick="editoroption9()" title="Clear Text">Clear Text</button>
+      </div>
+      <textarea
+        id="textarea1"
+        rows="15"
+        placeholder="Your text here..."
+      ></textarea>
+    </section>
+  </body>
+  <script>
+    function editoroption1() {
+      document.getElementById("textarea1").style.fontWeight = "bold";
+    }
+    function editoroption2() {
+      document.getElementById("textarea1").style.fontStyle = "italic";
+    }
+    function editoroption3() {
+      document.getElementById("textarea1").style.textAlign = "left";
+    }
+    function editoroption4() {
+      document.getElementById("textarea1").style.textAlign = "center";
+    }
+    function editoroption5() {
+      document.getElementById("textarea1").style.textAlign = "right";
+    }
+    function editoroption6() {
+      document.getElementById("textarea1").style.textTransform = "uppercase";
+    }
+    function editoroption7() {
+      document.getElementById("textarea1").style.textTransform = "lowercase";
+    }
+    function editoroption8() {
+      document.getElementById("textarea1").style.textTransform = "capitalize";
+    }
+
+    function editoroption9() {
+      document.getElementById("textarea1").style.fontWeight = "normal";
+      document.getElementById("textarea1").style.textAlign = "left";
+      document.getElementById("textarea1").style.fontStyle = "normal";
+      document.getElementById("textarea1").style.textTransform = "capitalize";
+      document.getElementById("textarea1").value = "";
+    }
+  </script>
+</html>
