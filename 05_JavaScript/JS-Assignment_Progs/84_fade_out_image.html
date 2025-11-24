@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade out an image</title>
+</head>
+<body>
+    <h1>Fade out an Image</h1>
+    <button onclick="fadeOut()">Fade Out Photo</button><br>
+    <img src="https://picsum.photos/id/237/200/300" alt="img" id="img" style="opacity: 100;">
+</body>
+<script>
+    function fadeOut() {
+        img.style.opacity = 0;
+        img.style.transition = "2s ease-out";
+    }
+</script>
+</html>
