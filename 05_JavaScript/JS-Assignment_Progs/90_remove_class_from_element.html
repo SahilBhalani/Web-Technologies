@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Class To Element</title>
+</head>
+<body>
+    <h1>Remove Class to P element</h1>
+    <p id="demo" class="paraa">P element</p>
+    <button onclick="removeClass()">Click to remove class to p element</button>
+</body>
+<script>
+    function removeClass(){
+        const remove = document.getElementById('demo');
+        remove.classList.remove('paraa');
+    }
+</script>
+</html>

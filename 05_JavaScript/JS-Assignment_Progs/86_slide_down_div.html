@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background: yellow;
+      }
+      #animate {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="slideDown()">Click Here to slide down a div</button>
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+  </body>
+  <script>
+    function slideDown(){
+        let id = null;
+        const elem = document.getElementById('animate');
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame(){
+            if(pos == 200){
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + 'px';
+            }
+        }
+    }
+  </script>
+</html>

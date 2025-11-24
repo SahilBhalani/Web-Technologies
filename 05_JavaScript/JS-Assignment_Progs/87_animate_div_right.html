@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background: yellow;
+      }
+      #animate {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="moveRight()">Click Here to animate a div</button>
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+  </body>
+  <script>
+    function moveRight(){
+        let id = null;
+        const elem = document.getElementById('animate');
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame(){
+            if(pos == 150){
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.left = pos + 'px';
+            }
+        }
+    }
+  </script>
+</html>

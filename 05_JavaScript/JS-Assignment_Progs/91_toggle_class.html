@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Class in Element</title>
+</head>
+<body>
+    <h1>Toggle Class in an element</h1>
+    <p id="demo">A Paragraph</p>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+</body>
+<script>
+    function addClass() {
+        const elem = document.getElementById('demo');
+        elem.classList.add("Paraa");
+    }
+    function removeClass() {
+        const elem = document.getElementById('demo');
+        elem.classList.remove("Paraa");
+    }
+</script>
+</html>

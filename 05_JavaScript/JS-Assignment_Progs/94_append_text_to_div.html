@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Text to a Div</title>
+</head>
+<body>
+    <h1>Append Text To a Div</h1>
+     <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div><hr>
+</body>
+<script>
+    let para = document.createElement("p");
+    let node = document.createTextNode("This is new")
+    para.append(node);
+    const elem = document.getElementById('div1');
+    elem.append(para);
+   
+</script>
+</html>
