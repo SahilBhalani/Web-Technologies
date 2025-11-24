@@ -1,4 +1,3 @@
-//make a  function to check whether a number is Armstrong number or not in javascript
 function isArmstrongNumber(num) {
     let sum = 0;
     let temp = num;
