@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Age</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function calculate_age(dob) {
+      let diff = Date.now() - dob.getTime();
+      let age = new Date(diff);
+
+      return Math.abs(age.getUTCFullYear() - 1970);
+    }
+
+    document.getElementById('demo').innerHTML = "Your Age is:" + calculate_age(new Date(2004,8,2));
+  </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Smallest Number</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function findSmallest(arr) {
+      if (arr.length === 0) {
+        return null;
+      }
+      let smallest = arr[0];
+      for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+          smallest = arr[i];
+        }
+      }
+      return smallest;
+    }
+
+    document.getElementById('demo').innerHTML = "The Smallest Number Is: " +  findSmallest([8,4,9,1,3,4]);
+  </script>
+</html>

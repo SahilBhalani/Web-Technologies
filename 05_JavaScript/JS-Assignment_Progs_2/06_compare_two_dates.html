@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Two Dates</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+  </body>
+  <script>
+    const compare = (date1, date2) =>
+      date1.toISOString() === date2.toISOString();
+
+    document.getElementById("demo").innerHTML = compare(
+      new Date(2015, 12, 15),
+      new Date(2015, 12, 15)
+    );
+    document.getElementById("demo2").innerHTML = compare(
+      new Date(2015, 12, 15),
+      new Date(2015, 12, 16)
+    );
+  </script>
+</html>

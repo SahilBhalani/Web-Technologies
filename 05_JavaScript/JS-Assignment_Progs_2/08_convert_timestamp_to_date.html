@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Timestamp To a Readable Date</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+   <script>
+    let timestamp =  new Date(1091385000000);
+    
+    let readDate = timestamp.toDateString();
+    document.getElementById('demo').innerHTML = readDate;
+   </script>
+</html>
