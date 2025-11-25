@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Frequency Of Characters</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function findFreq(str) {
+    let freq = {};
+
+    str.replace(/\S/g, function(l) {
+        freq[l] = (isNaN(freq[l]) ? 1 : freq[l] + 1);
+    })
+    return freq;
+}
+document.getElementById('demo').innerHTML = JSON.stringify(findFreq("Sahil Bhalani"));
+</script>
+</html>

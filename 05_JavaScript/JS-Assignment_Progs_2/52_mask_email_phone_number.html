@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Email Or Phone Number</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function mask(input){
+        if(input.includes("@")){
+            let parts = input.split("@");
+            let name = parts[0];
+            let domain = parts[1];
+            let maskedName = name[0] + "*****" + name[name.length - 1];
+            return maskedName + "@" + domain;
+        }
+    }
+
+    document.getElementById('demo').innerHTML = mask("sahilbhalani007@gmail.com");
+</script>
+</html>
