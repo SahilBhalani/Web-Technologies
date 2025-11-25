@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Special Characters</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function removeSpecialCharacters(str){
+        return str.replace(/[^a-zA-Z0-9]/g, '');
+    }
+    document.getElementById('demo').innerHTML = removeSpecialCharacters("Hello@# World! 123$%");
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert String to ASCII Values</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function toASCII(str){
+        let asciiValues = [];
+        for(let i = 0; i < str.length; i++){
+            asciiValues.push(str.charCodeAt(i));
+        }
+        return asciiValues;
+    }
+    document.getElementById('demo').innerHTML = toASCII("Sahil");
+</script>
+</html>
