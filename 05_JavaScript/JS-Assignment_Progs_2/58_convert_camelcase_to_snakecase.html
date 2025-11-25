@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Camel Case to Snake Case</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function camelToSnake(str){
+        return str.replace(/([A-Z])/g, function(g) { return "_" + g.toLowerCase(); });
+    }
+    document.getElementById('demo').innerHTML = camelToSnake("helloWorldThisIsSahil");
+</script>
+</html>

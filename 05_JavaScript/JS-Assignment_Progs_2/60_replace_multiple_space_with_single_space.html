@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Multiple Spaces With Single Space</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function replaceMultipleSpaces(str){
+        return str.replace(/\s+/g, " ");
+    }
+
+    document.getElementById('demo').innerHTML = replaceMultipleSpaces("Hello      World!   This    is   Sahil.");
+</script>
+</html>

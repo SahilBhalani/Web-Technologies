@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Each Word In Sentence</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function reverseWord(str){
+        let words = str.split(" ");
+        words = words.reverse();
+
+        return words.join(" ");
+    }
+
+    document.getElementById('demo').innerHTML = reverseWord("Hey There Sahil Here");
+</script>
+</html>
