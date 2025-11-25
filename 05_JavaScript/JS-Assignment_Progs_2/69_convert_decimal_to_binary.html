@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Decimal To Binary</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function decToBin(num){
+        let binary = '';
+        while(num > 0){
+            let rem  = num % 2;
+            binary = rem + binary;
+            num = Math.floor(num/2);
+        }
+        return binary;
+    }
+    document.getElementById('demo').innerHTML = decToBin(10);
+</script>
+</html>

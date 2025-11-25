@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find LCM of two numbers</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function findLCM(a,b){
+        function findGCD(x, y){
+            while(y){
+                let temp = y;
+                y = x % y;
+                x = temp;
+            }
+            return x
+        }
+        return ( a * b) / findGCD(a,b);
+    }
+
+    document.getElementById('demo').innerHTML = findLCM(4,5);
+</script>
+</html>

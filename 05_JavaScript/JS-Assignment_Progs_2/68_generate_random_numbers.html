@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Numbers</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function generateRandom(count, min, max){
+        let randomNumbers = [];
+        for (let i = 0; i < count; i++){
+            let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            randomNumbers.push(randomNum);
+        }
+        return randomNumbers;
+    }
+    document.getElementById('demo').innerHTML = JSON.stringify(generateRandom(5, 1, 100));
+</script>
+</html>
