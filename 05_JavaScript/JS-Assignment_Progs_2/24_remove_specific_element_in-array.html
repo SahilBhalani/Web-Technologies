@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Specific Element from array</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    const fruits = ["Apple", "Banana", "Mango", "Orange"];
+    const elementRemove = "Mango";
+    const index = fruits.indexOf(elementRemove);
+    if(index > -1){
+        fruits.splice(index, 1);
+    }
+    document.getElementById("demo").innerHTML =
+      'Array after removing "' + elementRemove + '": ' + fruits;
+</script>
+</html>

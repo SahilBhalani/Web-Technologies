@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Index of an Element</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+  </body>
+  <script>
+    const fruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple"];
+
+    const indexMango = fruits.indexOf("Mango");
+    document.getElementById("demo").innerHTML =
+      'Index of "Mango": ' + indexMango;
+
+    const indexPineapple = fruits.indexOf("Pineapple");
+    document.getElementById("demo2").innerHTML =
+      'Index of "Pineapple": ' + indexPineapple;
+
+    const indexGrapes = fruits.indexOf("Grapes");
+    document.getElementById("demo3").innerHTML =
+      'Index of "Grapes": ' + indexGrapes;
+  </script>
+</html>
