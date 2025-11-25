@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</body>
+<script>
+    function palindrome(str) {
+    for (let i = 0; i < str.length/2; i++) {
+        if(str[i] !== str[str.length - 1 - i]) {
+            return "The String is Not Palindrome"
+        } else {
+            return "The String is Palindrome"
+        }
+    }
+}
+document.getElementById('demo').innerHTML = palindrome("son");
+document.getElementById('demo2').innerHTML = palindrome("mom");
+
+</script>
+</html>
