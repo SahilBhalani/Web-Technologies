@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Array Elements</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+   function rotateArray(arr, k) {
+    let n = arr.length;
+    k = k % n;
+    let rotatedArr = arr.slice(n - k).concat(arr.slice(0, n - k));
+    return rotatedArr;
+}
+
+document.getElementById('demo').innerHTML = rotateArray([1,2,3,4,5],2);
+</script>
+</html>

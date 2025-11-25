@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Intersection</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+  </body>
+  <script>
+    function findIntersection(arr1, arr2) {
+      return arr1.filter((value) => arr2.includes(value));
+    }
+
+    document.getElementById('demo').innerHTML = JSON.stringify(findIntersection([1,2,3], [3,4,5]));
+    document.getElementById('demo2').innerHTML = JSON.stringify(findIntersection(['a','b','c'], ['c','d','e']));
+  </script>
+</html>

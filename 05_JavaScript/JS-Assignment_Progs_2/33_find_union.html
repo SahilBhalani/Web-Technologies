@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Union</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</body>
+<script>
+    function findUnion(arr1, arr2) {
+    return [...new Set([...arr1, ...arr2])];
+};
+
+document.getElementById('demo').innerHTML = JSON.stringify(findUnion([1,2,3],[3,4,5]));
+document.getElementById('demo2').innerHTML = JSON.stringify(findUnion(['a','b','c'],['c','d','e']));
+</script>
+</html>

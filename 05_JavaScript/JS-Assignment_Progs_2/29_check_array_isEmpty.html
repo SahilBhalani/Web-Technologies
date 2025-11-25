@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check if array is empty</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+  </body>
+  <script>
+    function isEmpty(arr){
+        if(arr.length === 0){
+            return "Array Is Empty"
+        } else {
+            return "Array Is Not Empty"
+        }
+    }
+
+    let arr = [];
+    document.getElementById('demo').innerHTML = isEmpty(arr);
+  </script>
+</html>
