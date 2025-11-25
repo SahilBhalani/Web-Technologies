@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse an Array Without Reverse</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function reverseArr(arr) {
+      if (arr === 0) {
+        return null;
+      }
+      return arr.map((element, idx, arr) => arr[arr.length - 1 - idx]);
+    }
+
+    document.getElementById('demo').innerHTML = reverseArr([1,2,3,4,5,6]);
+  </script>
+</html>
