@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download text file using JS</title>
+</head>
+<body>
+    <h1>Download Text file using js</h1>
+    <button onclick="downloadTextFile()">Download Text File</button>
+</body>
+<script>
+    function downloadTextFile(){
+        const text = "This is sample text file created using JavaScript.";
+        const blob = new Blob([text], { type: 'text/plain' });
+        const anchor = document.createElement('a');
+        anchor.download = "sample.txt";
+        anchor.href = window.URL.createObjectURL(blob);
+        anchor.target = "_blank";
+        anchor.style.display = "none"; 
+        document.body.appendChild(anchor); 
+        anchor.click(); 
+        document.body.removeChild(anchor); 
+    }
+    
+</script>
+</html>
