@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Class in JavaScript</title>
+</head>
+<body>
+    <h1>Create Class in JS</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    class Car{
+        constructor(name, year, model){
+            this.name = name;
+            this.year = year;
+            this.model = model;
+        }
+    }
+
+    const myCar = new Car("Ford", 2021, "Mustang");
+
+    document.getElementById("demo").innerHTML = 
+        "Car Name: " + myCar.name + "<br>" +
+        "Car Year: " + myCar.year + "<br>" +
+        "Car Model: " + myCar.model;
+</script>
+</html>

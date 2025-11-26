@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read JSON in JavaScript</title>
+</head>
+<body>
+    <h1>Read JSON in JavaScript</h1>
+    <pre id="demo"></pre>
+</body>
+<script>
+    const jsonString = `{
+        "name": "John Doe",
+        "age": 30,
+        "city": "New York",
+        "skills": ["JavaScript", "HTML", "CSS"]
+    }`;
+
+    const jsonObj = JSON.parse(jsonString);
+
+    document.getElementById('demo').textContent = JSON.stringify(jsonObj, null, 4);
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save JSON Date to File</title>
+</head>
+<body>
+    <h1>Save JSON Date to File</h1>
+    <button onclick="saveDateToFile()">Save Current Date to JSON File</button>
+</body>
+<script>
+    function saveDateToFile(){
+        const currentDate = new Date();
+        const dateObject = {
+            date: currentDate.toISOString()
+        };
+        const jsonString = JSON.stringify(dateObject, null, 2);
+        const blob = new Blob([jsonString], {type: "application/json"});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'current_date.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Object Using Constructor</title>
+  </head>
+  <body>
+    <h1>Create Object Using Constructor</h1>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function car(name, year, model) {
+      this.name = name;
+      this.year = year;
+      this.model = model;
+    }
+
+    const myCar = new car("Nissan", 1999, "GT-R");
+
+    document.getElementById("demo").innerHTML =
+      "Car Name: " +
+      myCar.name +
+      "<br>" +
+      "Car Year: " +
+      myCar.year +
+      "<br>" +
+      "Car Model: " +
+      myCar.model;
+  </script>
+</html>
