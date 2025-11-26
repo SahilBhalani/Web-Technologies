@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update CSS Style using JS</title>
+</head>
+<body>
+    <h1>Update CSS Styles usinfg JS</h1>
+    <p id="demo" style="background-color: skyblue;">Hey There! Sahil Here</p>
+    <button onclick="changeCSS()">Click To Change CSS</button>
+</body>
+<script>
+    function changeCSS(){
+        const demo = document.getElementById('demo');
+        demo.style.color = 'white';
+        demo.style.backgroundColor = 'red';
+        demo.style.fontSize = '40px';
+    }
+</script>
+</html>

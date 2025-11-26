@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new HTML element</title>
+</head>
+<body>
+    <h1>Add new HTML Element</h1>
+    <button onclick="addElement()">Click To Add</button>
+</body>
+<script>
+    function addElement(){
+        const newPara = document.createElement('p');
+        const paraText = document.createTextNode('This is new paragroph');
+        newPara.appendChild(paraText);
+        document.body.appendChild(newPara);
+    }
+</script>
+</html>
