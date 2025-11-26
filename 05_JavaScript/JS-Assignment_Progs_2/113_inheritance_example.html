@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Example</title>
+</head>
+<body>
+    <h1>Inheritance Example</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    class Vehicle{
+        constructor(name,year){
+            this.name = name;
+            this.year = year;
+        }
+    }
+
+    class Car extends Vehicle{
+        constructor(name,year,model){
+            super(name,year);
+            this.model = model;
+        }
+    }
+
+    const myCar = new Car("Ferrari", 1998, "La Ferrari");
+
+    document.getElementById('demo').innerHTML = 
+        "Car Name: " + myCar.name + "<br>" +
+        "Car Year: " + myCar.year + "<br>" +
+        "Car Model: " + myCar.model;
+</script>
+</html>

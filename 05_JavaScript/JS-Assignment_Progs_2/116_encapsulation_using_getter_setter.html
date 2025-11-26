@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <h1>Encapsultaion Using Getter Setter</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    class Person{
+        constructor(name, age){
+            this._name = name;
+            this._age = age;
+        }
+
+        get name(){
+            return this._name
+        }
+
+        set name(name){
+            this._name = name;
+        }
+
+        get age(){
+            return this._age
+        }
+
+        set age(age){
+            this._age = age;
+        }
+    }
+
+    const person1 = new Person("Sahil", 21);
+
+    document.getElementById('demo').innerHTML = 
+        "Name: " + person1.name + "<br>" +
+        "Age: " + person1.age;
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Overriding</title>
+</head>
+<body>
+    <h1>Method Overriding</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    class Animal{
+        speak(){
+            return "Animal Roars!";
+        }
+    }
+
+    class Dog extends Animal{
+        speak(){
+            return "Dog Barks!"
+        }
+    }
+
+    const myDog = new Dog();
+    document.getElementById('demo').innerHTML = myDog.speak();
+</script>
+</html>
