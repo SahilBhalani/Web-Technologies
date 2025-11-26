@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse digits of a number</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function reverseNums(num){
+        let rev = 0;
+        while(num > 0){
+            let digit = num % 10;
+            rev = rev * 10 + digit;
+            num = Math.floor(num / 10)
+        }
+        return rev;
+    }
+    document.getElementById('demo').innerHTML = reverseNums(12345);
+</script>
+</html>
