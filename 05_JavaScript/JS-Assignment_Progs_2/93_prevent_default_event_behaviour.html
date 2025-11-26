@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Event Default Behaviour</title>
+</head>
+<body>
+    <h1>Prevent Event Default Behaviour</h1>
+    <a href="https://www.example.com" id="myLink">Go to Example.com</a>
+</body>
+<script>
+    document.getElementById('myLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Default behaviour prevented! Link will not be followed.');
+    });
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation Example</title>
+</head>
+<body>
+    <h1>Event Delegation Example</h1>
+    <ul id="list">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+</body>
+<script>
+    document.getElementById('list').addEventListener('click', function(e){
+        if(e.target && e.target.nodeName == "LI"){
+            alert("You Clicked on " + e.target.innerText);
+        }
+    });
+</script>
+</html>
