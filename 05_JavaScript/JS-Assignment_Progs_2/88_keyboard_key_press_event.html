@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard key press event</title>
+</head>
+<body>
+    <h1>Keyboard Key Press Event</h1>
+    <input type="text" id="inputBox" placeholder="Press any key";>
+    <p id="demo"></p>
+</body>
+<script>
+    const inputBox = document.getElementById('inputBox');
+    const demo = document.getElementById('demo');
+
+    inputBox.addEventListener('keypress', 
+        function(event){
+            demo.innerHTML = "You Pressed: " + event.key;
+        }
+    )
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover and Mouseout</title>
+</head>
+<body>
+    <h1>Mouseover and Mouseout</h1>
+    <p id="demo">Hover on This to see the effect!</p>
+</body>
+<script>
+    const demo = document.getElementById('demo');
+
+    demo.addEventListener('mouseover',
+    function(){
+        demo.style.color = 'red';
+    });
+
+    demo.addEventListener('mouseout', 
+        function(){
+            demo.style.color = 'black';
+        }
+    )
+    
+</script>
+</html>

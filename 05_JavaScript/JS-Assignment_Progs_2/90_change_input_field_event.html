@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change input Event</title>
+</head>
+<body>
+    <h1>Change Input Field Event</h1>
+    <input type="tel" name="name" id="inputField" placeholder="Enter Your Number">
+    <p id="demo"></p>
+</body>
+<script>
+    const inputField = document.getElementById('inputField');
+    const demo = document.getElementById('demo');
+    inputField.addEventListener('change', 
+        function(){
+            demo.innerHTML = "You Entered:" + inputField.value;
+        }
+    )
+</script>
+</html>
