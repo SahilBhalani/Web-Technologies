@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function Example</title>
+</head>
+<body>
+    <h1>Factory Fuction Example</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function createCar(name,year,model){
+        return {
+            name: name,
+            year: year,
+            model: model
+        }    
+    }
+
+    const myCar = createCar("BMW", 2020, "M5 Competition");
+
+    document.getElementById('demo').innerHTML = 
+        "Car Name: " + myCar.name + "<br>" +
+        "Car Year: " + myCar.year + "<br>" +
+        "Car Model: " + myCar.model;
+</script>
+</html>

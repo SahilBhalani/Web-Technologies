@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class With Private Files</title>
+</head>
+<body>
+    <h1>Class With Private Files</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    class BankAccount{
+        #balance;
+        constructor(initialBalance){
+            this.#balance = initialBalance
+        }
+
+        deposit(amount){
+            this.#balance += amount
+        }
+
+        get balance(){
+            return this.#balance;
+        }
+
+        set balance(amount){
+            this.#balance = amount;
+        }
+    }
+
+    const myAccount = new BankAccount(1000);
+    myAccount.deposit(500);
+
+    document.getElementById('demo').innerHTML = "Account Balance is: " + myAccount.balance;
+</script>
+</html>

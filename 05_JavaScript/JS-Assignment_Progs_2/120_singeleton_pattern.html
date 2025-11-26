@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singeleton Pattern</title>
+</head>
+<body>
+    <h1>Singleton Pattern</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    class Singleton{
+        constructor(){
+            if(Singleton.instance){
+                return Singleton.instance;
+            }
+            Singleton.instance = this;
+        }
+    }
+
+    const instance1 = new Singleton();
+    const instance2 = new Singleton();
+
+    document.getElementById('demo').innerHTML = 
+        "Are both instances same? " + (instance1 === instance2);
+    
+</script>
+</html>
