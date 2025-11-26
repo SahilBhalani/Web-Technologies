@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Function Example</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function factorial(n){
+        if(n === 0){
+            return 1;
+        } else {
+            return n * factorial(n - 1 );
+        }
+    }
+
+    document.getElementById('demo').innerHTML = factorial(5);
+</script>
+</html>

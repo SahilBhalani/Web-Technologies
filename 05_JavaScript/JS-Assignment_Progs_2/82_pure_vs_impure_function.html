@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Vs Impure Function</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</body>
+<script>
+    function pureFunction(x , y){
+        return x + y; 
+    }
+
+    function imPureFunction(obj){
+        obj.name = "Your Name Changed";
+        return obj;
+    }
+
+    document.getElementById('demo').innerHTML = pureFunction(5,10);
+
+    givenObj = {name: "Sahil Bhalani"};
+    document.getElementById('demo2').innerHTML = imPureFunction(givenObj).name;
+</script>
+</html>
