@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to Build Dropdown</title>
+</head>
+<body>
+    <h1>Program to Build Dropdown</h1>
+    <select id="dd">
+        <option value="Option1">Opt 1</option>
+        <option value="Option2">Opt 2</option>
+        <option value="Option3">Opt 3</option>
+        <option value="Option4">Opt 4</option>
+        <option value="Option5">Opt 5</option>
+    </select>
+</body>
+<script>
+    const dropdown = document.getElementById('dd');
+
+    dropdown.addEventListener('change', 
+        function(){
+            alert("You Selected: " + dropdown.value);
+        }
+    )
+</script>
+</html>
