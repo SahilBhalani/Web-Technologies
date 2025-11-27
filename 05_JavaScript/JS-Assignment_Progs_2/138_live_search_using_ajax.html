@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Search Using AJAX</title>
+</head>
+<body>
+    <h1>Live Search using AJAX</h1>
+    <input type="text" id="searchInput" placeholder="Type to search...">
+    <div id="searchResults"></div>
+</body>
+<script>
+    document.getElementById('searchInput').addEventListener('input', function(){
+        const query = this.value;
+        if(query.length === 0){
+            document.getElementById('searchResults').innerHTML = '';
+            return;
+        } 
+        fetch(`https://jsonplaceholder.typicode.com/users?name_like=${query}`)
+        .then(response => response.json())
+        .then(data => {
+            let output = '<h2>Search Results:</h2><ul>';
+            data.forEach(user => {
+                output += `<li>${user.name} (${user.username}) - ${user.email}</li>`;
+            });
+            output += '</ul>';
+            document.getElementById('searchResults').innerHTML = output;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('searchResults').innerHTML = 'Error fetching search results.';
+        });
+    });
+</script>
+</html>

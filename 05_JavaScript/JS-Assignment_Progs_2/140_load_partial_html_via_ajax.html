@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Partial HTML via Ajax</title>
+</head>
+<body>
+    <h1>Load Partial HTML via Ajax</h1>
+    <button id="loadHtmlBtn">Load HTML Content</button>
+    <div id="htmlContainer"></div>
+</body>
+<script>
+    document.getElementById('loadHtmlBtn').addEventListener('click', function() {
+        fetch('partial_content.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('htmlContainer').innerHTML = data;
+            alert("HTML content loaded successfully!");
+        })
+        .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+            alert("Error loading HTML content: " + error.message);
+        });
+    });
+</script>
+</html>
