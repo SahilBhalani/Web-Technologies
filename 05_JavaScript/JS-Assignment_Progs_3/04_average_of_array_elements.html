@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of Array Elements</title>
+</head>
+<body>
+    <h1>Average of Array Elements</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    
+function avgArray(nums){
+    let sum = 0;
+    for(let i = 0; i < nums.length; i++){
+        sum += nums[i];
+    }
+    return sum / nums.length;
+}
+
+document.getElementById('demo').innerHTML = "The Average Of Array Elements Is: " + avgArray([10,20,30,40,50]);
+</script>
+</html>
