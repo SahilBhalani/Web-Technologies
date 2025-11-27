@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Simple Promise</title>
+</head>
+<body>
+    <h1>Create Simple Promise</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    const myPromise = new Promise((resolve, reject) => {
+        let con = true;
+        if(con){
+            resolve("Promise Resolved Successfully!")
+        } else {
+            reject("Promise Rejected!")
+        }
+    })
+
+    myPromise.then((message) => {
+        document.getElementById('demo').innerHTML = message;
+    }).catch((message) => {
+        document.getElementById('demo').innerHTML = message;
+    })
+</script>
+</html>

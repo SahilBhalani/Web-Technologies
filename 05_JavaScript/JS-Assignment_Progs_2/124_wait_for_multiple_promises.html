@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wait For Multiple Promises</title>
+</head>
+<body>
+    <h1>Wait For Multiple Promises</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    const promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Promise 1 Resolved");
+        } , 2000)
+    })
+    const promise2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Promise 2 Resolved");
+        } , 3000)
+    })
+    const promise3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Promise 3 Resolved");
+        } , 1500)
+    })
+
+    Promise.all([promise1, promise2, promise3]).then((message) => {
+        document.getElementById('demo').innerHTML = message;
+    })
+</script>
+</html>

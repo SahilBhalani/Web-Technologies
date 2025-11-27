@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chaining Example</title>
+</head>
+<body>
+    <h1>Promise Chaining Example</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    const promise1 = new Promise((resolve, reject) => {
+        resolve(5);
+    })
+
+    const promise2 = promise1.then((value) => {
+        return value * 2
+    })
+
+    const promise3 = promise2.then((value) => {
+        return value + 10;
+    })
+
+    promise3.then((value) => {
+        document.getElementById('demo').innerHTML = "Final Result: " + value;
+    })
+</script>
+</html>
