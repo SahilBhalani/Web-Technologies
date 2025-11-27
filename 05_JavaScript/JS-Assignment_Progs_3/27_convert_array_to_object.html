@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Array To Object</title>
+</head>
+<body>
+    <h1>Convert Array To Object</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    let myArray = [
+        ["name", "Sahil"],
+        ["age", 21],
+        ["city", "Surat"]
+    ]
+
+    let arrayToObj = Object.fromEntries(myArray);
+    document.getElementById('demo').innerHTML = "Array as Object: " + JSON.stringify(arrayToObj);
+</script>
+</html>

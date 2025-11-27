@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Object To Array</title>
+</head>
+<body>
+    <h1>Convert Object To Array</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    let myObj = {
+        name:"Sahil",
+        age: 21,
+        city: "Surat"
+    }
+
+    let objToArray = Object.entries(myObj);
+    document.getElementById('demo').innerHTML = "Object as Array: " + JSON.stringify(objToArray);
+    
+</script>
+</html>
