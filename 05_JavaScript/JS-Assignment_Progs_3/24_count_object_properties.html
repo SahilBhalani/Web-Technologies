@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Object Properties</title>
+</head>
+<body>
+    <h1>Count Object Properties</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function countProps(obj){
+        return Object.keys(obj).length
+    }
+
+    const myObj = {
+        name: "Sahil",
+        age: 22,
+        city: "Mumbai",
+        profession: "Developer"
+    }
+    document.getElementById('demo').innerHTML = "Number of Properties: " + countProps(myObj);
+</script>
+</html>8

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Property From Object</title>
+</head>
+<body>
+    <h1>Delete Property From Object</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    myObj = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    };
+    delete myObj.age;
+    document.getElementById("demo").innerHTML = "Updated Object: " + JSON.stringify(myObj);
+</script>
+</html>

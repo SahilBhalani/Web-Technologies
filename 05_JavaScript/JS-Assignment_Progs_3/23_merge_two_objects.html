@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Two Objects</title>
+</head>
+<body>
+    <h1>Merge Two Objects</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function mergeObjs(obj1, obj2){
+        return {...obj1, ...obj2};
+    }
+
+    const object1 = {a: 1, b: 2};
+    const object2 = {c: 3, d: 4};
+    document.getElementById('demo').innerHTML = "Merged Objects: " + JSON.stringify(mergeObjs(object1, object2));
+</script>
+</html>
