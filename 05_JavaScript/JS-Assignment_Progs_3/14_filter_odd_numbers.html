@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Odd Numbers</title>
+</head>
+<body>
+    <h1>Filter Odd Numbers</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    let filterOdd = (nums) => nums.filter((num) => num % 2 === 1);
+
+    let nums = [1,2,3,4,5,6,7,8,9];
+
+    document.getElementById('demo').innerHTML = "Odd Numbers: " + filterOdd(nums);
+</script>
+</html>
