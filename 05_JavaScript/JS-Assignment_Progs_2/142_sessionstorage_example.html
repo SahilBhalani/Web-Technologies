@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage Example</title>
+</head>
+<body>
+    <h1>Session storage Example</h1>
+    <input type="text" id="dataInput" placeholder="Enter some data" />
+    <button id="addDataBtn">Add Data to Session Storage</button>
+</body>
+<script>
+    document
+      .getElementById("addDataBtn")
+      .addEventListener("click", function () {
+        const data = document.getElementById("dataInput").value;
+        if (data) {
+          sessionStorage.setItem("mySessionData", data);
+          alert("Data added to Session Storage: " + data);
+          document.getElementById("dataInput").value = "";
+
+          const storedData = sessionStorage.getItem("mySessionData");
+          alert("Data read from Session Storage: " + storedData);
+
+          sessionStorage.removeItem("mySessionData");
+          alert("Data deleted from Session Storage.");
+        } else {
+          alert("Please enter some data to add.");
+        }
+      });
+</script>
+</html>

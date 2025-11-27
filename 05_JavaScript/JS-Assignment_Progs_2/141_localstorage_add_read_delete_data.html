@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Add, Read , Delete Data</title>
+  </head>
+  <body>
+    <h1>Local Storage Add, Read, Delete Data</h1>
+    <input type="text" id="dataInput" placeholder="Enter some data" />
+    <button id="addDataBtn">Add Data to Local Storage</button>
+  </body>
+  <script>
+    document
+      .getElementById("addDataBtn")
+      .addEventListener("click", function () {
+        const data = document.getElementById("dataInput").value;
+        if (data) {
+          localStorage.setItem("myData", data);
+          alert("Data added to Local Storage: " + data);
+          document.getElementById("dataInput").value = "";
+
+          const storedData = localStorage.getItem("myData");
+          alert("Data read from Local Storage: " + storedData);
+
+          localStorage.removeItem("myData");
+          alert("Data deleted from Local Storage.");
+        } else {
+          alert("Please enter some data to add.");
+        }
+      });
+  </script>
+</html>

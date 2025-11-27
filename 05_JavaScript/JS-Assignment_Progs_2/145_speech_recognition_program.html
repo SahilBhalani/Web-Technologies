@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Recognition Program</title>
+  </head>
+  <body>
+    <h1>Speed Recognition Program</h1>
+    <button id="startBtn">Start Speech Recognition</button>
+    <p id="result"></p>
+  </body>
+  <script>
+    const startBtn = document.getElementById("startBtn");
+    const resultPara = document.getElementById("result");
+
+    const SpeechRecognition =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+    recognition.onstart = function () {
+      resultPara.textContent = "Voice recognition started. Speak now.";
+    };
+
+    recognition.onresult = function (event) {
+      const transcript = event.results[0][0].transcript;
+      resultPara.textContent = "You said: " + transcript;
+    };
+
+    recognition.onerror = function (event) {
+      resultPara.textContent = "Error occurred in recognition: " + event.error;
+    };
+
+    startBtn.addEventListener("click", () => {
+      recognition.start();
+    });
+  </script>
+</html>
