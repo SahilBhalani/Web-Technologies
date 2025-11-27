@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout Function Using Promise</title>
+</head>
+<body>
+    <h1>Timeout Function Using Promise</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function timeout(ms){
+        return new Promise((resolve) => 
+            setTimeout(resolve, ms)
+        );
+    }
+
+    timeout(3000).then(() => {
+        document.getElementById('demo').innerHTML = "Executed after 3 Seconds";
+    })
+</script>
+</html>

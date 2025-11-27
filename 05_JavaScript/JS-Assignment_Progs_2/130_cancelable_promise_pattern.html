@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelable Promise Pattern</title>
+</head>
+<body>
+    <h1>Cancelable Promise Pattern</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function cancelablePromise(ms){
+        let cancel;
+        const promise = new Promise((resolve, reject) => {
+            const timeoutId = setTimeout(() => {
+                resolve("Promise Resolved after " + ms + " milliseconds");
+            }, ms);
+
+            cancel = () => {
+                clearTimeout(timeoutId);
+                reject("Promise Canceled");
+            };
+        });
+
+        return { promise, cancel };
+    }
+    const cancelable = cancelablePromise(5000);
+    cancelable.promise.then((message) => {
+        document.getElementById('demo').innerHTML = message;
+    }) .catch((error) => {
+        document.getElementById('demo').innerHTML = error;
+    })
+
+    setTimeout(() => {
+        cancelable.cancel();
+    }, 3000);
+</script>
+</html>
