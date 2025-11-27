@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Animate Element</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Jquery Animated Element</h1>
+    <button id="animateBtn">Animate Text</button>
+    <p id="demo" style="position: relative;">This text will be animated.</p>    
+  </body>
+  <script>
+    $(document).ready(function(){
+        $("#animateBtn").click(function(){
+            $("#demo").animate({
+                bottom: '-150px',
+                opacity: '0.5',
+                fontSize: '30px'
+            })
+        })
+    })
+  </script>
+</html>
