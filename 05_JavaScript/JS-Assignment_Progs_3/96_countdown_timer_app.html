@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer Add</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #countdownDisplay {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Countdown Timer Add</h1>
+    <input type="text" id="timeInput" placeholder="Enter time in seconds" />
+    <button onclick="startCountdown()">Start Countdown</button>
+    <p id="countdownDisplay"></p>
+  </body>
+  <script>
+    function startCountdown() {
+      const timeInput = document.getElementById("timeInput").value;
+      let timeLeft = parseInt(timeInput);
+      const countdownDisplay = document.getElementById("countdownDisplay");
+      const interval = setInterval(() => {
+        if (timeLeft >= 0) {
+          countdownDisplay.innerHTML = "Time Left: " + timeLeft + " seconds";
+          timeLeft--;
+        } else {
+          clearInterval(interval);
+          countdownDisplay.innerHTML = "Countdown Finished!";
+        }
+      }, 1000);
+    }
+  </script>
+</html>

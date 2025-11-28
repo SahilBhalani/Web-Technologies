@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown Program</title>
+    <style>
+        #customDropdown {
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom Dropdown Program</h1>
+    <select id="customDropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <p id="demo"></p>
+</body>
+<script>
+    document.getElementById('customDropdown').addEventListener('change', function() {
+        const selectedValue = this.value;
+        document.getElementById('demo').innerHTML = "You selected: " + selectedValue;
+    });
+</script>
+</html>

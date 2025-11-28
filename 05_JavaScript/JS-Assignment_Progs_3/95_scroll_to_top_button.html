@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll To top Button</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll To Top Button</h1>
+    <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">Scroll to Top &uarr;</button>
+</body>
+<script>
+    function scrollToTop(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+</html>
