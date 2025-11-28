@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion Function Example</title>
+</head>
+<body>
+    <h1>Recursion Function Example</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function factorial(n){
+        if(n === 0 || n === 1){
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+
+    document.getElementById('demo').innerHTML = "Factorial of 5 is: "+ factorial(5);
+</script>
+</html>
