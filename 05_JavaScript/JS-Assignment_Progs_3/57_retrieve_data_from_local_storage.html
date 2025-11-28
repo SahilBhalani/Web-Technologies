@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Data From Local Storage</title>
+</head>
+<body>
+    <h1>Retrieve Data From Local storage</h1>
+    <button onclick="retrieveData()">Retrieve Data</button>
+    <p id="displayData"></p>
+</body>
+<script>
+    function retrieveData(){
+        const retrievedData = localStorage.getItem('savedData');
+        document.getElementById('displayData').innerHTML = "Retrieved Data: " + retrievedData;
+    }
+</script>
+</html>
