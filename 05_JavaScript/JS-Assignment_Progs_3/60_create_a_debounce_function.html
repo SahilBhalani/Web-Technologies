@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Debounce Function</title>
+</head>
+<body>
+    <h1>Create A Debounce Function</h1>
+    <input type="text" id="debounceInput" placeholder="Type something..." />
+    <p id="output"></p>
+</body>
+<script>
+    function debounce(func, delay){
+        let timeoutId;
+        return function(...args){
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                func.apply(this, args);
+            }, delay);
+        }
+    }
+
+    function displayMessage(){
+        const input = document.getElementById('debounceInput').value;
+        document.getElementById('output').innerText = `You typed: ${input}`;
+    }
+   
+    document.getElementById('debounceInput').addEventListener('input', debounce(displayMessage, 500));
+</script>
+</html>

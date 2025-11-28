@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temparature Converter Tool</title>
+    <style>
+      label,
+      input {
+        margin: 5px;
+      }
+      button {
+        margin: 10px;
+      }
+      #result {
+        font-weight: bold;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Temparature Converter Tool</h1>
+    <label for="celsius">Celsius:</label>
+    <input
+      type="number"
+      id="celsius"
+      placeholder="Enter temperature in Celsius"
+    />
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input
+      type="number"
+      id="fahrenheit"
+      placeholder="Enter temperature in Fahrenheit"
+    /><br /><br />
+    <button onclick="convertToF()">Convert to Fahrenheit</button>
+    <button onclick="convertToC()">Convert to Celsius</button>
+    <p id="result"></p>
+  </body>
+  <script>
+    function convertToF() {
+      const celsius = parseFloat(document.getElementById("celsius").value);
+      const fahrenheit = (celsius * 9) / 5 + 32;
+      document.getElementById("result").innerHTML =
+        celsius + "&#8451; = " + fahrenheit.toFixed(2) + "&#8457;";
+    }
+
+    function convertToC() {
+      const fahrenheit = parseFloat(
+        document.getElementById("fahrenheit").value
+      );
+      const celsius = ((fahrenheit - 32) * 5) / 9;
+     document.getElementById('result').innerHTML = fahrenheit + "&#8457; = " + celsius.toFixed(2) + "&#8451";
+    }
+  </script>
+</html>
