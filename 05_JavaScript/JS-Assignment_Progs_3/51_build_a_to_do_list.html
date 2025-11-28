@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="resetTask()">Reset Tasks</button>
+    <ul id="taskList"></ul>
+</body>
+<script>
+    function addTask(){
+        const input = document.getElementById('taskInput');
+        const task = input.value.trim();
+        if(task !== ""){
+            const li = document.createElement('li');
+            li.textContent = task;
+            document.getElementById('taskList').appendChild(li);
+            input.value = "";
+        } else {
+            alert("Please enter a task.");
+        }
+    }
+
+    function resetTask(){
+        document.getElementById('taskList').innerHTML = "";
+    }
+
+</script>
+</html>

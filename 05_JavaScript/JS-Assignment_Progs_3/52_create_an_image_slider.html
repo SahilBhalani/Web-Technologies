@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Image slider</title>
+    <style>
+        #slider {
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Image Slider</h1>
+    <img id="slider" src="https://picsum.photos/id/237/200/300" alt="Image Slider" width="300" height="200">
+    <br>
+    <button onclick="previousImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+</body>
+<script>
+    const images = [
+        "https://picsum.photos/id/238/200/300",
+        "https://picsum.photos/id/239/200/300",
+        "https://picsum.photos/id/249/200/300",
+        "https://picsum.photos/id/259/200/300",
+        "https://picsum.photos/id/269/200/300",
+        "https://picsum.photos/id/279/200/300",
+        "https://picsum.photos/id/289/200/300",
+    ];
+
+    const currentimage = { index : 0}
+
+    function showImage(index){
+        const slider = document.getElementById('slider');
+        slider.src = images[index];
+    }
+
+    function nextImage(){
+        currentimage.index = (currentimage.index + 1) % images.length;
+        showImage(currentimage.index)
+    }
+
+    function previousImage(){
+        currentimage.index = (currentimage.index - 1 + images.length) % images.length;
+        showImage(currentimage.index)
+    }
+
+    showImage(currentimage.index);
+</script>
+</html>
