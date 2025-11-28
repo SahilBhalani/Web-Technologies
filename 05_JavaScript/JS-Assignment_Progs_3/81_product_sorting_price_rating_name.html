@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Sorting (Price, Rating , Name)</title>
+</head>
+<body>
+    <h1>Product Sorting (Price, Rating, Name)</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+</body>
+<script>
+    function sortProducts(products, criteria) {
+        if(criteria === 'price'){
+            products.sort((a, b) => a.price - b.price);
+        } else if(criteria === 'rating'){
+            products.sort((a, b) => b.rating - a.rating)
+        } else if(criteria === 'name'){
+            products.sort((a, b) => a.name.localeCompare(b.name))
+        }
+        return products
+    }
+
+    const products = [
+        {name: "Product A", price: 30, rating: 4.5},
+        {name: "Product B", price: 20, rating: 4.7},
+        {name: "Product C", price: 50, rating: 4.2},
+        {name: "Product D", price: 40, rating: 4.8}
+    ];
+
+    document.getElementById('demo1').innerHTML = "Products Sorted by Price: " + JSON.stringify(sortProducts(products, 'price'));
+
+    document.getElementById('demo2').innerHTML = "Products Sorted by Rating: " + JSON.stringify(sortProducts(products, 'rating'));
+
+    document.getElementById('demo3').innerHTML = "Products Sorted by Name: " + JSON.stringify(sortProducts(products, 'name'));
+
+</script>
+</html>

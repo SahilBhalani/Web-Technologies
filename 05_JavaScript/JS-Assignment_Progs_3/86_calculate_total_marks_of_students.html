@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Total Marks Of students</title>
+</head>
+<body>
+    <h1>Calculate Total Marks Of Students</h1>
+    <p id="demo"></p>
+</body>
+    <script>
+        function calculateMarks(students){
+            return students.map(student => {
+                const totalMarks = student.marks.reduce((acc, mark) => acc + mark, 0);
+                return {name: student.name, totalMarks: totalMarks};
+            })
+        }
+        const students = [
+            {name: "Alice", marks: [85, 90, 78]},
+            {name: "Bob", marks: [88, 76, 92]},
+            {name: "Charlie", marks: [90, 91, 89]}
+        ];
+
+        document.getElementById('demo').innerHTML = "Total Marks Of Students: " + JSON.stringify(calculateMarks(students));
+    </script>
+</html>

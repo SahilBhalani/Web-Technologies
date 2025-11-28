@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Suggestion System</title>
+</head>
+<body>
+    <h1>Search Suggestion System</h1>
+    <input type="text" id="searchInput" onkeyup="showSuggestions()" placeholder="Type to search...">
+    <ul id="suggestionsList"></ul>
+</body>
+<script>
+    const data = ["apple", "banana", "grape", "orange", "mango", "melon", "kiwi", "pear", "peach", "plum"];
+
+    function showSuggestions(){
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const suggestions = data.filter(item => item.toLowerCase().startsWith(input) && input.length > 0)
+        const suggestionsList = document.getElementById('suggestionsList');
+        suggestionsList.innerHTML = '';
+        suggestions.forEach(suggestion => {
+            const li = document.createElement('li');
+            li.textContent = suggestion;
+            suggestionsList.appendChild(li);
+        });
+    }
+</script>
+</html>

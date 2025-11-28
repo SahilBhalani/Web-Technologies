@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Duplicates Records IN Array of Objects</title>
+</head>
+<body>
+    <h1>Find Duplicates Records In Array Of Objects</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function findDuplicates(arr,key){
+        const seen = new Set();
+        const duplicates = new Set();
+        for (let obj of arr){
+            if(seen.has(obj[key])){
+                duplicates.add(obj[key]);
+            } else {
+                seen.add(obj[key])
+            }
+        }
+        return Array.from(duplicates)
+    }
+
+    const records = [
+        {id: 1, name: "Alice"},
+        {id: 2, name: "Bob"},
+        {id: 3, name: "Alice"},
+        {id: 4, name: "David"},
+        {id: 5, name: "Bob"}
+    ];
+
+    document.getElementById('demo').innerHTML = "Duplicates Records Are: " + JSON.stringify(findDuplicates(records, 'name'));
+</script>
+</html>
