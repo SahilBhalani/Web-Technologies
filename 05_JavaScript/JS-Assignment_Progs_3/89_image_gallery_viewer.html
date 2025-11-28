@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery Viewer</title>
+    <style>
+      #gallery {
+        text-align: center;
+      }
+      #gallery img {
+        margin: 10px;
+        border: 2px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gallery">
+      <h1>Image Gallery Viewer</h1>
+      <img
+        id="mainImage"
+        src="https://assets.lummi.ai/assets/QmcrXzeGoDHDYEMqMuWPuAJw9dLKG2dbbFhbU4tdVtRmu4?auto=format&w=1500"
+        alt="Main Image"
+        style="width: 600px; height: 400px"
+      />
+      <div>
+        <img
+          src="	https://assets.lummi.ai/assets/QmTYyrVDH6vNVdMeMfEZZ7XaCpcCZju5v4NUzca7eUoLvo?auto=format&w=1500"
+          alt="Image 1"
+          style="width: 150px; height: 100px; cursor: pointer"
+          onclick="changeImage(this.src)"
+        />
+        <img
+          src="https://assets.lummi.ai/assets/QmUEphVmjovMNBdLkMrwjYTj7H4tQXENMLHWE2fahWV8zc?auto=format&w=1500"
+          alt="Image 2"
+          style="width: 150px; height: 100px; cursor: pointer"
+          onclick="changeImage(this.src)"
+        />
+        <img
+          src="https://assets.lummi.ai/assets/QmTpZT7sxUTurcJCwjipAgk6M2W5f78vKpqesR2PQLNjKg?auto=format&w=1500"
+          alt="Image 3"
+          style="width: 150px; height: 100px; cursor: pointer"
+          onclick="changeImage(this.src)"
+        />
+        <img
+          src="https://assets.lummi.ai/assets/QmeAQESexeW6P5DuE7dyEADpbqFXrLhSgryBi1MX4wvDGd?auto=format&w=1500"
+          alt="Image 4"
+          style="width: 150px; height: 100px; cursor: pointer"
+          onclick="changeImage(this.src)"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    function changeImage(src) {
+      document.getElementById("mainImage").src = src;
+    }
+  </script>
+</html>

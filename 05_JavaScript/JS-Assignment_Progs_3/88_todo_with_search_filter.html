@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List With Search Filter</title>
+</head>
+<body>
+    <h1>To Do List With Search Filter</h1>
+    <input type="text" id="searchInput" placeholder="Search tasks..." onkeyup="filterTasks()">
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="resetTask()">Reset Tasks</button>
+    <ul id="taskList">
+        <li>Buy groceries</li>
+        <li>Walk the dog</li>
+        <li>Finish homework</li>
+        <li>Call mom</li>
+        <li>Read a book</li>
+    </ul>
+</body>
+<script>
+    function addTask(){
+        const task = prompt("Enter a new task: ");
+        if(task){
+            const li = document.createElement('li');
+            li.textContent = task;
+            document.getElementById('taskList').appendChild(li);
+        } else {
+            alert("Task cannot be empty!");
+        }
+    }
+
+    function resetTask(){
+        const taskList = document.getElementById('taskList');
+        taskList.innerHTML = '';
+    }
+
+    function filterTasks(){
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const tasks = document.getElementById('taskList').getElementsByTagName('li');
+        for(let task of tasks){
+            const taskText = task.textContent.toLowerCase();
+            if(taskText.includes(input)){
+                task.style.display = '';
+            } else {
+                task.style.display = 'none';
+            }
+        }
+    }
+
+
+</script>
+</html>

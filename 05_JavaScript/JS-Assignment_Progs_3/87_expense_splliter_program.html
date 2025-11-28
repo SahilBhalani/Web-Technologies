@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Splitter Program</title>
+</head>
+<body>
+    <h1>Expense Splitter Program</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function expenseSplitter(totalAmount, numOfPeople){
+        if(numOfPeople <= 0){
+            return "Number of people must be greater than zero.";
+        } 
+        const amountPerPerson = totalAmount / numOfPeople;
+        return "Each person should pay: $" + amountPerPerson.toFixed(2);
+    }
+
+    document.getElementById('demo').innerHTML = expenseSplitter(1250, 4);
+</script>
+</html>

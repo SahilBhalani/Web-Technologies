@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Limit Input Warning</title>
+  </head>
+  <body>
+    <h1>Character Limit Input Warning</h1>
+    <textarea
+      id="textInput"
+      rows="4"
+      cols="50"
+      placeholder="Type here..."
+    ></textarea>
+    <p id="warning" style="color: red; display: none">
+      Character limit exceeded!
+    </p>
+  </body>
+  <script>
+    const textInput = document.getElementById("textInput");
+    const warning = document.getElementById("warning");
+    const charLimit = 30;
+    textInput.addEventListener("input", () => {
+      if (textInput.value.length > charLimit) {
+        warning.style.display = "block";
+      } else {
+        warning.style.display = "none";
+      }
+    });
+  </script>
+</html>

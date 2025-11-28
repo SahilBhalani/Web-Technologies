@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Mode Toggle</title>
+</head>
+<body>
+    <h1>Light / Dark Mode</h1>
+    <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
+    <p id="demo">This is a sample paragraph to demonstrate light and dark mode toggle</p>
+</body>
+<script>
+    function toggleMode(){
+        const body = document.body;
+        body.style.backgroundColor = body.style.backgroundColor === 'black' ? 'white' : 'black';
+        body.style.color = body.style.color === 'white' ? 'black' : 'white';
+    }
+</script>
+</html>
