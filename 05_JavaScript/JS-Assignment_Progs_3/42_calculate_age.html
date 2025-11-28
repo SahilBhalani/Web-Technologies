@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Age From DOB</title>
+  </head>
+  <body>
+    <h1>Calculate Age From DOB</h1>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function calculateAge(dob){
+        const birthDate = new Date(dob);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+    }
+
+    const dob = "2004-08-02";
+    document.getElementById('demo').innerHTML = "Date of Birth: " + dob + "<br>" + "Calculated Age: " + calculateAge(dob);
+  </script>
+</html>

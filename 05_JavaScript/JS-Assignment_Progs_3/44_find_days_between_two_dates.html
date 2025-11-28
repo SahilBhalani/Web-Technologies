@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Days Between Two Dates</title>
+</head>
+<body>
+    <h1>Find Days Between Two Dates</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function findDaysBetweenDates(date1, date2){
+        const oneDay = 24 * 60 * 60 * 1000;
+        const diffDays = Math.abs((date2 - date1) / oneDay);
+        return diffDays;
+    }
+
+    const firstDate = new Date('2023-01-01');
+    const secondDate = new Date('2023-12-31');
+    document.getElementById('demo').innerHTML = "Days between " + firstDate.toDateString() + " and " + secondDate.toDateString() + " is: " + findDaysBetweenDates(firstDate, secondDate) + " days.";
+</script>
+</html>
