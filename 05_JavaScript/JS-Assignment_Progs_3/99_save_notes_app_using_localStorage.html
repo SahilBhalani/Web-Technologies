@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Notes App using LocalStorage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #noteInput {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Save Notes App Using LocalStorage</h1>
+    <textarea id="noteInput" rows="10" cols="50" placeholder="Type your notes here..."></textarea><br>
+    <button onclick="saveNote()">Save Note</button>
+</body>
+<script>
+    function saveNote(){
+        const note = document.getElementById('noteInput').value;
+        localStorage.setItem('savedNote', note);
+        alert('Note saved successfully!');
+    }
+</script>
+</html>

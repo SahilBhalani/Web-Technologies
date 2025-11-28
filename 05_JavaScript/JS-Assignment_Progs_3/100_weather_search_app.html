@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Seearch App (API Based)</title>
+  </head>
+  <body>
+    <h1>Weather Search App (API Based)</h1>
+    <input type="text" id="locationInput" placeholder="Enter location" />
+    <button id="searchButton">Search Weather</button>
+
+    <h2>Weather Information:</h2>
+    <p id="location"></p>
+    <p id="temperature"></p>
+    <p id="description"></p>
+  </body>
+  <script>
+
+    const apiKey = '766e57e648454b14b43113240252811';
+    const apiUrl = 'http://api.weatherapi.com/v1/current.json';
+
+    document.getElementById('searchButton').addEventListener('click', async () => {
+      const location = document.getElementById('locationInput').value;
+      if (!location) {
+        alert('Please enter a location');
+        return;
+      }
+
+      try {
+        const response = await fetch(`${apiUrl}?key=${apiKey}&q=${location}`);
+        if (!response.ok) {
+          throw new Error('Location not found');
+        }
+        const data = await response.json();
+
+        document.getElementById('location').textContent = `Location: ${data.location.name}, ${data.location.country}`;
+        document.getElementById('temperature').textContent = `Temperature: ${data.current.temp_c} °C`;
+        document.getElementById('description').textContent = `Condition: ${data.current.condition.text}`;
+      } catch (error) {
+        alert(error.message);
+      }
+    });
+  </script>
+</html>

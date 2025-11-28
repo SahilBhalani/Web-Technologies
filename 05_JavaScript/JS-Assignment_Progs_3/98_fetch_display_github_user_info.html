@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch and Display Github User Info</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #userInfo {
+        margin-top: 20px;
+      }
+      .user-card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        max-width: 400px;
+      }
+      .user-card img {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetch and Display Github User Info</h1>
+    <div id="userInfo"></div>
+  </body>
+  <script>
+    async function getUsers(names) {
+      let jobs = [];
+
+      for (let name of names) {
+        let job = fetch(`https://api.github.com/users/${name}`).then(
+          (successResponse) => {
+            if (successResponse.status != 200) {
+              return null;
+            } else {
+              return successResponse.json();
+            }
+          },
+          (failResponse) => {
+            return null;
+          }
+        );
+        jobs.push(job);
+      }
+
+      let results = await Promise.all(jobs);
+
+      return results;
+    }
+    async function displayUsers() {
+      const userNames = ["octocat", "torvalds", "sahilbhalani"];
+      const users = await getUsers(userNames);
+      const userInfoDiv = document.getElementById("userInfo");
+
+      users.forEach((user) => {
+        const userCard = document.createElement("div");
+        userCard.className = "user-card";
+
+        if (user) {
+          userCard.innerHTML = `
+            <img src="${user.avatar_url}" alt="${user.login}" width="100" />
+            <h2>${user.name || user.login}</h2>
+            <p><strong>Username:</strong> ${user.login}</p>
+            <p><strong>Bio:</strong> ${user.bio || "N/A"}</p>
+            <p><strong>Location:</strong> ${user.location || "N/A"}</p>
+            <p><strong>Public Repos:</strong> ${user.public_repos}</p>
+          `;
+        } else {
+          userCard.innerHTML = `<h2>User not found</h2>`;
+        }
+
+        userInfoDiv.appendChild(userCard);
+      });
+    }
+
+    displayUsers();
+  </script>
+</html>
