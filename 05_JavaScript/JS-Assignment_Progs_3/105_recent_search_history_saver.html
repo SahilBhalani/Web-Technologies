@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Search History Saver</title>
+</head>
+<body>
+    <h1>Recent Search History Saver</h1>
+    <input type="text" id="searchInput" placeholder="Enter search term" />
+    <button onclick="search()">Search</button>
+    <h2>Recent Searches:</h2>
+    <ul id="searchHistory"></ul>
+</body>
+<script>
+    function search(){
+        const searchTerm = document.getElementById('searchInput').value;
+        if(!searchTerm){
+            alert('Please enter a search term');
+            return;
+        }
+        let searches = JSON.parse(localStorage.getItem('searchHistory')) || [];
+        searches.unshift(searchTerm);
+        searches = searches.slice(0, 5);
+        localStorage.setItem('searchHistory', JSON.stringify(searches));
+        displaySearchHistory();
+    }
+
+    function displaySearchHistory(){
+        const searches = JSON.parse(localStorage.getItem('searchHistory')) || [];
+        const searchHistoryList = document.getElementById('searchHistory');
+        searchHistoryList.innerHTML = '';
+        searches.forEach(term => {
+            const li = document.createElement('li');
+            li.textContent = term;
+            searchHistoryList.appendChild(li);
+        });
+    }
+</script>
+</html>

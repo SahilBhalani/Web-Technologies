@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Theme (Light / Dark) In Local Stoage</title>
+</head>
+<body>
+    <h1>Save Theme(Light / Dark) In Local Storage</h1>
+    <button onclick="setLightTheme()">Light Theme</button>
+    <button onclick="setDarkTheme()">Dark Theme</button>
+</body>
+<script>
+    function setLightTheme(){
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        localStorage.setItem('theme', 'light');
+    }
+
+    function setDarkTheme(){
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        localStorage.setItem('theme', 'dark')
+    }
+    window.onload = function(){
+        const savedTheme = localStorage.getItem('theme');
+        if(savedTheme === 'light'){
+            setLightTheme();
+        } else if(savedTheme === 'dark'){
+            setDarkTheme();
+        }
+    }
+</script>
+</html>
