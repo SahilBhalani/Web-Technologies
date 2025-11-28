@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Days To Date</title>
+</head>
+<body>
+    <h1>Add Days to Date</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function addDays(days, date){
+        let result = new Date(date);
+        result.setDate(result.getDate() + days);
+        return result;
+    }
+
+    const today = new Date();
+    document.getElementById('demo').innerHTML = "Today is: " + today.getDate() + "<br>" + "10 days later: " + addDays(10, today).getDate(); 
+</script>
+</html>

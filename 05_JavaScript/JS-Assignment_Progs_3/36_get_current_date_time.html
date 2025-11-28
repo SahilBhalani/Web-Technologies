@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Current Date and Time</title>
+</head>
+<body>
+    <h1>Get Current Date and Time</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    const now = new Date();
+    document.getElementById('demo').innerHTML = "Current Date and Time: " + now.toDateString() + " " + now.toTimeString();
+</script>
+</html>

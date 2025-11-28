@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Dates</title>
+</head>
+<body>
+    <h1>Compare Two Dates</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    const date1 = new Date('2023-12-25');
+    const date2 = new Date('2024-01-01');
+    let comparisonResult = "";
+
+    if(date1 < date2){
+        comparisonResult = `${date1.toDateString()} is earlier than ${date2.toDateString()}`;
+    } else if(date1 > date2){
+        comparisonResult = `${date1.toDateString() } `
+    }
+</script>
+</html>

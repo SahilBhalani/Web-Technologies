@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format Date(DD//MM//YYYY)</title>
+</head>
+<body>
+    <h1>Format Date(DD/MM/YYYY)</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1;
+    let yyyy = today.getFullYear();
+
+    const formattedDate = `${dd}/${mm}/${yyyy}`;
+    document.getElementById('demo').innerHTML = "Formatted Date: " + formattedDate;
+</script>
+</html>
