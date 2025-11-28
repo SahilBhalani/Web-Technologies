@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Number To Words</title>
+  </head>
+  <body>
+    <h1>Convert Number To Words</h1>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function numToWords(num) {
+      const ones = [
+        "",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "thirteen",
+        "fourteen",
+        "fifteen",
+        "sixteen",
+        "seventeen",
+        "eighteen",
+        "nineteen",
+      ];
+      const tens = [
+        "",
+        "",
+        "twenty",
+        "thirty",
+        "forty",
+        "fifty",
+        "sixty",
+        "seventy",
+        "eighty",
+        "ninety",
+      ];
+      const scales = ["", "thousand", "million", "billion", "trillion"];
+
+      if (num === 0) return "zero";
+      if (num < 0) throw new Error("Negative numbers not supported");
+
+      let word = "";
+
+      const convertTriplet = (n) => {
+        let result = "";
+        if (n >= 100) {
+          result += ones[Math.floor(n / 100)] + " hundred ";
+          n %= 100;
+        }
+        if (n >= 20) {
+          result += tens[Math.floor(n / 10)] + " ";
+          n %= 10;
+        }
+        if (n > 0) {
+          result += ones[n] + " ";
+        }
+        return result.trim();
+      };
+
+      let scaleIndex = 0;
+      while (num > 0) {
+        const triplet = num % 1000;
+        if (triplet !== 0) {
+          const prefix = convertTriplet(triplet);
+          const scale = scales[scaleIndex];
+          word = prefix + (scale ? " " + scale : "") + (word ? " " + word : "");
+        }
+        num = Math.floor(num / 1000);
+        scaleIndex++;
+      }
+
+      return word.trim();
+    }
+    document.getElementById('demo').innerHTML = numToWords(12345);
+  </script>
+</html>

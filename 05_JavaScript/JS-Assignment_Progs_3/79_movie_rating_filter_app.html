@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating Filter App</title>
+</head>
+<body>
+    <h1>Movie Rating Filter App</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function filterMovies(movies, minRating) {
+        return movies.filter(movie => movie.rating >= minRating);
+    }
+
+    const movies = [
+        { title: "Inception", rating: 8.8 },
+        { title: "The Dark Knight", rating: 9.0 },
+        { title: "Interstellar", rating: 8.6 },
+        { title: "The Room", rating: 3.7 },
+        { title: "Cats", rating: 2.8 }
+    ]
+    document.getElementById('demo').innerHTML ="Filtered Movies Are : " + JSON.stringify(filterMovies(movies, 8.0));
+</script>
+</html>

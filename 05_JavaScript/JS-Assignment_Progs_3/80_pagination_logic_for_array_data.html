@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination Logic for Array Data</title>
+  </head>
+  <body>
+    <h1>Pagination Logic for Array Data</h1>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function paginateArray(arr, pageSize, pageNumber) {
+      const startIndex = (pageNumber - 1) * pageSize;
+      const endIndex = startIndex + pageSize;
+        return arr.slice(startIndex, endIndex);
+    }
+    const data = [
+      "Item 1",
+      "Item 2",
+      "Item 3",
+      "Item 4",
+      "Item 5",
+      "Item 6",
+      "Item 7",
+      "Item 8",
+      "Item 9",
+      "Item 10",
+    ];
+    document.getElementById('demo').innerHTML = "Paginated Data: " + JSON.stringify(paginateArray(data, 3, 2));
+  </script>
+</html>

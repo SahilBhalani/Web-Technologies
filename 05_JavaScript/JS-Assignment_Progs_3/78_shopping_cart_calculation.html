@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooping Cart Calculation</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function calculateCart(cartItems){
+        let totalPrice = 0;
+        for(let item of cartItems){
+            totalPrice += item.price * item.quantity;
+        }
+        return totalPrice;
+    }
+
+    const cart = [
+        {name: "Tshirt", price: 20, quantity: 2},
+        {name: "Jeans", price: 40, quantity: 3},
+        {name: "Shoes", price: 60, quantity: 1}
+      ];
+    document.getElementById('demo').innerHTML = "Total Cart Price Is: $" + calculateCart(cart);
+</script>
+</html>
