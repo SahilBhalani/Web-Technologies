@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Words in a Paragraph</title>
+</head>
+<body>
+    <h1>Count Words In a Parapraph</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function countWords(str){
+        const words = str.trim().split(/\s+/).filter((word) => word.length > 0);
+        return words.length;
+    }
+    document.getElementById('demo').innerHTML = "The Number of Words In A Paragraph Is: " + countWords("Hey There Sahill Here!");
+</script>
+</html>

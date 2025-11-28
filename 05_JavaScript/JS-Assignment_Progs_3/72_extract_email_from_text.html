@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract email from text</title>
+</head>
+<body>
+    <h1>Extract Email From Text</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    function extractEmail(text){
+        const emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+        const emails = text.match(emailPattern);
+        return emails || [];
+    }
+    document.getElementById('demo').innerHTML = "Extracted Emails: " + extractEmail("Contact us at abc@gmail.com or xyz007@gmail.com for more information.");
+</script>
+</html>

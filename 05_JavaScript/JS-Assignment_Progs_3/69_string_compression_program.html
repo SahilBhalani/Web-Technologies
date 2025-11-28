@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Compression Program</title>
+  </head>
+  <body>
+    <h1>String Compression Program</h1>
+    <label for="inputString">Enter String:</label><br />
+    <input type="text" id="inputString" size="50" /><br /><br />
+    <button onclick="compressString()">Compress</button><br /><br />
+    <h2>Compressed Output:</h2>
+    <textarea id="outputString" rows="4" cols="50" readonly></textarea>
+  </body>
+  <script>
+    function compressString() {
+      const inputString = document.getElementById("inputString").value;
+      if (inputString.length === 0) {
+        document.getElementById("outputString").value = "";
+        return;
+      }
+      let compressedString = "";
+      let count = 1;
+      for (let i = 0; i < inputString.length; i++) {
+        if (inputString[i] === inputString[i + 1]) {
+          count++;
+        } else {
+          compressedString += inputString[i] + count;
+          count = 1;
+        }
+        document.getElementById("outputString").value = compressedString;
+      }
+    }
+
+  </script>
+</html>
