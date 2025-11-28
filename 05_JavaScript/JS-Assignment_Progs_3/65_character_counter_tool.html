@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter Tool</title>
+</head>
+<body>
+    <h1>Character Counter Tool</h1>
+    <textarea id="textInput" rows="10" cols="50" placeholder="Type or paste your text here..."></textarea>
+    <p>Total Characters: <span id="charCount">0</span></p>
+</body>
+<script>
+    const textInput = document.getElementById('textInput');
+    const charCount = document.getElementById('charCount');
+    textInput.addEventListener('input', function(){
+        charCount.textContent = textInput.value.length
+    })
+</script>
+</html>

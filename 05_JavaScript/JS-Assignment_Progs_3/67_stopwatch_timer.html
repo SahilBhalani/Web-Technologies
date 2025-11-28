@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch Timer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #stopwatch {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: 18px;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stopwatch</h1>
+    <p id="stopwatch">00:00:00</p>
+    <button onclick="startStopwatch()">Start</button>
+    <button onclick="stopStopwatch()">Stop</button>
+    <button onclick="resetStopwatch()">Reset</button>
+  </body>
+  <script>
+    let stopwatchInterval;
+    let elapsedTime = 0;
+
+    function updateStopwatch() {
+      elapsedTime += 1;
+      const hours = String(Math.floor(elapsedTime / 3600)).padStart(2, "0");
+      const minutes = String(Math.floor((elapsedTime % 3600) / 60)).padStart(
+        2,
+        "0"
+      );
+      const seconds = String(elapsedTime % 60).padStart(2, "0");
+      document.getElementById(
+        "stopwatch"
+      ).innerText = `${hours}:${minutes}:${seconds}`;
+    }
+    function startStopwatch() {
+      if (!stopwatchInterval) {
+        stopwatchInterval = setInterval(updateStopwatch, 1000);
+      }
+    }
+
+    function stopStopwatch() {
+      clearInterval(stopwatchInterval);
+      stopwatchInterval = null;
+    }
+
+    function resetStopwatch() {
+      stopStopwatch();
+      elapsedTime = 0;
+      document.getElementById("stopwatch").innerText = "00:00:00";
+    }
+  </script>
+</html>

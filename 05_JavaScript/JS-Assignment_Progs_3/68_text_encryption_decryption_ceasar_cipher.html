@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption & Decryption (Ceasar Cipher)</title>
+</head>
+<body>
+    <h1>Text Encryption & Decryption (Ceasar Cipher)</h1>
+    <label for="inputText">Enter Text:</label><br>
+    <textarea id="inputText" rows="4" cols="50"></textarea><br><br>
+    <label for="shift">Shift Amount:</label>
+    <input type="number" id="shift" value="3"><br><br>
+    <button onclick="encryptText()">Encrypt</button>
+    <button onclick="decryptText()">Decrypt</button><br><br>
+    <h2>Output:</h2>
+    <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+</body>
+<script>
+    function encryptText(){
+        const inputText = document.getElementById("inputText").value;
+        const shift = parseInt(document.getElementById("shift").value);
+        let outputText = "";
+
+        for(let i = 0; i < inputText.length; i++){
+            let char = inputText[i];
+            if(char.match(/[a-z]/i)){
+                const code = inputText.charCodeAt(i);
+                let base = (code >= 65 && code <= 90) ? 65 : 97;
+                char = String.fromCharCode(((code - base + shift) % 26) + base);
+            }
+            outputText += char;
+        }
+        document.getElementById("outputText").value = outputText;
+    }
+
+    function decryptText(){
+        const inputText = document.getElementById("inputText").value;
+        const shift = parseInt(document.getElementById("shift").value);
+        let outputText = "";
+
+        for(let i = 0; i < inputText.length; i++){
+            let char = inputText[i];
+            if(char.match(/[a-z]/i)){
+                const code = inputText.charCodeAt(i);
+                let base = (code >= 65 && code <= 90) ? 65 : 97;
+                char = String.fromCharCode(((code - base - shift + 26) % 26) + base);
+            }
+            outputText += char;
+        }
+        document.getElementById("outputText").value = outputText;
+    }
+</script>
+</html>

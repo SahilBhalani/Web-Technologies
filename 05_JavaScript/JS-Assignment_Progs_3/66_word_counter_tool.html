@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Tool</title>
+</head>
+<body>
+    <h1>Word Counter Tool</h1>
+    <textarea id="textInput" rows="10" cols="50" placeholder="Type or paste your text here..."></textarea>
+    <p>Total Words: <span id="wordCount">0</span></p>
+</body>
+<script>
+    const textInput = document.getElementById('textInput');
+    const wordCount = document.getElementById('wordCount');
+    textInput.addEventListener('input', function(){
+        const words = textInput.value.trim().split(/\s+/).filter(word => word.length > 0);
+        wordCount.textContent = words.length
+    })
+</script>
+</html>
