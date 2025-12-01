@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch JSON Data and Display</title>
+  </head>
+  <body>
+    <button id="load">Load User</button>
+    <p id="demo"></p>
+  </body>
+  <script>
+    document.getElementById("load").onclick = () => {
+      fetch("user.json")
+        .then((res) => res.json())
+        .then((data) => {
+          document.getElementById("demo").innerHTML = JSON.stringify(
+            data,
+            null,
+            2
+          );
+        });
+    };
+  </script>
+</html>

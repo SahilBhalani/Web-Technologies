@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Load Text</button>
+    <p id="demo"></p>
+    
+</body>
+<script>
+    document.getElementById('btn').addEventListener("click", () => {
+        fetch("sample.txt")
+        .then(response => response.text())
+        .then(data => document.getElementById('demo').innerHTML = data);
+    });
+</script>
+</html>
