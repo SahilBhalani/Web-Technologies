@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Load List and Display in Table</title>
+  </head>
+  <body>
+    <button id="load">Load Users</button>
+    <table border="1">
+      <tbody id="users"></tbody>
+    </table>
+  </body>
+
+  <script>
+    document.getElementById("load").onclick = () => {
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((r) => r.json())
+        .then((data) => {
+          document.getElementById("users").innerHTML = data
+            .map((u) => `<tr><td>${u.name}</td><td>${u.email}</td></tr>`)
+            .join("");
+        });
+    };
+  </script>
+</html>

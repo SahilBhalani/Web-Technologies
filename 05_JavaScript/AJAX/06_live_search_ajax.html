@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>live Search AJAX</title>
+  </head>
+  <body>
+    <input id="search" placeholder="Type To search..." />
+    <p id="demo"></p>
+  </body>
+  <script>
+    document.getElementById("search").addEventListener("input", e => {
+      fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${e.target.value}`)
+        .then((res) => res.json())
+        .then(data => {
+          document.getElementById("demo").innerHTML =
+            data[0]?.word || "No Result";
+        })
+        .catch(() => (document.getElementById("demo").innerHTML = ""));
+    });
+  </script>
+</html>
