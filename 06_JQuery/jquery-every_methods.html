@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Event Methods</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p class="p">If you click on me, I will disappear.</p>
+    <p class="p">Click me away!</p>
+    <p class="p">Click me too!</p>
+    <hr />
+
+    <p class="tst">If you double-click on me, I will disappear.</p>
+    <p class="tst">Click me away!</p>
+    <p class="tst">Click me too!</p>
+    <hr>
+    <p id="p1">Enter this paragraph.</p>
+  </body>
+  <script>
+    //  * click() Method
+    // The click() method is executed when the user clickcs on HTML element.
+    $(document).ready(function () {
+      $(".p").click(function () {
+        $(this).hide();
+      });
+    });
+
+    // The dblclick() Method
+    // The dblclick() method is executed when the user double clicks on HTML element
+    $(document).ready(function() {
+        $(".tst").dblclick(function(){
+            $(this).hide();
+        });
+    });
+
+    // mouseenter() Method
+    // mouseenter() method is executed when th mouse pointer enters the HTML element.
+    $(document).ready(function() {
+        $("#p1").mouseenter(function() {
+            alert("You Entered p1!")
+        })
+    })
+
+    //mouseleave() Method
+    //mouseleave() method is executed when the mouse points leaves the HTML element.
+    $(document).ready(function() {
+        $("#p1").mouseleave(function() {
+            alert("Bye! You now leave p1!")
+        })
+    })
+  </script>
+</html>
