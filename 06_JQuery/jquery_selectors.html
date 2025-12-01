@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- * jQuery Selectors 
+    Jquery Selectors allow you to select and manipulate HTML Elements.
+    Jquery Selectors are used to "Find" HTML elements based on thier name, id, classes, types, attributes, values of attributes and much more. it's based on the existing CSS Selectors. 
+    -->
+
+    <p>Click To hide</p>
+    <p>Click To hide</p>
+    <p>Click To hide</p>
+    <button id="myBtn1">Click to Hide All Paragraphs</button>
+    <hr />
+
+    <p>This is a paragraph</p>
+    <p id="test">This is new paragraph</p>
+    <button id="myBtn2">Hide #test Paragraph</button>
+    <hr />
+
+    <h3 class="tst">This is a Heading</h3>
+    <p>This is a paragraph</p>
+    <p class="tst">This is new paragraph</p>
+    <button id="myBtn3">Hide .test Paragraph</button>
+    <hr />
+  </body>
+
+  <script>
+    // The Element Selector
+    // The jQuery element selector selects elements based on the element name.
+    $(document).ready(function () {
+      $("#myBtn1").click(function () {
+        $("p").hide();
+      });
+    });
+
+    // The #id Selector
+    //The jQuery #id selector uses the id attribute of an HTML tag to find the specific element.
+    $(document).ready(function () {
+      $("#myBtn2").click(function () {
+        $("#test").hide();
+      });
+    });
+
+    // The .class Selector
+    // The jQuery .class selector finds element with a specific class.
+    $(document).ready(function() {
+        $("#myBtn3").click(function() {
+            $(".tst").hide();
+        });
+    });
+  </script>
+</html>
