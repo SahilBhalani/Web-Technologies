@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+<body>
+    <button id="btn">Test Error</button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('btn').onclick = () => {
+            fetch("https://wrong-url.com/data")
+            .then(res => {
+                if(!res.ok) throw new error("Network Error");
+                return res.json();
+            })
+            .then(data => document.getElementById('demo').innerHTML = data)
+            .catch(err => document.getElementById('demo').innerHTML = err.message)
+        };
+    </script>
+</body>
+</html>
