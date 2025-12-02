@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Sliding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+      }
+
+      #flip,
+      #flip2,
+      #flip3 {
+        cursor: pointer;
+      }
+
+      #panel,
+      #flip,
+      #flip2,
+      #flip3 {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jquery Sliding</h1>
+    <hr />
+
+    <div id="flip">Click To Slide Down Panel</div>
+    <div id="flip2">Click To Slide Up Panel</div>
+    <div id="flip3">Click To Toggle Panel</div>
+    <div id="panel">HeY There! Sahil Here</div>
+  </body>
+  <script>
+    //The slideDown() Method
+    $(document).ready(function () {
+      $("#flip").click(function () {
+        $("#panel").slideDown();
+      });
+    });
+
+    //The slideUp() Method
+    $(document).ready(function () {
+        $("#flip2").click(function () { 
+            $("#panel").slideUp("slow");    
+        });
+    });
+
+    //The slideToggle() Method
+    $(document).ready(function () {
+        $("#flip3").click(function () {
+            $("#panel").slideToggle("fast");
+          })
+      })
+  </script>
+</html>
