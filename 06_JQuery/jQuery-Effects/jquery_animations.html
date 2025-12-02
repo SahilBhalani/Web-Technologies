@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Animations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Jquery Animations</h1><hr>
+
+    <div id="div1" style="background:#98bf21;height:100px;width:100px;position:relative;">Hey There!</div><br>
+    <button id="myBtn" style="position: relative;">Animate Div</button>
+    <button id="myBtn2">Manipulate Multiple Property</button>
+    <button id="myBtn3">Manipulate Using Relative Property</button>
+    <button id="myBtn4">Manipulate Using Predefined Values</button>
+    <button id="myBtn5">Manipulate Using Queue Functionality</button>
+    <button id="stop">Stop sliding</button>
+
+</body>
+<script>
+
+    //The animate() Method
+    $(document).ready(function () {
+        $("#myBtn").click(function(){
+            $("#div1").animate({left: '250px'});
+        });
+    });
+
+    // jQuery animate() - Manipulate Multiple Properties
+    $(document).ready(function () {
+        $("#myBtn2").click(function () {
+            $("#div1").animate({
+                left: '250px',
+                opacity: '0.5',
+                height: '150px',
+                width: '150px'
+            });
+          });
+      });
+
+    // jQuery animate() - Using Relative Values
+    $(document).ready(function () {
+        $("#myBtn3").click(function() {
+            $("#div1").animate({
+                left: '250px',
+                height: '+=150px',
+                width: '+=150px'
+            });
+        });
+    });
+
+    // jQuery animate() - Using Pre-defined Values
+    $(document).ready(function () {
+        $("#myBtn4").click(function() {
+            $("#div1").animate({
+                height: 'toggle'
+            });
+        });
+    });
+
+    // jQuery animate() - Uses Queue Functionality
+    $(document).ready(function () {
+        $("#myBtn5").click(function () {
+            var div = $("#div1");
+            div.animate({height: '300px', opacity: '0.4'}, "slow")
+            div.animate({width: '300px', opacity: '0.8'}, "slow")
+            div.animate({height: '100px', opacity: '0.4'}, "slow")
+            div.animate({width: '100px', opacity: '0.8'}, "slow")
+            div.animate({left: '100px'}, "slow")
+            div.animate({fontSize: '3em'}, "slow");
+          });
+    });
+
+    //jQuery stop() Method
+    $(document).ready(function () {
+        $("#stop").click(function () {
+            $("#div1").stop();
+          })
+    });
+
+
+</script>
+</html>
