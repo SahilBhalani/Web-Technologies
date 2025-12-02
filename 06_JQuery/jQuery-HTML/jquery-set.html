@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Set Content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p id="test1">This is a Paragraph</p>
+    <p id="test2">This is another Paragraph</p>
+    <p>Input Field: <input type="text" id="test3" value="Mickey Mouse" /></p>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+    <hr />
+
+    <p id="test11">This is a <b>bold</b> paragraph.</p>
+    <p id="test22">This is another <b>bold</b> paragraph.</p>
+    <button id="btn4">Show Old/New Text</button>
+    <button id="btn5">Show Old/New HTML</button><hr>
+
+    <p><a href="https://www.w3schools.com" id="unc" title="some title">W3Schools.com</a></p>
+    <button id="btn6">Change href Value</button>
+
+  </body>
+  <script>
+    //Set Content - text(), html(), and val()
+    $(document).ready(function () {
+      $("#btn1").click(function () {
+        $("#test1").text("Hey There!");
+      });
+
+      $("#btn2").click(function () {
+        $("#test2").html("<b>Sahil Here!</b>");
+      });
+
+      $("#btn3").click(function () {
+        $("#test3").val("Daisy Duck");
+      });
+    });
+
+    //Set Attributes - attr()
+    $(document).ready(function () {
+        $("#btn6").click(function () {
+            $("#unc").attr({
+                "href" : "https://www.google.com",
+                "title": "Google Google Google"
+            });
+          });
+    });
+
+    //Callback Function for text(), html(), val()
+    $(document).ready(function () {
+        $("#btn4").click(function () {
+            $("#test11").text(function (i , origText) {
+                return "Old Text: " + origText + " New text: Hello World! (index: " + i + ") \n";
+              });
+          });
+
+        $("#btn5").click(function() {
+            $("#test22").html(function (i, origText) {
+                return "Old HTML: " + origText + " New HTML: Hello <b>World!</b> (index: " + i + ") \n";
+              });
+        });
+    });
+
+    // 
+  </script>
+</html>
