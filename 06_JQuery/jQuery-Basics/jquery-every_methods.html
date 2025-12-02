@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Event Methods</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p class="p">If you click on me, I will disappear.</p>
+    <p class="p">Click me away!</p>
+    <p class="p">Click me too!</p>
+    <hr />
+
+    <p class="tst">If you double-click on me, I will disappear.</p>
+    <p class="tst">Click me away!</p>
+    <p class="tst">Click me too!</p>
+    <hr />
+    <p id="p1">Enter this paragraph.</p>
+    <hr />
+    <p id="p2">This is a paragraph.</p>
+    <hr />
+
+    Name: <input type="text" name="fullname" /> Email:
+    <input type="text" name="email" /><hr>
+    <p id="pEnd">Click or move the mouse pointer over this paragraph.</p>
+  </body>
+  <script>
+    //  * click() Method
+    // The click() method is executed when the user clickcs on HTML element.
+    $(document).ready(function () {
+      $(".p").click(function () {
+        $(this).hide();
+      });
+    });
+
+    // The dblclick() Method
+    // The dblclick() method is executed when the user double clicks on HTML element
+    $(document).ready(function () {
+      $(".tst").dblclick(function () {
+        $(this).hide();
+      });
+    });
+
+    // mouseenter() Method
+    // mouseenter() method is executed when th mouse pointer enters the HTML element.
+    $(document).ready(function () {
+      $("#p1").mouseenter(function () {
+        alert("You Entered p1!");
+      });
+    });
+
+    //mouseleave() Method
+    //mouseleave() method is executed when the mouse points leaves the HTML element.
+    $(document).ready(function () {
+      $("#p1").mouseleave(function () {
+        alert("Bye! You now leave p1!");
+      });
+    });
+
+    //mousedown()
+    //mousedown() method is executed when the left middle or right mouse button is pressed down, while the mouse is over the HTML Element
+    $(document).ready(function () {
+      $("#p2").mousedown(function () {
+        alert("mouse down over p2!");
+      });
+    });
+
+    //mouseup()
+    //mouseup() method is executed when the left middle or right mouse button is released, while the mouse is over the HTML element.
+    $(document).ready(function () {
+      $("#p2").mouseup(function () {
+        alert("Mouse up over p2!");
+      });
+    });
+
+    //hover()
+    //hover() method takes two functions and is a combinations of the mouseenter() and mouesleave() methods.
+    //The first functions is executed when the mouse enters the HTML Element, and the second function is executed when the mouse leaves the HTML element.
+
+    //focus()
+    //The focus() is executed when the form field gets focus:
+    $(document).ready(function () {
+      $("input").focus(function () {
+        $(this).css("background-color", "yellow");
+      });
+    });
+
+    //blur()
+    //THe blur() is executed when the form field gets out of focus
+    $(document).ready(function () {
+      $("input").blur(function () {
+        $(this).css("background-color", "green")
+        })
+    });
+
+    //The on() method
+    //The on() method attaches one or more event handlers for the selected elements.
+    $(document).ready(function () {
+      $("#pEnd").on({
+        mouseenter: function () {
+          $(this).css("background-color", "lightgray");
+          },
+        mouseleave: function() {
+          $(this).css("background-color", "lightblue");
+        }, 
+        click: function(){
+          $(this).css("background-color", "yellow");
+        }
+      });
+    });
+  </script>
+</html>
