@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Remove Element</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .test {
+        color: red;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <div
@@ -22,6 +28,14 @@
     </div>
     <button id="btn1">Remove div Element</button>
     <button id="btn2">Empty div Element</button>
+    <hr />
+
+    <p>This is a paragraph.</p>
+    <p class="test">This is another paragraph.</p>
+    <p class="test">This is another paragraph.</p>
+    <p class="demo">This is another paragraph.</p>
+    <p class="demo">This is another paragraph.</p>
+    <button id="btn11">Remove All elements with class = "test" and "demo"</button>
   </body>
   <script>
     //jquery remove() Method
@@ -32,6 +46,12 @@
 
       $("#btn2").click(function () {
         $("#div1").empty();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#btn11").click(function () {
+        $("p").remove(".test, .demo");
         });
     });
   </script>
