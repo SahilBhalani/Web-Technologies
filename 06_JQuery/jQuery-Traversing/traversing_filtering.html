@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing - Filtering</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Homepage</h1>
+
+    <p>This is a paragraph.</p>
+
+    <div style="border: 1px solid black">
+      <p>A paragraph in a div.</p>
+      <p>Another paragraph in a div.</p>
+    </div>
+    <br />
+
+    <div style="border: 1px solid black">
+      <p>A paragraph in another div.</p>
+      <p>Another paragraph in another div.</p>
+    </div>
+    <br />
+
+    <div style="border: 1px solid black">
+      <p>A paragraph in another div.</p>
+      <p>Another paragraph in another div.</p>
+    </div>
+    <hr />
+
+    <h1>Welcome to My Homepage</h1>
+
+    <h6>My name is Donald.</h6>
+    <h6 class="intro">I live in Duckburg.</h6>
+    <h6 class="intro">I love Duckburg.</h6>
+    <h6>My best friend is Mickey.</h6>
+  </body>
+  <script>
+    //jQuery first() Method
+    //The first() method returns te first element of the specified elements.
+    $(document).ready(function () {
+      $("div").first().css({
+        "background-color": "yellow",
+      });
+    });
+
+    //jQuery last() Method
+    //The last() method returns that last elements of the specified elements.
+    $(document).ready(function () {
+      $("div").last().css({
+        "background-color": "darkblue",
+      });
+    });
+
+    //jQuery eq() Method
+    //The eq() method returns an element with a specific index number of the selected elements.
+    //The index numbers starts at 0, so the first element will have the index number 0 and not 1.
+    $(document).ready(function () {
+      $("div").eq(1).css({
+        "background-color": "red",
+      });
+    });
+
+    //jQuery filter() Method
+    //The filter() method lets you specify a criteria. Elements that do not match criteria are removed from the selection, and those that match will be retured.
+    $(document).ready(function () {
+        $("h6").filter(".intro").css({
+            "background-color" : "yellow"
+        });
+    });
+
+    //jQuery not() Method
+    //The not() method returns all elements that do not match the criteria
+    //The not() method is the opposite of filter()
+    $(document).ready(function () {
+        $("h6").not(".intro").css({
+            "background-color" : "yellow"
+        });
+    });
+  </script>
+</html>
