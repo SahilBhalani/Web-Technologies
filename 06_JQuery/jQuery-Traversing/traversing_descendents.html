@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing - Descendants</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .descendants * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="descendants" style="width: 500px">
+      div (current element)
+      <p class="first">
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+      <p class="second">
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+    </div>
+  </body>
+  <script>
+    //jQuery children() Method
+    //The children() method returns all direct children of the selected element.
+    //This method only traverse a single element that are children of each <div> elements:
+        $(document).ready(function () {
+            $("div").children().css({"color" : "red" , "border" : "2px solid red"});
+        });
+
+    //you can also use an optional parameter to filter the search for children.
+    $(document).ready(function () {
+        $("div").children("p.first").css({"color" : 
+            "magenta", "border" : "2px solid magenta"
+        });
+    });
+
+    //jQuery find() Method
+    //The find() method returns descendants elements of the selected element, all the way down to the last descendant.
+    $(document).ready(function () {
+        $("div").find("span").css({"color" : "yellow" , "border" : "2px solid yellow"});
+    });
+
+    //The following example returns all descendants of <div>
+        $(document).ready(function () {
+            $("div").find("*").css({"color" : "#003366" , "border" : "2px solid #003366"})
+        });
+
+  </script>
+</html>
