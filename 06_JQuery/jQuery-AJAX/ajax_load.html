@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX load() Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="div1">
+      <h2>Let jQuery AJAX Change This Text</h2>
+    </div>
+    <br />
+
+    <div id="div2">
+      <h2>Let jQuery AJAX Change This Text</h2>
+      <p id="p1"></p>
+    </div>
+    <br />
+
+    <button id="mybtn1">Get External Content</button>
+    <button id="mybtn2">Get External Content In Paragraph</button>
+  </body>
+  <script>
+    //jQuery Load Method
+    //The load method loads data from a server and puts the returned data into the selected element.
+    $(document).ready(function () {
+      $("#mybtn1").click(function () {
+        $("#div1").load("merged_output.txt");
+      });
+    });
+
+    //It is also possible to add a jQuery selector to the URL parameter.
+    $(document).ready(function () {
+      $("#mybtn2").click(function () {
+        $("#div2").load("merged_output.txt #p1");
+      });
+    });
+
+    //The optional callback parameter specifies a callback function to run when  the load() method is completed. The callback function can have different parameters:
+    $(document).ready(function () {
+      $("#mybtn1").click(function () {
+        $("#div1").load(
+          "merged_output.txt",
+          function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success")
+              alert("External Content Loaded Successfully!");
+            if (statusTxt == "error")
+              alert("Error: " + xhr.status + ": " + xhr.statusTxt);
+          }
+        );
+      });
+    });
+  </script>
+</html>
