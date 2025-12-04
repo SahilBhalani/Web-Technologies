@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing - Ancestors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ancestors">
+      <div style="width: 500px">
+        div (great-grandparent)
+        <ul>
+          ul (grandparent)
+          <li>
+            li (direct parent)
+            <span>span</span>
+          </li>
+        </ul>
+      </div>
+
+      <div style="width: 500px">
+        div (grandparent)
+        <p>
+          p (direct parent)
+          <span>span</span>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    //Jquery parent() Method
+    //The parent method returns the direct parent element of the selected element.
+    //This method only traverse a single level up the DOM tree.
+    $(document).ready(function () {
+        $("span").parent().css({"color" : "red", "border" : "2px solid red"});
+    });
+
+    //jQuery parents() Method
+    // The parents method returns all ancestors elements of the selected elements, all the way up to the document's root element
+    $(document).ready(function () {
+        $("span").parents().css({"color" : "purple", "border" : "2px solid purple"});
+    });
+
+    //you can also use an optional parameter to filter the search for ancestors
+    $(document).ready(function () {
+        $("span").parents("ul").css({"color" : "darkblue", "border" : "2px solid darkblue"})
+    });
+
+    //jQuery parentsUntil() Method
+    //The parentsUntil() method returns all ancestor elements between two given arguments.
+    $(document).ready(function () {
+        $("span").parentsUntil("div").css({"color" : "maroon" , "border" : "2px solid maroon"});
+    });
+  </script>
+</html>
