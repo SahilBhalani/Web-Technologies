@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing - Siblings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .siblings * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body class="siblings">
+    <div>
+      div (parent)
+      <p>p</p>
+      <span>span</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+      <p>p</p>
+    </div>
+  </body>
+  <script>
+    // jQuery siblings() Method
+    //The siblings() method returns all sibling elements of the selected element.
+    $(document).ready(function () {
+      $("h2").siblings().css({ color: "red", border: "2px solid red" });
+    });
+
+    //you can also use an optional parameter to filter the search for siblings
+    $(document).ready(function () {
+      $("h2")
+        .siblings("p")
+        .css({ color: "#6666ff", border: "2px solid #6666ff" });
+    });
+
+    //jQuery next() Method
+    //The next() method returns the next siblings element of the selected element.
+    $(document).ready(function () {
+      $("h2").next().css({ color: "#ccff33", border: "2px solid #ccff33" });
+    });
+
+    //jQuery nextAll() Method
+    //The nextAll() method returns all next siblings elements of the selected element.
+    $(document).ready(function () {
+        $("h2").nextAll().css({"color" : "#0099cc" , "border" : "2px solid #0099cc"})
+    });
+
+    //jQuery nextUntil() Method
+    //The nextUntil() method returns all next sibling elements between two given arguments
+    $(document).ready(function () {
+        $("h2").nextUntil("h6").css({"color" : "#ff9999" , "border" : "2px solid #ff9999"})
+    });
+
+    //jQuery prev(), prevAll() & prevUntil() Methods
+    //The prev(), prevAll() and prevUntil() meethods work just like the methods above but with reverse functionality: they return previous sibling elements (traverse backwords) along with sibling elements in the DOM tree, instead of forward.
+  </script>
+</html>
