@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery noConflict() Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <button>Test jQuery</button>
+  </body>
+  <script>
+    //The jQuery noConflict() Method
+    //The noConflict() method releases the hold on the $ shortcut identifier, so that other script can use  it.
+    $.noConflict();
+    jQuery(document).ready(function () {
+      jQuery("button").click(function () {
+        jQuery("p").text("jQuery is still working!");
+      });
+    });
+  </script>
+</html>
