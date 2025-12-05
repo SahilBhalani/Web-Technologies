@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Douuble Click To Toggle Background Color</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      p {
+        background: blue;
+        color: white;
+      }
+      p.dbl {
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Double click to toggle background color</p>
+  </body>
+  <script>
+    $(document).ready(function () {
+        var pdb1 = $("p:first");
+        pdb1.dblclick(function() {
+            pdb1.toggleClass("dbl");
+        });
+    });
+  </script>
+</html>
