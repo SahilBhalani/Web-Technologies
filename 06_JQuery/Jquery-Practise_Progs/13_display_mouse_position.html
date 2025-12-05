@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Mouse Position</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://db.onlinewebfonts.com/c/efd86b69ab539177c9f077bd67c914ab?family=Coolvetica"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-color: blanchedalmond;
+      color: maroon;
+      font-family: "Coolvetica";
+      font-size: 40px;
+    }
+    div {
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <div id="position"></div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(document).on("mousemove", function (event) {
+        $("#position").text(
+          "pageX : " + event.pageX + " pageY : " + event.pageY
+        );
+      });
+    });
+  </script>
+</html>

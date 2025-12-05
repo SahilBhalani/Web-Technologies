@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevent the default action of the click</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <a href="https://www.google.com">Click Prevent</a>
+    <p id="log"></p>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("a").click(function (e) {
+        e.preventDefault();
+        $("<p>")
+          .append("default " + e.type + " prevented")
+          .appendTo("#log");
+      });
+    });
+  </script>
+</html>

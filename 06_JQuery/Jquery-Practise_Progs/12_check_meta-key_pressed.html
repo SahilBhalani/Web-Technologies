@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Check Whether the META key was pressed when the event is fired
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://db.onlinewebfonts.com/c/efd86b69ab539177c9f077bd67c914ab?family=Coolvetica"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: blanchedalmond;
+        color: maroon;
+        font-family: "Coolvetica";
+        font-size: 50px;
+      }
+      div {
+        padding: 20px;
+      }
+      #checkMetaKey{
+        font-family: "Coolvetica";
+      }
+    </style>
+  </head>
+  <body>
+    <p>On Windows keyboards, the META key maps to the Windows key.</p>
+    <button value="Test" name="Test" id="checkMetaKey">Click me!</button>
+    <div id="display"></div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#checkMetaKey").click(function (event) {
+        $("#display").text(event.metaKey);
+      });
+    });
+  </script>
+</html>
