@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink Text Using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://db.onlinewebfonts.com/c/efd86b69ab539177c9f077bd67c914ab?family=Coolvetica"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/27af41e09dc102ee650f5b6bc1f72ce7?family=Playfair+Display+Bold+Italic"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Coolvetica";
+        font-size: xx-large;
+        letter-spacing: -2px;
+        background-color: blanchedalmond;
+        color: maroon;
+      }
+
+      #blink {
+        font-family: "Playfair Display Bold Italic";
+      }
+    </style>
+  </head>
+  <body>
+    <p>My Name is <span id="blink">sahil bhalani</span></p>
+  </body>
+  <script>
+    $(document).ready(function () {
+      function blink_text() {
+        $("#blink").fadeOut(500);
+        $("#blink").fadeIn(500);
+      }
+
+      setInterval(blink_text, 1000);
+    });
+  </script>
+</html>
