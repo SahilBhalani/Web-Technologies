@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide all Headings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      body {
+        height: 100dvh;
+        margin: 0;
+
+        background-color: #06c;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.2) 2px,
+            transparent 2px
+          ),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.2) 2px, transparent 1px),
+          linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("h1").click(function () {
+        $(this).slideUp("400", function () {
+          $("h2").slideUp("400", function () {
+            $("h3").slideUp("400");
+          });
+        });
+      });
+    });
+  </script>
+</html>
